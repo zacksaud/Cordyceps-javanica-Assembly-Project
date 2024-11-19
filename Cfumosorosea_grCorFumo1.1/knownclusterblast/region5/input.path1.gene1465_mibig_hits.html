@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ADY16696.1</td>
+              <td>TqaH</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001142/1">BGC0001142</a></td>
+              <td>NRP</td>
+              <td>24.0</td>
+              <td>121.2</td>
+              <td>114.0</td>
+              <td>6.2e-28</td>
+          </tr>
+    
+          <tr>
+              <td>AGC83573.1</td>
+              <td>FAD_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000818/1">BGC0000818</a></td>
+              <td>NRP</td>
+              <td>24.0</td>
+              <td>119.8</td>
+              <td>93.0</td>
+              <td>1.74e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AUM60057.1</td>
+              <td>FAD-dependent_oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001706/1">BGC0001706</a></td>
+              <td>Terpene</td>
+              <td>27.0</td>
+              <td>70.8</td>
+              <td>87.0</td>
+              <td>2.88e-18</td>
+          </tr>
+    
+          <tr>
+              <td>QKG86303.1</td>
+              <td>flavin_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002254/1">BGC0002254</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>64.9</td>
+              <td>81.0</td>
+              <td>2.35e-16</td>
+          </tr>
+    
+          <tr>
+              <td>EJP62795.1</td>
+              <td>FAD_binding_domain-containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001720/1">BGC0001720</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>81.5</td>
+              <td>77.0</td>
+              <td>4.04e-15</td>
+          </tr>
+    
+          <tr>
+              <td>KKP00965.1</td>
+              <td>FAD_dependent_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001854/1">BGC0001854</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>32.0</td>
+              <td>61.1</td>
+              <td>76.0</td>
+              <td>6.84e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AGP37409.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002386/1">BGC0002386</a></td>
+              <td>NRP+Polyketide</td>
+              <td>32.0</td>
+              <td>54.2</td>
+              <td>74.0</td>
+              <td>5.36e-14</td>
+          </tr>
+    
+          <tr>
+              <td>PKX92299.1</td>
+              <td>FAD_binding_domain_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001988/1">BGC0001988</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>66.8</td>
+              <td>72.0</td>
+              <td>2.16e-13</td>
+          </tr>
+    
+          <tr>
+              <td>XP_020057668.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001718/1">BGC0001718</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>32.4</td>
+              <td>66.0</td>
+              <td>1.47e-11</td>
+          </tr>
+    
+          <tr>
+              <td>EHA19293.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001124/1">BGC0001124</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>47.2</td>
+              <td>59.0</td>
+              <td>2.92e-09</td>
+          </tr>
+    
+          <tr>
+              <td>CCE67072.1</td>
+              <td>monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001242/1">BGC0001242</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>31.6</td>
+              <td>57.0</td>
+              <td>1.56e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ADY16690.1</td>
+              <td>TqaE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001142/1">BGC0001142</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>46.6</td>
+              <td>57.0</td>
+              <td>1.92e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ADM34135.1</td>
+              <td>FAD_binding_domain_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001084/1">BGC0001084</a></td>
+              <td>NRP+Terpene+Alkaloid</td>
+              <td>31.0</td>
+              <td>27.6</td>
+              <td>53.0</td>
+              <td>2.21e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ADM34142.1</td>
+              <td>FAD_binding_domain_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001084/1">BGC0001084</a></td>
+              <td>NRP+Terpene+Alkaloid</td>
+              <td>33.0</td>
+              <td>35.4</td>
+              <td>53.0</td>
+              <td>3.13e-07</td>
+          </tr>
+    
+          <tr>
+              <td>QKG86310.1</td>
+              <td>FAD_binding_domain_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002254/1">BGC0002254</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>36.5</td>
+              <td>52.0</td>
+              <td>5.54e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AGC83580.1</td>
+              <td>FAD_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000818/1">BGC0000818</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>34.6</td>
+              <td>51.0</td>
+              <td>9.74e-07</td>
+          </tr>
+    
+          <tr>
+              <td>SCL57575.1</td>
+              <td>2-polyprenyl-6-methoxyphenol_hydroxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002387/1">BGC0002387</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>51.7</td>
+              <td>49.0</td>
+              <td>5.07e-06</td>
+          </tr>
+    
+          <tr>
+              <td>UHY14128.1</td>
+              <td>FAD-dependent_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002671/1">BGC0002671</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>46.4</td>
+              <td>48.0</td>
+              <td>8.74e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AET79188.1</td>
+              <td>dimethylallyl_tryptophan_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001241/1">BGC0001241</a></td>
+              <td>Terpene</td>
+              <td>65.0</td>
+              <td>99.0</td>
+              <td>385.0</td>
+              <td>3.53e-133</td>
+          </tr>
+    
+          <tr>
+              <td>CCE30228.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002232/1">BGC0002232</a></td>
+              <td>Alkaloid</td>
+              <td>65.0</td>
+              <td>99.0</td>
+              <td>385.0</td>
+              <td>3.53e-133</td>
+          </tr>
+    
+          <tr>
+              <td>EAL94103.2</td>
+              <td>dimethylallyl_tryptophan_synthase_FgaPT2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000811/1">BGC0000811</a></td>
+              <td>Alkaloid</td>
+              <td>61.0</td>
+              <td>98.0</td>
+              <td>367.0</td>
+              <td>7.22e-126</td>
+          </tr>
+    
+          <tr>
+              <td>ABV57826.1</td>
+              <td>dimethylallyltryptophan_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001267/1">BGC0001267</a></td>
+              <td>Terpene</td>
+              <td>59.0</td>
+              <td>99.7</td>
+              <td>346.0</td>
+              <td>1.21e-117</td>
+          </tr>
+    
+          <tr>
+              <td>KGO40475.1</td>
+              <td>Aromatic_prenyltransferase,_DMATS_type</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001205/1">BGC0001205</a></td>
+              <td>Polyketide</td>
+              <td>53.0</td>
+              <td>97.0</td>
+              <td>312.0</td>
+              <td>3.1e-104</td>
+          </tr>
+    
+          <tr>
+              <td>AFA26385.1</td>
+              <td>dimethylallyl_tryptophan_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001874/1">BGC0001874</a></td>
+              <td>NRP+Polyketide</td>
+              <td>42.0</td>
+              <td>98.3</td>
+              <td>231.0</td>
+              <td>6.74e-73</td>
+          </tr>
+    
+          <tr>
+              <td>BAK26561.1</td>
+              <td>dimethylallyltryptophan_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000977/1">BGC0000977</a></td>
+              <td>NRP+Polyketide</td>
+              <td>41.0</td>
+              <td>98.3</td>
+              <td>225.0</td>
+              <td>1.64e-70</td>
+          </tr>
+    
+          <tr>
+              <td>QKG86302.1</td>
+              <td>normal_prenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002254/1">BGC0002254</a></td>
+              <td>Polyketide</td>
+              <td>38.0</td>
+              <td>99.0</td>
+              <td>189.0</td>
+              <td>1.23e-56</td>
+          </tr>
+    
+          <tr>
+              <td>AGC83574.1</td>
+              <td>prenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000818/1">BGC0000818</a></td>
+              <td>NRP</td>
+              <td>37.0</td>
+              <td>96.7</td>
+              <td>179.0</td>
+              <td>5.59e-53</td>
+          </tr>
+    
+          <tr>
+              <td>ADM34136.1</td>
+              <td>aromatic_prenyl-transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001084/1">BGC0001084</a></td>
+              <td>NRP+Terpene+Alkaloid</td>
+              <td>36.0</td>
+              <td>96.7</td>
+              <td>176.0</td>
+              <td>1.18e-51</td>
+          </tr>
+    
+          <tr>
+              <td>CAP96440.1</td>
+              <td>dimethylallyltryptophan_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000420/1">BGC0000420</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>95.7</td>
+              <td>156.0</td>
+              <td>2.26e-44</td>
+          </tr>
+    
+          <tr>
+              <td>AGA37265.1</td>
+              <td>prenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000816/1">BGC0000816</a></td>
+              <td>NRP+Alkaloid</td>
+              <td>30.0</td>
+              <td>95.3</td>
+              <td>145.0</td>
+              <td>3.44e-40</td>
+          </tr>
+    
+          <tr>
+              <td>AGC83577.1</td>
+              <td>prenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000818/1">BGC0000818</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>99.3</td>
+              <td>136.0</td>
+              <td>1.27e-36</td>
+          </tr>
+    
+          <tr>
+              <td>QKG86307.1</td>
+              <td>reverse_prenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002254/1">BGC0002254</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>100.0</td>
+              <td>128.0</td>
+              <td>1.55e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ADM34139.1</td>
+              <td>aromatic_prenyl-transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001084/1">BGC0001084</a></td>
+              <td>NRP+Terpene+Alkaloid</td>
+              <td>29.0</td>
+              <td>100.0</td>
+              <td>124.0</td>
+              <td>4.02e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AGA37276.1</td>
+              <td>prenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000819/1">BGC0000819</a></td>
+              <td>NRP+Alkaloid</td>
+              <td>28.0</td>
+              <td>98.3</td>
+              <td>122.0</td>
+              <td>1.64e-31</td>
+          </tr>
+    
+          <tr>
+              <td>QIQ51364.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002199/1">BGC0002199</a></td>
+              <td>Alkaloid</td>
+              <td>31.0</td>
+              <td>93.7</td>
+              <td>120.0</td>
+              <td>8.31e-31</td>
+          </tr>
+    
+          <tr>
+              <td>AGA37268.1</td>
+              <td>prenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000819/1">BGC0000819</a></td>
+              <td>NRP+Alkaloid</td>
+              <td>25.0</td>
+              <td>100.3</td>
+              <td>79.0</td>
+              <td>3.45e-16</td>
+          </tr>
+    
+          <tr>
+              <td>BBD84645.1</td>
+              <td>putative_prenyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001775/1">BGC0001775</a></td>
+              <td>Terpene</td>
+              <td>27.0</td>
+              <td>80.0</td>
+              <td>75.0</td>
+              <td>1.11e-14</td>
+          </tr>
+    
+          <tr>
+              <td>BAM84051.1</td>
+              <td>aromatic_prenyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001260/1">BGC0001260</a></td>
+              <td>Terpene</td>
+              <td>24.0</td>
+              <td>104.7</td>
+              <td>68.0</td>
+              <td>1.61e-12</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

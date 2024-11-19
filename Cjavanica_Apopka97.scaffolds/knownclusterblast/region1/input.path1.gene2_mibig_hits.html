@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>OSS48493.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002194/1">BGC0002194</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>85.3</td>
+              <td>217.0</td>
+              <td>5.92e-63</td>
+          </tr>
+    
+          <tr>
+              <td>AAF00219.1</td>
+              <td>transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000277/1">BGC0000277</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>47.5</td>
+              <td>92.0</td>
+              <td>2e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ADG86335.1</td>
+              <td>transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000190/1">BGC0000190</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>26.1</td>
+              <td>90.0</td>
+              <td>1.04e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AAL15595.1</td>
+              <td>Sim17</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000270/1">BGC0000270</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>26.9</td>
+              <td>86.0</td>
+              <td>3.44e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QJY30855.1</td>
+              <td>MFS_general_substrate_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002539/1">BGC0002539</a></td>
+              <td>Alkaloid</td>
+              <td>30.0</td>
+              <td>31.4</td>
+              <td>74.0</td>
+              <td>1.43e-13</td>
+          </tr>
+    
+          <tr>
+              <td>WP_002277502.1</td>
+              <td>multi_efflux_pump,_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002058/1">BGC0002058</a></td>
+              <td>Polyketide+NRP</td>
+              <td>26.0</td>
+              <td>39.6</td>
+              <td>74.0</td>
+              <td>2.41e-13</td>
+          </tr>
+    
+          <tr>
+              <td>QCY50746.1</td>
+              <td>DHA2_family_efflux_MFS_transporter_permease_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002287/1">BGC0002287</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>39.6</td>
+              <td>74.0</td>
+              <td>2.41e-13</td>
+          </tr>
+    
+          <tr>
+              <td>BDA39136.1</td>
+              <td>MFS_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001398/1">BGC0001398</a></td>
+              <td>RiPP</td>
+              <td>26.0</td>
+              <td>41.3</td>
+              <td>68.0</td>
+              <td>1.19e-11</td>
+          </tr>
+    
+          <tr>
+              <td>QKG86294.1</td>
+              <td>MFS_general_substrate_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002253/1">BGC0002253</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>39.0</td>
+              <td>65.0</td>
+              <td>1.71e-10</td>
+          </tr>
+    
+          <tr>
+              <td>MCG7203811.1</td>
+              <td>DHA2_family_efflux_MFS_transporter_permease_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000248/1">BGC0000248</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>27.0</td>
+              <td>64.0</td>
+              <td>2.91e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90069.1</td>
+              <td>AflT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000010/1">BGC0000010</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>40.6</td>
+              <td>62.0</td>
+              <td>9.55e-10</td>
+          </tr>
+    
+          <tr>
+              <td>QDK64761.1</td>
+              <td>AshT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002301/1">BGC0002301</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>46.3</td>
+              <td>59.0</td>
+              <td>8.93e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90092.1</td>
+              <td>AflT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000006/1">BGC0000006</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>42.9</td>
+              <td>58.0</td>
+              <td>1.54e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AAS89998.1</td>
+              <td>AflT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000007/1">BGC0000007</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>42.9</td>
+              <td>58.0</td>
+              <td>1.54e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90021.1</td>
+              <td>AflT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000008/1">BGC0000008</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>42.9</td>
+              <td>58.0</td>
+              <td>1.54e-08</td>
+          </tr>
+    
+          <tr>
+              <td>BAE71313.1</td>
+              <td>putative_ABC_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000004/1">BGC0000004</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>27.0</td>
+              <td>58.0</td>
+              <td>1.96e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AAS90046.1</td>
+              <td>AflT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000009/1">BGC0000009</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>41.5</td>
+              <td>55.0</td>
+              <td>1.87e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ACN69979.1</td>
+              <td>efflux_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000079/1">BGC0000079</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>41.2</td>
+              <td>54.0</td>
+              <td>3.18e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

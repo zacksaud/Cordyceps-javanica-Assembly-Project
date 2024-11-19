@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACR44939.1</td>
+              <td>8-amino-7-oxononanoate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001238/1">BGC0001238</a></td>
+              <td>Other</td>
+              <td>43.0</td>
+              <td>96.1</td>
+              <td>187.0</td>
+              <td>4.46e-57</td>
+          </tr>
+    
+          <tr>
+              <td>ACR44942.1</td>
+              <td>8-amino-7-oxononanoate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001239/1">BGC0001239</a></td>
+              <td>Other</td>
+              <td>43.0</td>
+              <td>96.1</td>
+              <td>187.0</td>
+              <td>4.46e-57</td>
+          </tr>
+    
+          <tr>
+              <td>CAH08161.1</td>
+              <td>putative_8-amino-7-oxononanoate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000948/1">BGC0000948</a></td>
+              <td>Other</td>
+              <td>35.0</td>
+              <td>95.2</td>
+              <td>133.0</td>
+              <td>1.25e-36</td>
+          </tr>
+    
+          <tr>
+              <td>AIL50190.1</td>
+              <td>putative_5-aminolevulinate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000213/1">BGC0000213</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>31.0</td>
+              <td>98.7</td>
+              <td>114.0</td>
+              <td>1.74e-29</td>
+          </tr>
+    
+          <tr>
+              <td>ADC79615.1</td>
+              <td>BafZ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000028/1">BGC0000028</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>31.0</td>
+              <td>98.7</td>
+              <td>113.0</td>
+              <td>3.57e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AAX98209.1</td>
+              <td>5-aminolevulinate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000052/1">BGC0000052</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>98.7</td>
+              <td>112.0</td>
+              <td>6.53e-29</td>
+          </tr>
+    
+          <tr>
+              <td>ADI58646.1</td>
+              <td>2-Oxoamine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000187/1">BGC0000187</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>32.0</td>
+              <td>98.7</td>
+              <td>107.0</td>
+              <td>4.45e-27</td>
+          </tr>
+    
+          <tr>
+              <td>AGY30678.1</td>
+              <td>Ann2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001298/1">BGC0001298</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>98.7</td>
+              <td>107.0</td>
+              <td>5.47e-27</td>
+          </tr>
+    
+          <tr>
+              <td>MBA5221219.1</td>
+              <td>aminotransferase_class_I/II-fold_pyridoxal_phosphate-dependent_enzyme</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002090/1">BGC0002090</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide</td>
+              <td>34.0</td>
+              <td>97.0</td>
+              <td>107.0</td>
+              <td>3.5e-26</td>
+          </tr>
+    
+          <tr>
+              <td>CAA16183.1</td>
+              <td>polyketide_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001063/1">BGC0001063</a></td>
+              <td>NRP+Polyketide</td>
+              <td>34.0</td>
+              <td>97.0</td>
+              <td>105.0</td>
+              <td>8.68e-26</td>
+          </tr>
+    
+          <tr>
+              <td>BAG84248.1</td>
+              <td>putative_polyketide_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000257/1">BGC0000257</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>97.0</td>
+              <td>104.0</td>
+              <td>2.97e-25</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78719.1</td>
+              <td>8-amino-7-oxononanoate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001420/1">BGC0001420</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>31.0</td>
+              <td>96.5</td>
+              <td>101.0</td>
+              <td>2.13e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AHF22854.1</td>
+              <td>MarL</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000091/1">BGC0000091</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>96.5</td>
+              <td>92.0</td>
+              <td>7.1e-21</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

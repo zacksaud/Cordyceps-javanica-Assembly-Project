@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QJY30863.1</td>
+              <td>aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002539/1">BGC0002539</a></td>
+              <td>Alkaloid</td>
+              <td>58.0</td>
+              <td>100.3</td>
+              <td>436.0</td>
+              <td>1.4e-152</td>
+          </tr>
+    
+          <tr>
+              <td>EPS29075.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001724/1">BGC0001724</a></td>
+              <td>NRP+Polyketide</td>
+              <td>54.0</td>
+              <td>97.6</td>
+              <td>380.0</td>
+              <td>7.17e-131</td>
+          </tr>
+    
+          <tr>
+              <td>OAQ83763.1</td>
+              <td>branched-chain_amino_acid_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001358/1">BGC0001358</a></td>
+              <td>NRP+Polyketide</td>
+              <td>50.0</td>
+              <td>96.8</td>
+              <td>360.0</td>
+              <td>5.58e-123</td>
+          </tr>
+    
+          <tr>
+              <td>ESU05153.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002178/1">BGC0002178</a></td>
+              <td>NRP</td>
+              <td>48.0</td>
+              <td>95.2</td>
+              <td>342.0</td>
+              <td>8.62e-116</td>
+          </tr>
+    
+          <tr>
+              <td>QIW91872.1</td>
+              <td>HtyB</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002543/1">BGC0002543</a></td>
+              <td>NRP</td>
+              <td>47.0</td>
+              <td>100.5</td>
+              <td>338.0</td>
+              <td>1.43e-114</td>
+          </tr>
+    
+          <tr>
+              <td>CBF73436.1</td>
+              <td>branched-chain_amino-acid_transaminase,_putative_(Eurofung)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001515/1">BGC0001515</a></td>
+              <td>NRP</td>
+              <td>49.0</td>
+              <td>97.6</td>
+              <td>336.0</td>
+              <td>5.22e-114</td>
+          </tr>
+    
+          <tr>
+              <td>AMM63171.1</td>
+              <td>AniD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001371/1">BGC0001371</a></td>
+              <td>NRP</td>
+              <td>45.0</td>
+              <td>98.7</td>
+              <td>326.0</td>
+              <td>1.74e-109</td>
+          </tr>
+    
+          <tr>
+              <td>EPE34346.1</td>
+              <td>D-aminoacid_aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001035/1">BGC0001035</a></td>
+              <td>Polyketide+NRP</td>
+              <td>46.0</td>
+              <td>96.8</td>
+              <td>321.0</td>
+              <td>5.71e-108</td>
+          </tr>
+    
+          <tr>
+              <td>AKJ70938.1</td>
+              <td>transaminase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002611/1">BGC0002611</a></td>
+              <td>NRP</td>
+              <td>46.0</td>
+              <td>105.6</td>
+              <td>320.0</td>
+              <td>4.13e-107</td>
+          </tr>
+    
+          <tr>
+              <td>ACZ66250.1</td>
+              <td>APS4</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000304/1">BGC0000304</a></td>
+              <td>NRP</td>
+              <td>44.0</td>
+              <td>94.4</td>
+              <td>294.0</td>
+              <td>3.94e-97</td>
+          </tr>
+    
+          <tr>
+              <td>simJ</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000334/1">BGC0000334</a></td>
+              <td>NRP</td>
+              <td>45.0</td>
+              <td>98.4</td>
+              <td>285.0</td>
+              <td>7.87e-94</td>
+          </tr>
+    
+          <tr>
+              <td>ATQ39435.1</td>
+              <td>aminotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001565/1">BGC0001565</a></td>
+              <td>NRP</td>
+              <td>43.0</td>
+              <td>97.9</td>
+              <td>272.0</td>
+              <td>1.03e-88</td>
+          </tr>
+    
+          <tr>
+              <td>MAA_10039</td>
+              <td>subgroup_IIIi_aminotransferase,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000337/1">BGC0000337</a></td>
+              <td>NRP</td>
+              <td>46.0</td>
+              <td>87.5</td>
+              <td>266.0</td>
+              <td>1.79e-86</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

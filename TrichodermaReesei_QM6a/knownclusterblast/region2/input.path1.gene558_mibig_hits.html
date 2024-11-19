@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>KFH44385.1</td>
+              <td>putative_transporter-like_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002190/1">BGC0002190</a></td>
+              <td>Polyketide</td>
+              <td>77.0</td>
+              <td>96.3</td>
+              <td>735.0</td>
+              <td>2.23e-266</td>
+          </tr>
+    
+          <tr>
+              <td>CAP95407.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001404/1">BGC0001404</a></td>
+              <td>Polyketide</td>
+              <td>76.0</td>
+              <td>95.1</td>
+              <td>727.0</td>
+              <td>2.74e-263</td>
+          </tr>
+    
+          <tr>
+              <td>EWG54279.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001190/1">BGC0001190</a></td>
+              <td>Polyketide</td>
+              <td>46.0</td>
+              <td>96.7</td>
+              <td>434.0</td>
+              <td>2.16e-145</td>
+          </tr>
+    
+          <tr>
+              <td>ALI92656.1</td>
+              <td>MRR1_Major_Facilitator_Superfamily_(MFS)_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001338/1">BGC0001338</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>37.0</td>
+              <td>94.3</td>
+              <td>298.0</td>
+              <td>2.21e-95</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001827195.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001996/1">BGC0001996</a></td>
+              <td>Other</td>
+              <td>38.0</td>
+              <td>90.9</td>
+              <td>297.0</td>
+              <td>7.31e-95</td>
+          </tr>
+    
+          <tr>
+              <td>QOV03401.1</td>
+              <td>SpoC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002262/1">BGC0002262</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>96.5</td>
+              <td>297.0</td>
+              <td>7.95e-95</td>
+          </tr>
+    
+          <tr>
+              <td>QBK15054.1</td>
+              <td>major_facilitator_TraF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002197/1">BGC0002197</a></td>
+              <td>Polyketide+NRP</td>
+              <td>36.0</td>
+              <td>95.3</td>
+              <td>283.0</td>
+              <td>1.72e-89</td>
+          </tr>
+    
+          <tr>
+              <td>PLB34719.1</td>
+              <td>major_facilitator_superfamily_domain-containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002749/1">BGC0002749</a></td>
+              <td>NRP+Polyketide</td>
+              <td>34.0</td>
+              <td>90.4</td>
+              <td>279.0</td>
+              <td>1.04e-87</td>
+          </tr>
+    
+          <tr>
+              <td>EED18004.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000154/1">BGC0000154</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>33.0</td>
+              <td>92.7</td>
+              <td>259.0</td>
+              <td>3.27e-80</td>
+          </tr>
+    
+          <tr>
+              <td>PIB02403.1</td>
+              <td>putative_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001541/1">BGC0001541</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>91.1</td>
+              <td>243.0</td>
+              <td>6.28e-74</td>
+          </tr>
+    
+          <tr>
+              <td>EAU32817.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000160/1">BGC0000160</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>91.3</td>
+              <td>237.0</td>
+              <td>4.08e-72</td>
+          </tr>
+    
+          <tr>
+              <td>BAK26557.1</td>
+              <td>putative_MFS_multidrug_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000977/1">BGC0000977</a></td>
+              <td>NRP+Polyketide</td>
+              <td>34.0</td>
+              <td>89.2</td>
+              <td>238.0</td>
+              <td>4.8e-72</td>
+          </tr>
+    
+          <tr>
+              <td>CCT67996.1</td>
+              <td>bikaverin_cluster-efflux_pump</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000030/1">BGC0000030</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>91.7</td>
+              <td>232.0</td>
+              <td>4.13e-70</td>
+          </tr>
+    
+          <tr>
+              <td>ASK38705.1</td>
+              <td>major_facilitator_superfamily_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001436/1">BGC0001436</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>33.0</td>
+              <td>93.3</td>
+              <td>229.0</td>
+              <td>1.29e-68</td>
+          </tr>
+    
+          <tr>
+              <td>ARU80382.1</td>
+              <td>MFS_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001542/1">BGC0001542</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>91.1</td>
+              <td>227.0</td>
+              <td>9.22e-68</td>
+          </tr>
+    
+          <tr>
+              <td>AGO86666.1</td>
+              <td>putative_MFS_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001255/1">BGC0001255</a></td>
+              <td>NRP+Polyketide</td>
+              <td>33.0</td>
+              <td>93.5</td>
+              <td>223.0</td>
+              <td>1.22e-66</td>
+          </tr>
+    
+          <tr>
+              <td>BAE63187.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002195/1">BGC0002195</a></td>
+              <td>Other</td>
+              <td>32.0</td>
+              <td>92.1</td>
+              <td>223.0</td>
+              <td>7.93e-66</td>
+          </tr>
+    
+          <tr>
+              <td>EAQ86381.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001405/1">BGC0001405</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>89.8</td>
+              <td>211.0</td>
+              <td>5.1e-62</td>
+          </tr>
+    
+          <tr>
+              <td>FAA01297.1</td>
+              <td>major_facilitator_superfamily_transporter_PyvG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002210/1">BGC0002210</a></td>
+              <td>Polyketide+NRP</td>
+              <td>27.0</td>
+              <td>97.8</td>
+              <td>188.0</td>
+              <td>4.44e-53</td>
+          </tr>
+    
+          <tr>
+              <td>XP_011392678.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001281/1">BGC0001281</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>64.4</td>
+              <td>122.0</td>
+              <td>3.15e-29</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

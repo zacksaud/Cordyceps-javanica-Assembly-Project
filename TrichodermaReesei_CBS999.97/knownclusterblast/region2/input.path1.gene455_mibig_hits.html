@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>EFY99278.1</td>
+              <td>Siderophore_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002710/1">BGC0002710</a></td>
+              <td>NRP</td>
+              <td>74.0</td>
+              <td>100.2</td>
+              <td>704.0</td>
+              <td>7.62e-256</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ96466.1</td>
+              <td>N-acyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000330/1">BGC0000330</a></td>
+              <td>NRP:NRP siderophore</td>
+              <td>47.0</td>
+              <td>48.1</td>
+              <td>189.0</td>
+              <td>1.41e-55</td>
+          </tr>
+    
+          <tr>
+              <td>AUD11988.1</td>
+              <td>OrbL</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001721/1">BGC0001721</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>76.7</td>
+              <td>184.0</td>
+              <td>7.64e-54</td>
+          </tr>
+    
+          <tr>
+              <td>CAR52000.1</td>
+              <td>putative_ornibactin_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002569/1">BGC0002569</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>72.5</td>
+              <td>183.0</td>
+              <td>1.13e-53</td>
+          </tr>
+    
+          <tr>
+              <td>ABC94349.1</td>
+              <td>N6-hydroxylysine_O-acetyltransferase_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000457/1">BGC0000457</a></td>
+              <td>NRP</td>
+              <td>41.0</td>
+              <td>49.9</td>
+              <td>180.0</td>
+              <td>1.71e-52</td>
+          </tr>
+    
+          <tr>
+              <td>CAL17538.1</td>
+              <td>siderophore_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002465/1">BGC0002465</a></td>
+              <td>NRP</td>
+              <td>45.0</td>
+              <td>44.0</td>
+              <td>180.0</td>
+              <td>1.71e-52</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ71837.1</td>
+              <td>siderophore_biosynthesis_protein,_putative_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001189/1">BGC0001189</a></td>
+              <td>NRP</td>
+              <td>44.0</td>
+              <td>42.9</td>
+              <td>172.0</td>
+              <td>3.18e-49</td>
+          </tr>
+    
+          <tr>
+              <td>ABX37377.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000984/1">BGC0000984</a></td>
+              <td>NRP+Polyketide</td>
+              <td>46.0</td>
+              <td>42.9</td>
+              <td>171.0</td>
+              <td>2.2e-48</td>
+          </tr>
+    
+          <tr>
+              <td>KIU65665.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001713/1">BGC0001713</a></td>
+              <td>Other</td>
+              <td>42.0</td>
+              <td>43.5</td>
+              <td>164.0</td>
+              <td>2.34e-46</td>
+          </tr>
+    
+          <tr>
+              <td>ADJ63846.1</td>
+              <td>acetyltransferases,_including_N-acetylases_of_ribosomal_proteins</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000424/1">BGC0000424</a></td>
+              <td>NRP:NRP siderophore</td>
+              <td>45.0</td>
+              <td>42.9</td>
+              <td>161.0</td>
+              <td>1.94e-45</td>
+          </tr>
+    
+          <tr>
+              <td>ABM34274.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002419/1">BGC0002419</a></td>
+              <td>NRP+Polyketide</td>
+              <td>43.0</td>
+              <td>43.1</td>
+              <td>161.0</td>
+              <td>4.12e-45</td>
+          </tr>
+    
+          <tr>
+              <td>NAO96325.1</td>
+              <td>GNAT_family_N-acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002117/1">BGC0002117</a></td>
+              <td>NRP</td>
+              <td>45.0</td>
+              <td>42.9</td>
+              <td>159.0</td>
+              <td>3.44e-44</td>
+          </tr>
+    
+          <tr>
+              <td>ACA84881.1</td>
+              <td>IucA/IucC_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002469/1">BGC0002469</a></td>
+              <td>Other</td>
+              <td>38.0</td>
+              <td>44.8</td>
+              <td>140.0</td>
+              <td>1.56e-35</td>
+          </tr>
+    
+          <tr>
+              <td>CAR51996.1</td>
+              <td>ornibactin_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002569/1">BGC0002569</a></td>
+              <td>NRP</td>
+              <td>37.0</td>
+              <td>42.9</td>
+              <td>132.0</td>
+              <td>1.29e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AUD11992.1</td>
+              <td>OrbK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001721/1">BGC0001721</a></td>
+              <td>NRP</td>
+              <td>36.0</td>
+              <td>44.2</td>
+              <td>116.0</td>
+              <td>1e-28</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

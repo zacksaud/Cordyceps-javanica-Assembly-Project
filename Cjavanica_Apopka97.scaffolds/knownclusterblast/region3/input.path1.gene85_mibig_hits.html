@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ANY57881.1</td>
+              <td>PenC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001372/1">BGC0001372</a></td>
+              <td>Terpene</td>
+              <td>47.0</td>
+              <td>98.8</td>
+              <td>375.0</td>
+              <td>2.95e-128</td>
+          </tr>
+    
+          <tr>
+              <td>ADY00134.1</td>
+              <td>putative_O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000104/1">BGC0000104</a></td>
+              <td>Terpene+Polyketide:Iterative type I polyketide</td>
+              <td>30.0</td>
+              <td>99.3</td>
+              <td>172.0</td>
+              <td>1.76e-49</td>
+          </tr>
+    
+          <tr>
+              <td>AJG44384.1</td>
+              <td>MpaG&#39;</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002619/1">BGC0002619</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>99.3</td>
+              <td>170.0</td>
+              <td>1.84e-48</td>
+          </tr>
+    
+          <tr>
+              <td>CDM36722.1</td>
+              <td>O-methyltransferase,_caffeic_acid-type</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001360/1">BGC0001360</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>99.8</td>
+              <td>162.0</td>
+              <td>1.46e-45</td>
+          </tr>
+    
+          <tr>
+              <td>API82661.1</td>
+              <td>putative_O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001677/1">BGC0001677</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>83.3</td>
+              <td>157.0</td>
+              <td>5.87e-44</td>
+          </tr>
+    
+          <tr>
+              <td>API82668.1</td>
+              <td>putative_O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002616/1">BGC0002616</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>83.3</td>
+              <td>157.0</td>
+              <td>5.87e-44</td>
+          </tr>
+    
+          <tr>
+              <td>EAL85127.1</td>
+              <td>O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001067/1">BGC0001067</a></td>
+              <td>Terpene+Polyketide:Iterative type I polyketide</td>
+              <td>36.0</td>
+              <td>63.3</td>
+              <td>142.0</td>
+              <td>1.02e-39</td>
+          </tr>
+    
+          <tr>
+              <td>AUW31187.1</td>
+              <td>putative_O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001489/1">BGC0001489</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>98.3</td>
+              <td>137.0</td>
+              <td>2.23e-36</td>
+          </tr>
+    
+          <tr>
+              <td>ACZ66252.1</td>
+              <td>APS6</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000304/1">BGC0000304</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>94.8</td>
+              <td>125.0</td>
+              <td>5.98e-32</td>
+          </tr>
+    
+          <tr>
+              <td>QPP19361.1</td>
+              <td>Pen4-1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002501/1">BGC0002501</a></td>
+              <td>Alkaloid</td>
+              <td>28.0</td>
+              <td>90.4</td>
+              <td>125.0</td>
+              <td>1.12e-31</td>
+          </tr>
+    
+          <tr>
+              <td>QPP19362.1</td>
+              <td>PenK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002501/1">BGC0002501</a></td>
+              <td>Alkaloid</td>
+              <td>28.0</td>
+              <td>83.5</td>
+              <td>124.0</td>
+              <td>8.71e-31</td>
+          </tr>
+    
+          <tr>
+              <td>ANY57889.1</td>
+              <td>PenK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001372/1">BGC0001372</a></td>
+              <td>Terpene</td>
+              <td>26.0</td>
+              <td>93.6</td>
+              <td>108.0</td>
+              <td>1.37e-25</td>
+          </tr>
+    
+          <tr>
+              <td>EAU31622.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002592/1">BGC0002592</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>97.0</td>
+              <td>101.0</td>
+              <td>5.69e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AKD43502.1</td>
+              <td>O-Methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001409/1">BGC0001409</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>80.3</td>
+              <td>89.0</td>
+              <td>4.18e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ACN64847.1</td>
+              <td>PokMT3</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001061/1">BGC0001061</a></td>
+              <td>Polyketide:Iterative type I polyketide+Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>27.0</td>
+              <td>80.3</td>
+              <td>84.0</td>
+              <td>1.9e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QDQ37878.1</td>
+              <td>O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001979/1">BGC0001979</a></td>
+              <td>Polyketide</td>
+              <td>24.0</td>
+              <td>86.5</td>
+              <td>80.0</td>
+              <td>3.11e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ABI22145.1</td>
+              <td>SAM-dependent_methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000422/1">BGC0000422</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>81.5</td>
+              <td>79.0</td>
+              <td>6.72e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ATY37600.1</td>
+              <td>BogM</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001532/1">BGC0001532</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>87.7</td>
+              <td>77.0</td>
+              <td>4.42e-15</td>
+          </tr>
+    
+          <tr>
+              <td>ARD70871.1</td>
+              <td>O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001693/1">BGC0001693</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>82.5</td>
+              <td>76.0</td>
+              <td>5.94e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AFD30960.1</td>
+              <td>CrmM</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000966/1">BGC0000966</a></td>
+              <td>NRP+Polyketide</td>
+              <td>32.0</td>
+              <td>43.1</td>
+              <td>65.0</td>
+              <td>3.07e-11</td>
+          </tr>
+    
+          <tr>
+              <td>ABP54646.1</td>
+              <td>hydroxyneurosporene-O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000241/1">BGC0000241</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>25.0</td>
+              <td>82.5</td>
+              <td>63.0</td>
+              <td>1.68e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AHZ61857.1</td>
+              <td>O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000240/1">BGC0000240</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>23.0</td>
+              <td>82.5</td>
+              <td>62.0</td>
+              <td>2.24e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AGY49596.1</td>
+              <td>O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001155/1">BGC0001155</a></td>
+              <td>RiPP:Thiopeptide</td>
+              <td>31.0</td>
+              <td>36.9</td>
+              <td>58.0</td>
+              <td>5.13e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AEF32094.1</td>
+              <td>O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001333/1">BGC0001333</a></td>
+              <td>Alkaloid</td>
+              <td>24.0</td>
+              <td>76.4</td>
+              <td>58.0</td>
+              <td>6.88e-09</td>
+          </tr>
+    
+          <tr>
+              <td>OKI81367.1</td>
+              <td>methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002478/1">BGC0002478</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>36.7</td>
+              <td>52.0</td>
+              <td>3.72e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ACZ21384.1</td>
+              <td>O-methyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002298/1">BGC0002298</a></td>
+              <td>RiPP</td>
+              <td>28.0</td>
+              <td>37.4</td>
+              <td>52.0</td>
+              <td>7.02e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

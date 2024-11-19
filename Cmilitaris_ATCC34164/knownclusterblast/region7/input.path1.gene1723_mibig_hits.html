@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BBC43187.1</td>
+              <td>trans-enoyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001738/1">BGC0001738</a></td>
+              <td>NRP+Polyketide</td>
+              <td>58.0</td>
+              <td>105.4</td>
+              <td>422.0</td>
+              <td>3.77e-148</td>
+          </tr>
+    
+          <tr>
+              <td>AGO86659.1</td>
+              <td>equisetin_enoylreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001255/1">BGC0001255</a></td>
+              <td>NRP+Polyketide</td>
+              <td>53.0</td>
+              <td>104.5</td>
+              <td>378.0</td>
+              <td>5.6e-131</td>
+          </tr>
+    
+          <tr>
+              <td>AZZ09612.1</td>
+              <td>PvhC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002304/1">BGC0002304</a></td>
+              <td>Polyketide+NRP</td>
+              <td>48.0</td>
+              <td>104.5</td>
+              <td>344.0</td>
+              <td>1.45e-117</td>
+          </tr>
+    
+          <tr>
+              <td>CEF75882.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001600/1">BGC0001600</a></td>
+              <td>Polyketide</td>
+              <td>44.0</td>
+              <td>103.6</td>
+              <td>294.0</td>
+              <td>4.89e-98</td>
+          </tr>
+    
+          <tr>
+              <td>KAF5858311.1</td>
+              <td>Enoyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002139/1">BGC0002139</a></td>
+              <td>Polyketide</td>
+              <td>45.0</td>
+              <td>104.2</td>
+              <td>293.0</td>
+              <td>8.91e-98</td>
+          </tr>
+    
+          <tr>
+              <td>EAW09121.1</td>
+              <td>zinc-binding_dehydrogenase_family_oxidoreductase,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000983/1">BGC0000983</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>40.0</td>
+              <td>105.4</td>
+              <td>268.0</td>
+              <td>1.45e-87</td>
+          </tr>
+    
+          <tr>
+              <td>QBE85642.1</td>
+              <td>BuaC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001857/1">BGC0001857</a></td>
+              <td>Alkaloid+NRP+Polyketide:Iterative type I polyketide</td>
+              <td>39.0</td>
+              <td>103.9</td>
+              <td>267.0</td>
+              <td>2.35e-87</td>
+          </tr>
+    
+          <tr>
+              <td>EHA55871.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002235/1">BGC0002235</a></td>
+              <td>Polyketide+NRP</td>
+              <td>39.0</td>
+              <td>105.1</td>
+              <td>265.0</td>
+              <td>1.18e-86</td>
+          </tr>
+    
+          <tr>
+              <td>QCS37515.1</td>
+              <td>pyiC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001881/1">BGC0001881</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>37.0</td>
+              <td>106.3</td>
+              <td>251.0</td>
+              <td>3.51e-81</td>
+          </tr>
+    
+          <tr>
+              <td>QOG08941.1</td>
+              <td>FfsC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002204/1">BGC0002204</a></td>
+              <td>Polyketide+NRP</td>
+              <td>39.0</td>
+              <td>106.0</td>
+              <td>248.0</td>
+              <td>1.05e-79</td>
+          </tr>
+    
+          <tr>
+              <td>QBK15055.1</td>
+              <td>enoyl_reductase_TraG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002197/1">BGC0002197</a></td>
+              <td>Polyketide+NRP</td>
+              <td>40.0</td>
+              <td>105.4</td>
+              <td>246.0</td>
+              <td>2.72e-79</td>
+          </tr>
+    
+          <tr>
+              <td>EED49870.1</td>
+              <td>alcohol_dehydrogenase,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001445/1">BGC0001445</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>41.0</td>
+              <td>103.9</td>
+              <td>243.0</td>
+              <td>1.15e-77</td>
+          </tr>
+    
+          <tr>
+              <td>KKP04596.1</td>
+              <td>trans_enoyl-reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002066/1">BGC0002066</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>38.0</td>
+              <td>104.8</td>
+              <td>241.0</td>
+              <td>1.76e-77</td>
+          </tr>
+    
+          <tr>
+              <td>AAD34554.1</td>
+              <td>enoyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000088/1">BGC0000088</a></td>
+              <td>Polyketide</td>
+              <td>41.0</td>
+              <td>106.0</td>
+              <td>239.0</td>
+              <td>1.33e-76</td>
+          </tr>
+    
+          <tr>
+              <td>EPS29079.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001724/1">BGC0001724</a></td>
+              <td>NRP+Polyketide</td>
+              <td>37.0</td>
+              <td>106.6</td>
+              <td>235.0</td>
+              <td>1.29e-74</td>
+          </tr>
+    
+          <tr>
+              <td>QOJ72665.1</td>
+              <td>XenG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002505/1">BGC0002505</a></td>
+              <td>Polyketide+NRP</td>
+              <td>38.0</td>
+              <td>106.3</td>
+              <td>234.0</td>
+              <td>2.89e-74</td>
+          </tr>
+    
+          <tr>
+              <td>EHA55861.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002235/1">BGC0002235</a></td>
+              <td>Polyketide+NRP</td>
+              <td>36.0</td>
+              <td>105.7</td>
+              <td>231.0</td>
+              <td>2.36e-73</td>
+          </tr>
+    
+          <tr>
+              <td>ABA02243.1</td>
+              <td>dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000098/1">BGC0000098</a></td>
+              <td>Polyketide</td>
+              <td>39.0</td>
+              <td>105.7</td>
+              <td>230.0</td>
+              <td>4.84e-73</td>
+          </tr>
+    
+          <tr>
+              <td>QHD43131.1</td>
+              <td>enoyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002546/1">BGC0002546</a></td>
+              <td>NRP+Polyketide</td>
+              <td>35.0</td>
+              <td>106.3</td>
+              <td>223.0</td>
+              <td>3.27e-70</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001220461.1</td>
+              <td>enoyl_reducctase_</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001182/1">BGC0001182</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>109.6</td>
+              <td>221.0</td>
+              <td>2.16e-69</td>
+          </tr>
+    
+          <tr>
+              <td>ARP51714.1</td>
+              <td>NADP-dependent_dehydrogenase_/enoyl-reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001741/1">BGC0001741</a></td>
+              <td>NRP+Polyketide</td>
+              <td>37.0</td>
+              <td>106.9</td>
+              <td>217.0</td>
+              <td>1e-67</td>
+          </tr>
+    
+          <tr>
+              <td>EPS34237.1</td>
+              <td>trans-enoyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002067/1">BGC0002067</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>37.0</td>
+              <td>103.6</td>
+              <td>214.0</td>
+              <td>5.58e-67</td>
+          </tr>
+    
+          <tr>
+              <td>QBQ83710.1</td>
+              <td>trans-enoyl_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002093/1">BGC0002093</a></td>
+              <td>Polyketide+NRP</td>
+              <td>37.0</td>
+              <td>109.3</td>
+              <td>214.0</td>
+              <td>1.98e-66</td>
+          </tr>
+    
+          <tr>
+              <td>EAT91806.2</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002205/1">BGC0002205</a></td>
+              <td>Polyketide+NRP</td>
+              <td>36.0</td>
+              <td>105.4</td>
+              <td>208.0</td>
+              <td>1.19e-64</td>
+          </tr>
+    
+          <tr>
+              <td>CCT72378.1</td>
+              <td>related_to_C.carbonum_toxD_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001305/1">BGC0001305</a></td>
+              <td>Polyketide</td>
+              <td>37.0</td>
+              <td>104.2</td>
+              <td>201.0</td>
+              <td>1.06e-61</td>
+          </tr>
+    
+          <tr>
+              <td>CBF80481.1</td>
+              <td>enoylreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000959/1">BGC0000959</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>103.6</td>
+              <td>197.0</td>
+              <td>1.16e-60</td>
+          </tr>
+    
+          <tr>
+              <td>iliB</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002035/1">BGC0002035</a></td>
+              <td>NRP+Polyketide</td>
+              <td>34.0</td>
+              <td>109.3</td>
+              <td>197.0</td>
+              <td>8.24e-60</td>
+          </tr>
+    
+          <tr>
+              <td>QXF14602.1</td>
+              <td>PydC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002239/1">BGC0002239</a></td>
+              <td>Polyketide+NRP</td>
+              <td>33.0</td>
+              <td>104.2</td>
+              <td>194.0</td>
+              <td>3.17e-59</td>
+          </tr>
+    
+          <tr>
+              <td>AEO57491.1</td>
+              <td>enoylreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001449/1">BGC0001449</a></td>
+              <td>NRP+Alkaloid+Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>110.8</td>
+              <td>193.0</td>
+              <td>1.78e-58</td>
+          </tr>
+    
+          <tr>
+              <td>QBC19713.1</td>
+              <td>TwmE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001954/1">BGC0001954</a></td>
+              <td>NRP+Polyketide</td>
+              <td>35.0</td>
+              <td>105.4</td>
+              <td>178.0</td>
+              <td>1.08e-52</td>
+          </tr>
+    
+          <tr>
+              <td>QQW45475.1</td>
+              <td>trans-acting_enoylreductase_CalK&#39;</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002168/1">BGC0002168</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>106.9</td>
+              <td>167.0</td>
+              <td>8.92e-49</td>
+          </tr>
+    
+          <tr>
+              <td>BBM05074.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002170/1">BGC0002170</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>106.9</td>
+              <td>167.0</td>
+              <td>8.92e-49</td>
+          </tr>
+    
+          <tr>
+              <td>BAQ25464.1</td>
+              <td>zinc-binding_dehydrogenase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001264/1">BGC0001264</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>98.5</td>
+              <td>164.0</td>
+              <td>2.76e-47</td>
+          </tr>
+    
+          <tr>
+              <td>EAT85330.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002165/1">BGC0002165</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>96.7</td>
+              <td>162.0</td>
+              <td>7.62e-47</td>
+          </tr>
+    
+          <tr>
+              <td>EHA28239.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001143/1">BGC0001143</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>62.2</td>
+              <td>105.0</td>
+              <td>1.09e-25</td>
+          </tr>
+    
+          <tr>
+              <td>EAA59568.1</td>
+              <td>alcohol_dehydrogenase,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000057/1">BGC0000057</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>28.0</td>
+              <td>100.9</td>
+              <td>97.0</td>
+              <td>1.26e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AXM43069.1</td>
+              <td>Zinc_dependent_alcohol_dehydrogenasez</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001945/1">BGC0001945</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>58.0</td>
+              <td>62.0</td>
+              <td>1.8e-10</td>
+          </tr>
+    
+          <tr>
+              <td>BBU37368.1</td>
+              <td>polyketide_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002525/1">BGC0002525</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>47.1</td>
+              <td>51.0</td>
+              <td>1.18e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

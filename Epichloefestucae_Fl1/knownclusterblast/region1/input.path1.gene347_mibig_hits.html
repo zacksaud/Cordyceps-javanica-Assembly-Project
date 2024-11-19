@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CCE28990.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001365/1">BGC0001365</a></td>
+              <td>NRP</td>
+              <td>78.0</td>
+              <td>102.9</td>
+              <td>499.0</td>
+              <td>7.3e-180</td>
+          </tr>
+    
+          <tr>
+              <td>AAS92555.1</td>
+              <td>SirT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001044/1">BGC0001044</a></td>
+              <td>NRP</td>
+              <td>38.0</td>
+              <td>104.8</td>
+              <td>210.0</td>
+              <td>8.29e-66</td>
+          </tr>
+    
+          <tr>
+              <td>BAE56600.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001123/1">BGC0001123</a></td>
+              <td>NRP</td>
+              <td>39.0</td>
+              <td>100.3</td>
+              <td>203.0</td>
+              <td>2.01e-63</td>
+          </tr>
+    
+          <tr>
+              <td>QVK45116.1</td>
+              <td>oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002438/1">BGC0002438</a></td>
+              <td>Alkaloid</td>
+              <td>38.0</td>
+              <td>96.2</td>
+              <td>199.0</td>
+              <td>1.22e-61</td>
+          </tr>
+    
+          <tr>
+              <td>DAB41654.1</td>
+              <td>thioredoxin_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001585/1">BGC0001585</a></td>
+              <td>Alkaloid</td>
+              <td>34.0</td>
+              <td>101.9</td>
+              <td>151.0</td>
+              <td>5.96e-43</td>
+          </tr>
+    
+          <tr>
+              <td>AQZ42157.1</td>
+              <td>putative_thioredoxin_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001820/1">BGC0001820</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>105.1</td>
+              <td>142.0</td>
+              <td>1.09e-39</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf003</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000321/1">BGC0000321</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>97.1</td>
+              <td>134.0</td>
+              <td>1.56e-36</td>
+          </tr>
+    
+          <tr>
+              <td>ESU05147.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002178/1">BGC0002178</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>70.5</td>
+              <td>129.0</td>
+              <td>1.37e-34</td>
+          </tr>
+    
+          <tr>
+              <td>CCD48301.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002217/1">BGC0002217</a></td>
+              <td>Terpene</td>
+              <td>34.0</td>
+              <td>61.9</td>
+              <td>104.0</td>
+              <td>6.32e-27</td>
+          </tr>
+    
+          <tr>
+              <td>BAH04166.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000450/1">BGC0000450</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>102.2</td>
+              <td>91.0</td>
+              <td>1.23e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AET98909.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000415/1">BGC0000415</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>102.2</td>
+              <td>86.0</td>
+              <td>7.58e-19</td>
+          </tr>
+    
+          <tr>
+              <td>BAI63292.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000434/1">BGC0000434</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>95.5</td>
+              <td>82.0</td>
+              <td>1.28e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BAE98166.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000339/1">BGC0000339</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>90.4</td>
+              <td>76.0</td>
+              <td>1.86e-15</td>
+          </tr>
+    
+          <tr>
+              <td>WP_028678145.1</td>
+              <td>FAD-dependent_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001228/1">BGC0001228</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>29.0</td>
+              <td>90.1</td>
+              <td>69.0</td>
+              <td>4.84e-13</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>
