@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QIW91876.1</td>
+              <td>TRT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002543/1">BGC0002543</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>44.3</td>
+              <td>127.0</td>
+              <td>1.27e-30</td>
+          </tr>
+    
+          <tr>
+              <td>CBF87872.1</td>
+              <td>ABC_multidrug_transporter_(Eurofung)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001699/1">BGC0001699</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>45.4</td>
+              <td>126.0</td>
+              <td>2.69e-30</td>
+          </tr>
+    
+          <tr>
+              <td>OAQ83754.1</td>
+              <td>ABC_multidrug_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001358/1">BGC0001358</a></td>
+              <td>NRP+Polyketide</td>
+              <td>28.0</td>
+              <td>54.4</td>
+              <td>108.0</td>
+              <td>2.39e-24</td>
+          </tr>
+    
+          <tr>
+              <td>CBF73441.1</td>
+              <td>ABC_transporter_(Eurofung)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001515/1">BGC0001515</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>41.4</td>
+              <td>106.0</td>
+              <td>9.99e-24</td>
+          </tr>
+    
+          <tr>
+              <td>CRG85577.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001402/1">BGC0001402</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>45.4</td>
+              <td>96.0</td>
+              <td>2.83e-20</td>
+          </tr>
+    
+          <tr>
+              <td>QQZ01652.1</td>
+              <td>ABC_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002497/1">BGC0002497</a></td>
+              <td>Other</td>
+              <td>30.0</td>
+              <td>44.6</td>
+              <td>63.0</td>
+              <td>4.2e-10</td>
+          </tr>
+    
+          <tr>
+              <td>WP_012444311.1</td>
+              <td>peptidase_domain-containing_ABC_transporter_RaxB</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002005/1">BGC0002005</a></td>
+              <td>RiPP</td>
+              <td>30.0</td>
+              <td>31.2</td>
+              <td>59.0</td>
+              <td>9.05e-09</td>
+          </tr>
+    
+          <tr>
+              <td>CZF83999.1</td>
+              <td>Toxin_RTX-I_translocation_ATP-binding_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002382/1">BGC0002382</a></td>
+              <td>RiPP</td>
+              <td>30.0</td>
+              <td>25.3</td>
+              <td>57.0</td>
+              <td>3.57e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>XP_011325837.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001545/1">BGC0001545</a></td>
+              <td>NRP</td>
+              <td>43.0</td>
+              <td>68.1</td>
+              <td>521.0</td>
+              <td>9.29e-173</td>
+          </tr>
+    
+          <tr>
+              <td>AVR48532.1</td>
+              <td>CusD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001564/1">BGC0001564</a></td>
+              <td>NRP+Polyketide</td>
+              <td>36.0</td>
+              <td>63.9</td>
+              <td>342.0</td>
+              <td>6.15e-105</td>
+          </tr>
+    
+          <tr>
+              <td>ADA69249.1</td>
+              <td>asparagine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001071/1">BGC0001071</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>35.0</td>
+              <td>64.3</td>
+              <td>342.0</td>
+              <td>6.84e-105</td>
+          </tr>
+    
+          <tr>
+              <td>ADQ74607.1</td>
+              <td>glutamine_amidotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000921/1">BGC0000921</a></td>
+              <td>Polyketide+NRP+Other:Shikimate-derived</td>
+              <td>34.0</td>
+              <td>60.9</td>
+              <td>281.0</td>
+              <td>3.89e-82</td>
+          </tr>
+    
+          <tr>
+              <td>ABL74944.1</td>
+              <td>Gln-dependent_amino_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001048/1">BGC0001048</a></td>
+              <td>NRP:Glycopeptide+Polyketide:Modular type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>34.0</td>
+              <td>53.7</td>
+              <td>250.0</td>
+              <td>2.25e-71</td>
+          </tr>
+    
+          <tr>
+              <td>AAG02363.1</td>
+              <td>asparagine_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000963/1">BGC0000963</a></td>
+              <td>NRP:Glycopeptide+Polyketide:Modular type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>32.0</td>
+              <td>55.0</td>
+              <td>242.0</td>
+              <td>1.51e-68</td>
+          </tr>
+    
+          <tr>
+              <td>QTT72093.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolyzing)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002350/1">BGC0002350</a></td>
+              <td>NRP+Polyketide+Saccharide</td>
+              <td>32.0</td>
+              <td>55.0</td>
+              <td>242.0</td>
+              <td>1.94e-68</td>
+          </tr>
+    
+          <tr>
+              <td>CAN93346.1</td>
+              <td>asparagine_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000179/1">BGC0000179</a></td>
+              <td>Polyketide:Trans-AT type I polyketide</td>
+              <td>32.0</td>
+              <td>60.3</td>
+              <td>223.0</td>
+              <td>1.57e-61</td>
+          </tr>
+    
+          <tr>
+              <td>QGZ36665.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolyzing)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002082/1">BGC0002082</a></td>
+              <td>NRP+Polyketide</td>
+              <td>31.0</td>
+              <td>61.1</td>
+              <td>216.0</td>
+              <td>5.05e-59</td>
+          </tr>
+    
+          <tr>
+              <td>ADN68491.1</td>
+              <td>SorQ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000184/1">BGC0000184</a></td>
+              <td>Polyketide:Trans-AT type I polyketide</td>
+              <td>30.0</td>
+              <td>62.7</td>
+              <td>213.0</td>
+              <td>5.06e-58</td>
+          </tr>
+    
+          <tr>
+              <td>ACG60746.1</td>
+              <td>Gln-dependent_amino_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001058/1">BGC0001058</a></td>
+              <td>NRP:Glycopeptide+Polyketide:Modular type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>31.0</td>
+              <td>54.4</td>
+              <td>212.0</td>
+              <td>6.19e-58</td>
+          </tr>
+    
+          <tr>
+              <td>SKB24632.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002455/1">BGC0002455</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>60.1</td>
+              <td>202.0</td>
+              <td>1.66e-54</td>
+          </tr>
+    
+          <tr>
+              <td>AFO59865.1</td>
+              <td>amidotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000175/1">BGC0000175</a></td>
+              <td>Polyketide:Trans-AT type I polyketide</td>
+              <td>32.0</td>
+              <td>60.6</td>
+              <td>198.0</td>
+              <td>6.26e-53</td>
+          </tr>
+    
+          <tr>
+              <td>CCC21122.1</td>
+              <td>amidotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000171/1">BGC0000171</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>31.0</td>
+              <td>59.6</td>
+              <td>196.0</td>
+              <td>1.67e-52</td>
+          </tr>
+    
+          <tr>
+              <td>AAY39345.1</td>
+              <td>Asparagine_synthase,_glutamine-hydrolyzing</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002060/1">BGC0002060</a></td>
+              <td>Polyketide:Trans-AT type I polyketide</td>
+              <td>28.0</td>
+              <td>60.9</td>
+              <td>194.0</td>
+              <td>1.26e-51</td>
+          </tr>
+    
+          <tr>
+              <td>ANQ31716.1</td>
+              <td>asparagoine_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001395/1">BGC0001395</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>65.7</td>
+              <td>193.0</td>
+              <td>1.73e-51</td>
+          </tr>
+    
+          <tr>
+              <td>WP_198399553.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolyzing)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002087/1">BGC0002087</a></td>
+              <td>NRP+Polyketide</td>
+              <td>31.0</td>
+              <td>59.9</td>
+              <td>193.0</td>
+              <td>2.22e-51</td>
+          </tr>
+    
+          <tr>
+              <td>KAF1058476.1</td>
+              <td>Asparagine_synthetase_[glutamine-hydrolyzing]_1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002083/1">BGC0002083</a></td>
+              <td>Polyketide:Trans-AT type I polyketide</td>
+              <td>31.0</td>
+              <td>59.9</td>
+              <td>193.0</td>
+              <td>2.53e-51</td>
+          </tr>
+    
+          <tr>
+              <td>ACY01389.1</td>
+              <td>amidotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000177/1">BGC0000177</a></td>
+              <td>Polyketide:Modular type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>28.0</td>
+              <td>64.3</td>
+              <td>185.0</td>
+              <td>1.15e-48</td>
+          </tr>
+    
+          <tr>
+              <td>ACY01399.1</td>
+              <td>amidotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000083/1">BGC0000083</a></td>
+              <td>Polyketide:Modular type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>30.0</td>
+              <td>59.8</td>
+              <td>182.0</td>
+              <td>9.09e-48</td>
+          </tr>
+    
+          <tr>
+              <td>ABV99086.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolyzing)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001007/1">BGC0001007</a></td>
+              <td>Polyketide+NRP</td>
+              <td>27.0</td>
+              <td>55.3</td>
+              <td>182.0</td>
+              <td>1.17e-47</td>
+          </tr>
+    
+          <tr>
+              <td>ABP55494.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolysing)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001006/1">BGC0001006</a></td>
+              <td>NRP+Polyketide</td>
+              <td>27.0</td>
+              <td>54.8</td>
+              <td>181.0</td>
+              <td>1.58e-47</td>
+          </tr>
+    
+          <tr>
+              <td>AAF24002.1</td>
+              <td>WbpS</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000781/1">BGC0000781</a></td>
+              <td>Saccharide</td>
+              <td>29.0</td>
+              <td>57.8</td>
+              <td>179.0</td>
+              <td>6.55e-47</td>
+          </tr>
+    
+          <tr>
+              <td>ABC02786.1</td>
+              <td>putative_amidotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000809/1">BGC0000809</a></td>
+              <td>Alkaloid</td>
+              <td>30.0</td>
+              <td>53.3</td>
+              <td>164.0</td>
+              <td>4.64e-42</td>
+          </tr>
+    
+          <tr>
+              <td>QGX02582.1</td>
+              <td>transamidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001880/1">BGC0001880</a></td>
+              <td>RiPP:Cyanobactin</td>
+              <td>25.0</td>
+              <td>60.7</td>
+              <td>161.0</td>
+              <td>6.56e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ATJ34007.1</td>
+              <td>asparagine_synthetase_B</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001442/1">BGC0001442</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>56.7</td>
+              <td>158.0</td>
+              <td>6.11e-40</td>
+          </tr>
+    
+          <tr>
+              <td>WP_033283361.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolyzing)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001739/1">BGC0001739</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>64.0</td>
+              <td>157.0</td>
+              <td>1.46e-39</td>
+          </tr>
+    
+          <tr>
+              <td>AAM97368.1</td>
+              <td>RubR</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000266/1">BGC0000266</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>57.3</td>
+              <td>155.0</td>
+              <td>6.64e-39</td>
+          </tr>
+    
+          <tr>
+              <td>BAA89376.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000864/1">BGC0000864</a></td>
+              <td>Other</td>
+              <td>32.0</td>
+              <td>36.8</td>
+              <td>153.0</td>
+              <td>9.39e-39</td>
+          </tr>
+    
+          <tr>
+              <td>WP_019634561.1</td>
+              <td>asparagine_synthase_(glutamine-hydrolyzing)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001443/1">BGC0001443</a></td>
+              <td>NRP+Polyketide</td>
+              <td>28.0</td>
+              <td>55.1</td>
+              <td>148.0</td>
+              <td>1.17e-36</td>
+          </tr>
+    
+          <tr>
+              <td>AFW04589.1</td>
+              <td>asparagine_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001783/1">BGC0001783</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>36.5</td>
+              <td>146.0</td>
+              <td>4.24e-36</td>
+          </tr>
+    
+          <tr>
+              <td>AYM48696.1</td>
+              <td>T9</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002364/1">BGC0002364</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>38.6</td>
+              <td>142.0</td>
+              <td>6.28e-35</td>
+          </tr>
+    
+          <tr>
+              <td>ANQ31707.1</td>
+              <td>asparagin_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001395/1">BGC0001395</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>54.4</td>
+              <td>142.0</td>
+              <td>1.1e-34</td>
+          </tr>
+    
+          <tr>
+              <td>ANW12109.1</td>
+              <td>amido_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001374/1">BGC0001374</a></td>
+              <td>Other</td>
+              <td>26.0</td>
+              <td>54.4</td>
+              <td>131.0</td>
+              <td>2.52e-31</td>
+          </tr>
+    
+          <tr>
+              <td>ADB23384.1</td>
+              <td>amidotransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001062/1">BGC0001062</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>25.7</td>
+              <td>130.0</td>
+              <td>5.01e-31</td>
+          </tr>
+    
+          <tr>
+              <td>AFU65909.1</td>
+              <td>DacD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000216/1">BGC0000216</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>56.5</td>
+              <td>124.0</td>
+              <td>6.22e-29</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BCP96880.1</td>
+              <td>putative_alpha_ketoglutarate_dependent_dioxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002614/1">BGC0002614</a></td>
+              <td>NRP+Polyketide</td>
+              <td>55.0</td>
+              <td>104.5</td>
+              <td>428.0</td>
+              <td>3.3e-150</td>
+          </tr>
+    
+          <tr>
+              <td>BBE36499.1</td>
+              <td>putative_alpha-ketoglutarate-dependent_dioxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001528/1">BGC0001528</a></td>
+              <td>Terpene</td>
+              <td>49.0</td>
+              <td>96.9</td>
+              <td>338.0</td>
+              <td>4.08e-115</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001827203.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001996/1">BGC0001996</a></td>
+              <td>Other</td>
+              <td>49.0</td>
+              <td>94.3</td>
+              <td>328.0</td>
+              <td>2.66e-111</td>
+          </tr>
+    
+          <tr>
+              <td>QOV03412.1</td>
+              <td>SpoG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002262/1">BGC0002262</a></td>
+              <td>Polyketide</td>
+              <td>47.0</td>
+              <td>94.6</td>
+              <td>301.0</td>
+              <td>4.03e-100</td>
+          </tr>
+    
+          <tr>
+              <td>CEO59281.1</td>
+              <td>Putative_Taurine_catabolism_dioxygenase_TauD,_TfdA_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002278/1">BGC0002278</a></td>
+              <td>Alkaloid+NRP</td>
+              <td>38.0</td>
+              <td>97.2</td>
+              <td>212.0</td>
+              <td>7.12e-66</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf6</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000687/1">BGC0000687</a></td>
+              <td>Terpene</td>
+              <td>35.0</td>
+              <td>92.9</td>
+              <td>122.0</td>
+              <td>3.06e-32</td>
+          </tr>
+    
+          <tr>
+              <td>KGO40482.1</td>
+              <td>Taurine_catabolism_dioxygenase_TauD/TfdA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001205/1">BGC0001205</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>99.1</td>
+              <td>95.0</td>
+              <td>1.28e-21</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>WP_039806874.1</td>
+              <td>lysine_N(6)-hydroxylase/L-ornithine_N(5)-oxygenase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002001/1">BGC0002001</a></td>
+              <td>NRP+Polyketide</td>
+              <td>37.0</td>
+              <td>85.6</td>
+              <td>296.0</td>
+              <td>2.73e-95</td>
+          </tr>
+    
+          <tr>
+              <td>CAL17537.1</td>
+              <td>L-ornithine_N5-oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002465/1">BGC0002465</a></td>
+              <td>NRP</td>
+              <td>38.0</td>
+              <td>85.4</td>
+              <td>294.0</td>
+              <td>2.76e-94</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ96465.1</td>
+              <td>ornithine_N-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000330/1">BGC0000330</a></td>
+              <td>NRP:NRP siderophore</td>
+              <td>38.0</td>
+              <td>85.4</td>
+              <td>283.0</td>
+              <td>1.17e-89</td>
+          </tr>
+    
+          <tr>
+              <td>ABX37378.1</td>
+              <td>L-lysine_6-monooxygenase_(NADPH)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000984/1">BGC0000984</a></td>
+              <td>NRP+Polyketide</td>
+              <td>37.0</td>
+              <td>85.4</td>
+              <td>276.0</td>
+              <td>2.93e-87</td>
+          </tr>
+    
+          <tr>
+              <td>ADJ63845.1</td>
+              <td>L-ornithine_N5-monooxygenase_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000424/1">BGC0000424</a></td>
+              <td>NRP:NRP siderophore</td>
+              <td>36.0</td>
+              <td>85.4</td>
+              <td>271.0</td>
+              <td>2.44e-85</td>
+          </tr>
+    
+          <tr>
+              <td>ALG65346.1</td>
+              <td>Var11</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002416/1">BGC0002416</a></td>
+              <td>NRP+Polyketide</td>
+              <td>37.0</td>
+              <td>85.4</td>
+              <td>270.0</td>
+              <td>4.31e-85</td>
+          </tr>
+    
+          <tr>
+              <td>NAO96324.1</td>
+              <td>SidA/IucD/PvdA_family_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002117/1">BGC0002117</a></td>
+              <td>NRP</td>
+              <td>37.0</td>
+              <td>85.4</td>
+              <td>268.0</td>
+              <td>3.75e-84</td>
+          </tr>
+    
+          <tr>
+              <td>ABM34270.1</td>
+              <td>L-lysine_6-monooxygenase_(NADPH)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002419/1">BGC0002419</a></td>
+              <td>NRP+Polyketide</td>
+              <td>37.0</td>
+              <td>85.4</td>
+              <td>264.0</td>
+              <td>2.06e-82</td>
+          </tr>
+    
+          <tr>
+              <td>MBE3202949.1</td>
+              <td>lysine_N(6)-hydroxylase/L-ornithine_N(5)-oxygenase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002410/1">BGC0002410</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>85.6</td>
+              <td>260.0</td>
+              <td>8.44e-81</td>
+          </tr>
+    
+          <tr>
+              <td>AGU50947.1</td>
+              <td>putative_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002417/1">BGC0002417</a></td>
+              <td>NRP+Polyketide</td>
+              <td>36.0</td>
+              <td>86.4</td>
+              <td>258.0</td>
+              <td>2.31e-80</td>
+          </tr>
+    
+          <tr>
+              <td>ACS20356.1</td>
+              <td>L-lysine_6-monooxygenase_(NADPH)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002420/1">BGC0002420</a></td>
+              <td>NRP+Polyketide</td>
+              <td>36.0</td>
+              <td>86.4</td>
+              <td>258.0</td>
+              <td>3.36e-80</td>
+          </tr>
+    
+          <tr>
+              <td>AJD47500.1</td>
+              <td>L-lysine_6-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002418/1">BGC0002418</a></td>
+              <td>NRP+Polyketide</td>
+              <td>37.0</td>
+              <td>85.4</td>
+              <td>257.0</td>
+              <td>6.12e-80</td>
+          </tr>
+    
+          <tr>
+              <td>ACO78740.1</td>
+              <td>L-ornithine_N5-oxygenase-PvdA-like_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002433/1">BGC0002433</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>86.2</td>
+              <td>255.0</td>
+              <td>3.82e-79</td>
+          </tr>
+    
+          <tr>
+              <td>ACY06283.1</td>
+              <td>L-lysine_6-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001042/1">BGC0001042</a></td>
+              <td>NRP+Polyketide</td>
+              <td>35.0</td>
+              <td>85.2</td>
+              <td>254.0</td>
+              <td>6.23e-79</td>
+          </tr>
+    
+          <tr>
+              <td>ABC39452.1</td>
+              <td>l-ornithine_5-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000386/1">BGC0000386</a></td>
+              <td>NRP:NRP siderophore</td>
+              <td>34.0</td>
+              <td>89.8</td>
+              <td>256.0</td>
+              <td>7.49e-79</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ71838.1</td>
+              <td>L-ornithine_5-monooxygenase(L-ornithine_N5-oxygenase)_L-lysine_6-monooxygenase_(Lysine_N(6)-hydroxylase);_Siderophore_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001189/1">BGC0001189</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>85.8</td>
+              <td>254.0</td>
+              <td>1.03e-78</td>
+          </tr>
+    
+          <tr>
+              <td>CBG75497.1</td>
+              <td>putative_peptide_N-oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000423/1">BGC0000423</a></td>
+              <td>NRP</td>
+              <td>38.0</td>
+              <td>86.2</td>
+              <td>254.0</td>
+              <td>2.23e-78</td>
+          </tr>
+    
+          <tr>
+              <td>QBQ12451.1</td>
+              <td>ornithine_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002693/1">BGC0002693</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>85.8</td>
+              <td>252.0</td>
+              <td>6.56e-78</td>
+          </tr>
+    
+          <tr>
+              <td>ABE35420.1</td>
+              <td>l-ornithine_5-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002421/1">BGC0002421</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>87.4</td>
+              <td>250.0</td>
+              <td>3.45e-77</td>
+          </tr>
+    
+          <tr>
+              <td>QIE08741.1</td>
+              <td>ornithine_N-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002544/1">BGC0002544</a></td>
+              <td>NRP</td>
+              <td>37.0</td>
+              <td>86.2</td>
+              <td>246.0</td>
+              <td>6.51e-76</td>
+          </tr>
+    
+          <tr>
+              <td>WP_039794392.1</td>
+              <td>lysine_N(6)-hydroxylase/L-ornithine_N(5)-oxygenase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001211/1">BGC0001211</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>85.4</td>
+              <td>246.0</td>
+              <td>1.13e-75</td>
+          </tr>
+    
+          <tr>
+              <td>QYI86760.1</td>
+              <td>putative_L-ornithine_N5-oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002424/1">BGC0002424</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>85.6</td>
+              <td>244.0</td>
+              <td>7.61e-75</td>
+          </tr>
+    
+          <tr>
+              <td>NKI69297.1</td>
+              <td>SidA/IucD/PvdA_family_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002408/1">BGC0002408</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>87.7</td>
+              <td>244.0</td>
+              <td>8.09e-75</td>
+          </tr>
+    
+          <tr>
+              <td>WP_028847741.1</td>
+              <td>lysine_N(6)-hydroxylase/L-ornithine_N(5)-oxygenase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002467/1">BGC0002467</a></td>
+              <td>NRP</td>
+              <td>36.0</td>
+              <td>86.6</td>
+              <td>241.0</td>
+              <td>8.18e-74</td>
+          </tr>
+    
+          <tr>
+              <td>CAR51997.1</td>
+              <td>putative_L-ornithine_5-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002569/1">BGC0002569</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>85.6</td>
+              <td>241.0</td>
+              <td>8.91e-74</td>
+          </tr>
+    
+          <tr>
+              <td>CAM02311.1</td>
+              <td>putative_peptide_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000349/1">BGC0000349</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>84.9</td>
+              <td>240.0</td>
+              <td>2.2e-73</td>
+          </tr>
+    
+          <tr>
+              <td>AMK48246.1</td>
+              <td>L-ornithine-5-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001351/1">BGC0001351</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>86.2</td>
+              <td>238.0</td>
+              <td>1.2e-72</td>
+          </tr>
+    
+          <tr>
+              <td>AAY93340.1</td>
+              <td>L-ornithine_5-monooxygenase_PvdA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000413/1">BGC0000413</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>85.4</td>
+              <td>237.0</td>
+              <td>3.69e-72</td>
+          </tr>
+    
+          <tr>
+              <td>ctg4_3</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002017/1">BGC0002017</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>86.4</td>
+              <td>236.0</td>
+              <td>5.31e-72</td>
+          </tr>
+    
+          <tr>
+              <td>AGE11900.1</td>
+              <td>L-ornithine_5-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000366/1">BGC0000366</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>86.6</td>
+              <td>236.0</td>
+              <td>2.21e-71</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf18</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001767/1">BGC0001767</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>85.8</td>
+              <td>234.0</td>
+              <td>2.89e-71</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ55902.1</td>
+              <td>putative_peptide_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000359/1">BGC0000359</a></td>
+              <td>NRP</td>
+              <td>36.0</td>
+              <td>85.8</td>
+              <td>233.0</td>
+              <td>6.46e-71</td>
+          </tr>
+    
+          <tr>
+              <td>CAB53328.1</td>
+              <td>putative_peptide_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000325/1">BGC0000325</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>87.7</td>
+              <td>232.0</td>
+              <td>3.51e-70</td>
+          </tr>
+    
+          <tr>
+              <td>AFJ20768.1</td>
+              <td>ornithine_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002300/1">BGC0002300</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>85.2</td>
+              <td>229.0</td>
+              <td>4.97e-69</td>
+          </tr>
+    
+          <tr>
+              <td>ATW47209.1</td>
+              <td>L-lysine_6-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002466/1">BGC0002466</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>87.0</td>
+              <td>227.0</td>
+              <td>2.83e-68</td>
+          </tr>
+    
+          <tr>
+              <td>WP_019634560.1</td>
+              <td>lysine_N(6)-hydroxylase/L-ornithine_N(5)-oxygenase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001443/1">BGC0001443</a></td>
+              <td>NRP+Polyketide</td>
+              <td>33.0</td>
+              <td>87.0</td>
+              <td>226.0</td>
+              <td>3.4e-68</td>
+          </tr>
+    
+          <tr>
+              <td>AJV88381.1</td>
+              <td>MfnI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001214/1">BGC0001214</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>84.3</td>
+              <td>222.0</td>
+              <td>9.69e-67</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf1261</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001752/1">BGC0001752</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>85.4</td>
+              <td>223.0</td>
+              <td>1.94e-66</td>
+          </tr>
+    
+          <tr>
+              <td>WP_141576255.1</td>
+              <td>lysine_N(6)-hydroxylase/L-ornithine_N(5)-oxygenase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002686/1">BGC0002686</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>84.9</td>
+              <td>216.0</td>
+              <td>2.13e-64</td>
+          </tr>
+    
+          <tr>
+              <td>EFL06875.1</td>
+              <td>peptide_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000300/1">BGC0000300</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>87.0</td>
+              <td>216.0</td>
+              <td>2.62e-64</td>
+          </tr>
+    
+          <tr>
+              <td>MBD2892720.1</td>
+              <td>L-ornithine_N(5)-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002718/1">BGC0002718</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>85.4</td>
+              <td>213.0</td>
+              <td>2.35e-63</td>
+          </tr>
+    
+          <tr>
+              <td>CBZ42147.1</td>
+              <td>peptide_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001117/1">BGC0001117</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>86.2</td>
+              <td>211.0</td>
+              <td>1.72e-62</td>
+          </tr>
+    
+          <tr>
+              <td>ABV56589.1</td>
+              <td>KtzI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000378/1">BGC0000378</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>86.0</td>
+              <td>207.0</td>
+              <td>4.04e-61</td>
+          </tr>
+    
+          <tr>
+              <td>AUD11991.1</td>
+              <td>PvdA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001721/1">BGC0001721</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>72.2</td>
+              <td>185.0</td>
+              <td>4.55e-53</td>
+          </tr>
+    
+          <tr>
+              <td>SCO70318.1</td>
+              <td>Monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001433/1">BGC0001433</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>34.0</td>
+              <td>75.5</td>
+              <td>183.0</td>
+              <td>1.93e-52</td>
+          </tr>
+    
+          <tr>
+              <td>KIU65663.1</td>
+              <td>lysine_6-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001713/1">BGC0001713</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>69.9</td>
+              <td>147.0</td>
+              <td>1.31e-38</td>
+          </tr>
+    
+          <tr>
+              <td>AFY40276.1</td>
+              <td>L-lysine_6-monooxygenase_(NADPH)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002633/1">BGC0002633</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>70.1</td>
+              <td>144.0</td>
+              <td>1.68e-37</td>
+          </tr>
+    
+          <tr>
+              <td>ACB01061.1</td>
+              <td>siderophore_biosynthesis_protein;_N-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002470/1">BGC0002470</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>70.3</td>
+              <td>138.0</td>
+              <td>1.38e-35</td>
+          </tr>
+    
+          <tr>
+              <td>CAM86884.1</td>
+              <td>putative_lysine/ornithine_N-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002471/1">BGC0002471</a></td>
+              <td>Other</td>
+              <td>30.0</td>
+              <td>71.3</td>
+              <td>138.0</td>
+              <td>3.64e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AVW82904.1</td>
+              <td>L-lysine_N6-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002039/1">BGC0002039</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>69.7</td>
+              <td>137.0</td>
+              <td>5.11e-35</td>
+          </tr>
+    
+          <tr>
+              <td>desaB</td>
+              <td>FAD-dependent_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001453/1">BGC0001453</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>70.1</td>
+              <td>132.0</td>
+              <td>2.02e-33</td>
+          </tr>
+    
+          <tr>
+              <td>RUL90691.1</td>
+              <td>alcaligin_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002690/1">BGC0002690</a></td>
+              <td>Other</td>
+              <td>28.0</td>
+              <td>70.5</td>
+              <td>130.0</td>
+              <td>1.25e-32</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50185.1</td>
+              <td>lysine_6-monooxygenase-like_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000410/1">BGC0000410</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>59.0</td>
+              <td>125.0</td>
+              <td>4.84e-31</td>
+          </tr>
+    
+          <tr>
+              <td>BAM09327.1</td>
+              <td>putative_acinetoferrin_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000295/1">BGC0000295</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>70.9</td>
+              <td>124.0</td>
+              <td>2.19e-30</td>
+          </tr>
+    
+          <tr>
+              <td>CAG69513.1</td>
+              <td>putative_siderophore_biosynthesis_protein;_putative_Lysine/ornithine_N-monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000352/1">BGC0000352</a></td>
+              <td>NRP:NRP siderophore</td>
+              <td>25.0</td>
+              <td>70.3</td>
+              <td>112.0</td>
+              <td>2.21e-26</td>
+          </tr>
+    
+          <tr>
+              <td>WP_003814013.1</td>
+              <td>alcaligin_siderophore_biosynthesis_hydroxylase_AlcA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002464/1">BGC0002464</a></td>
+              <td>Other</td>
+              <td>25.0</td>
+              <td>70.5</td>
+              <td>110.0</td>
+              <td>1.15e-25</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

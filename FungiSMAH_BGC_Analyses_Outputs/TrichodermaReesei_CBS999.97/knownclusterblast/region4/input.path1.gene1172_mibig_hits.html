@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>KDB16999.1</td>
+              <td>laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002177/1">BGC0002177</a></td>
+              <td>Polyketide</td>
+              <td>50.0</td>
+              <td>115.0</td>
+              <td>553.0</td>
+              <td>6.96e-194</td>
+          </tr>
+    
+          <tr>
+              <td>QDK64758.1</td>
+              <td>AshL</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002301/1">BGC0002301</a></td>
+              <td>Polyketide</td>
+              <td>46.0</td>
+              <td>127.4</td>
+              <td>531.0</td>
+              <td>1.33e-184</td>
+          </tr>
+    
+          <tr>
+              <td>ESU07752.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002709/1">BGC0002709</a></td>
+              <td>Polyketide</td>
+              <td>38.0</td>
+              <td>127.0</td>
+              <td>410.0</td>
+              <td>4.61e-137</td>
+          </tr>
+    
+          <tr>
+              <td>QKG86291.1</td>
+              <td>laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002253/1">BGC0002253</a></td>
+              <td>Polyketide</td>
+              <td>39.0</td>
+              <td>115.2</td>
+              <td>383.0</td>
+              <td>1.47e-127</td>
+          </tr>
+    
+          <tr>
+              <td>XP_028481812.1</td>
+              <td>multi-copper_oxidase/laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001866/1">BGC0001866</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>126.2</td>
+              <td>376.0</td>
+              <td>1.2e-123</td>
+          </tr>
+    
+          <tr>
+              <td>QNT61264.1</td>
+              <td>laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002507/1">BGC0002507</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>125.2</td>
+              <td>374.0</td>
+              <td>3.92e-123</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001798925.1</td>
+              <td>multi-copper_oxidase/laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001865/1">BGC0001865</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>29.0</td>
+              <td>121.6</td>
+              <td>236.0</td>
+              <td>2.21e-70</td>
+          </tr>
+    
+          <tr>
+              <td>PIB01155.1</td>
+              <td>Laccase-1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001541/1">BGC0001541</a></td>
+              <td>Polyketide</td>
+              <td>44.0</td>
+              <td>32.2</td>
+              <td>126.0</td>
+              <td>8.11e-31</td>
+          </tr>
+    
+          <tr>
+              <td>gene7</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001906/1">BGC0001906</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>20.6</td>
+              <td>50.0</td>
+              <td>3.83e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

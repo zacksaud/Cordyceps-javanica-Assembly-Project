@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QMS79051.1</td>
+              <td>acetamidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002198/1">BGC0002198</a></td>
+              <td>NRP</td>
+              <td>46.0</td>
+              <td>45.9</td>
+              <td>162.0</td>
+              <td>1.27e-43</td>
+          </tr>
+    
+          <tr>
+              <td>BBC83958.1</td>
+              <td>putative_amidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001636/1">BGC0001636</a></td>
+              <td>NRP</td>
+              <td>44.0</td>
+              <td>39.3</td>
+              <td>129.0</td>
+              <td>3.81e-32</td>
+          </tr>
+    
+          <tr>
+              <td>ESU09200.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002594/1">BGC0002594</a></td>
+              <td>Polyketide</td>
+              <td>38.0</td>
+              <td>47.4</td>
+              <td>120.0</td>
+              <td>5.24e-29</td>
+          </tr>
+    
+          <tr>
+              <td>BAV32171.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001373/1">BGC0001373</a></td>
+              <td>Polyketide</td>
+              <td>40.0</td>
+              <td>26.8</td>
+              <td>74.0</td>
+              <td>1.25e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ADN68490.1</td>
+              <td>SorP</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000184/1">BGC0000184</a></td>
+              <td>Polyketide:Trans-AT type I polyketide</td>
+              <td>34.0</td>
+              <td>33.3</td>
+              <td>71.0</td>
+              <td>1.37e-12</td>
+          </tr>
+    
+          <tr>
+              <td>SKB24620.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002455/1">BGC0002455</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>33.7</td>
+              <td>66.0</td>
+              <td>3.71e-11</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

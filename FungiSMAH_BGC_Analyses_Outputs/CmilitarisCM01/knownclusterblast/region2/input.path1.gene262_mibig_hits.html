@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AJG44378.1</td>
+              <td>DAHP_synthase-like_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002619/1">BGC0002619</a></td>
+              <td>Polyketide</td>
+              <td>69.0</td>
+              <td>99.7</td>
+              <td>487.0</td>
+              <td>2.32e-173</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001217689.1</td>
+              <td>phospho-2-dehydro-3-deoxyheptonate_aldolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001517/1">BGC0001517</a></td>
+              <td>NRP</td>
+              <td>66.0</td>
+              <td>97.5</td>
+              <td>457.0</td>
+              <td>2.55e-161</td>
+          </tr>
+    
+          <tr>
+              <td>OKA09448.1</td>
+              <td>3-deoxy-7-phosphoheptulonate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001459/1">BGC0001459</a></td>
+              <td>NRP:Glycopeptide</td>
+              <td>52.0</td>
+              <td>97.5</td>
+              <td>337.0</td>
+              <td>1.34e-114</td>
+          </tr>
+    
+          <tr>
+              <td>AIG79211.1</td>
+              <td>3-deoxy-7-phosphoheptulonate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000419/1">BGC0000419</a></td>
+              <td>Saccharide+NRP:Glycopeptide</td>
+              <td>52.0</td>
+              <td>97.2</td>
+              <td>333.0</td>
+              <td>4.24e-113</td>
+          </tr>
+    
+          <tr>
+              <td>AEI58892.1</td>
+              <td>putative_aldolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000455/1">BGC0000455</a></td>
+              <td>NRP</td>
+              <td>52.0</td>
+              <td>97.2</td>
+              <td>331.0</td>
+              <td>4.86e-112</td>
+          </tr>
+    
+          <tr>
+              <td>EME52961.1</td>
+              <td>phospho-2-dehydro-3-deoxyheptonate_aldolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001460/1">BGC0001460</a></td>
+              <td>NRP:Glycopeptide</td>
+              <td>52.0</td>
+              <td>97.2</td>
+              <td>330.0</td>
+              <td>6.88e-112</td>
+          </tr>
+    
+          <tr>
+              <td>OLZ50910.1</td>
+              <td>3-deoxy-7-phosphoheptulonate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001461/1">BGC0001461</a></td>
+              <td>NRP:Glycopeptide</td>
+              <td>51.0</td>
+              <td>97.2</td>
+              <td>330.0</td>
+              <td>9.75e-112</td>
+          </tr>
+    
+          <tr>
+              <td>AYA22305.1</td>
+              <td>DahP</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001955/1">BGC0001955</a></td>
+              <td>NRP</td>
+              <td>51.0</td>
+              <td>97.2</td>
+              <td>330.0</td>
+              <td>9.75e-112</td>
+          </tr>
+    
+          <tr>
+              <td>AIE77089.1</td>
+              <td>putative_aldolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000418/1">BGC0000418</a></td>
+              <td>NRP</td>
+              <td>51.0</td>
+              <td>97.2</td>
+              <td>328.0</td>
+              <td>4.19e-111</td>
+          </tr>
+    
+          <tr>
+              <td>CAG25757.1</td>
+              <td>putative_alodlase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000311/1">BGC0000311</a></td>
+              <td>NRP</td>
+              <td>51.0</td>
+              <td>98.0</td>
+              <td>319.0</td>
+              <td>2.1e-107</td>
+          </tr>
+    
+          <tr>
+              <td>PHM31514.1</td>
+              <td>Aromatic_amino_acid_biosynthesis</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001868/1">BGC0001868</a></td>
+              <td>Other:Phenazine</td>
+              <td>48.0</td>
+              <td>95.8</td>
+              <td>318.0</td>
+              <td>4.34e-107</td>
+          </tr>
+    
+          <tr>
+              <td>AKP45401.1</td>
+              <td>CysN</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001413/1">BGC0001413</a></td>
+              <td>NRP</td>
+              <td>47.0</td>
+              <td>93.3</td>
+              <td>305.0</td>
+              <td>4.45e-102</td>
+          </tr>
+    
+          <tr>
+              <td>WP_024483794.1</td>
+              <td>3-deoxy-7-phosphoheptulonate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002002/1">BGC0002002</a></td>
+              <td>NRP</td>
+              <td>46.0</td>
+              <td>94.7</td>
+              <td>285.0</td>
+              <td>4.28e-94</td>
+          </tr>
+    
+          <tr>
+              <td>AJI44169.1</td>
+              <td>2-keto-3-deoxy-D-arabino-heptulosonate-7</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001193/1">BGC0001193</a></td>
+              <td>NRP</td>
+              <td>45.0</td>
+              <td>95.5</td>
+              <td>279.0</td>
+              <td>7.11e-92</td>
+          </tr>
+    
+          <tr>
+              <td>AAO07756.1</td>
+              <td>3-deoxy-7-phosphoheptulonate_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000460/1">BGC0000460</a></td>
+              <td>NRP</td>
+              <td>49.0</td>
+              <td>91.0</td>
+              <td>276.0</td>
+              <td>1.77e-90</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ45633.1</td>
+              <td>DAHP_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000454/1">BGC0000454</a></td>
+              <td>NRP</td>
+              <td>46.0</td>
+              <td>84.0</td>
+              <td>250.0</td>
+              <td>4.42e-81</td>
+          </tr>
+    
+          <tr>
+              <td>ACU36652.1</td>
+              <td>phospho-2-dehydro-3-deoxyheptonate_aldolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000392/1">BGC0000392</a></td>
+              <td>NRP</td>
+              <td>42.0</td>
+              <td>94.1</td>
+              <td>249.0</td>
+              <td>5.44e-80</td>
+          </tr>
+    
+          <tr>
+              <td>AKQ52526.1</td>
+              <td>DAHP_synthase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002533/1">BGC0002533</a></td>
+              <td>NRP+Polyketide</td>
+              <td>43.0</td>
+              <td>91.6</td>
+              <td>243.0</td>
+              <td>9.99e-78</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

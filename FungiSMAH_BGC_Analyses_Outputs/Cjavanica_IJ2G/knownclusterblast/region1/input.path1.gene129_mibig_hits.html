@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ARE72418.1</td>
+              <td>acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001510/1">BGC0001510</a></td>
+              <td>Other</td>
+              <td>40.0</td>
+              <td>71.8</td>
+              <td>91.0</td>
+              <td>1.1e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AEE65503.1</td>
+              <td>galactoside_O-acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000223/1">BGC0000223</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>33.0</td>
+              <td>75.5</td>
+              <td>78.0</td>
+              <td>3.44e-18</td>
+          </tr>
+    
+          <tr>
+              <td>QFU80915.1</td>
+              <td>acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002550/1">BGC0002550</a></td>
+              <td>Polyketide</td>
+              <td>40.0</td>
+              <td>74.8</td>
+              <td>74.0</td>
+              <td>7.55e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QVQ62864.1</td>
+              <td>sugar_O-acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002373/1">BGC0002373</a></td>
+              <td>NRP</td>
+              <td>38.0</td>
+              <td>73.6</td>
+              <td>73.0</td>
+              <td>5.61e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AGC09471.1</td>
+              <td>chloramphenicol_acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001183/1">BGC0001183</a></td>
+              <td>Polyketide</td>
+              <td>39.0</td>
+              <td>74.8</td>
+              <td>74.0</td>
+              <td>6.87e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ACM68693.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000298/1">BGC0000298</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>79.8</td>
+              <td>61.0</td>
+              <td>1.7e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AAK77314.1</td>
+              <td>putative_acetyltransferase_PssR</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000762/1">BGC0000762</a></td>
+              <td>Saccharide</td>
+              <td>30.0</td>
+              <td>63.2</td>
+              <td>48.0</td>
+              <td>5.07e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ANY57976.1</td>
+              <td>acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001369/1">BGC0001369</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>36.2</td>
+              <td>46.0</td>
+              <td>2.9e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

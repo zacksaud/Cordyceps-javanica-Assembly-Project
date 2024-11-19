@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>XP_028481812.1</td>
+              <td>multi-copper_oxidase/laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001866/1">BGC0001866</a></td>
+              <td>Polyketide</td>
+              <td>70.0</td>
+              <td>48.1</td>
+              <td>911.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>ESU07752.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002709/1">BGC0002709</a></td>
+              <td>Polyketide</td>
+              <td>51.0</td>
+              <td>49.7</td>
+              <td>656.0</td>
+              <td>7.35e-223</td>
+          </tr>
+    
+          <tr>
+              <td>QNT61264.1</td>
+              <td>laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002507/1">BGC0002507</a></td>
+              <td>Polyketide</td>
+              <td>47.0</td>
+              <td>49.7</td>
+              <td>601.0</td>
+              <td>7.29e-202</td>
+          </tr>
+    
+          <tr>
+              <td>QDK64758.1</td>
+              <td>AshL</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002301/1">BGC0002301</a></td>
+              <td>Polyketide</td>
+              <td>45.0</td>
+              <td>50.3</td>
+              <td>541.0</td>
+              <td>9.42e-179</td>
+          </tr>
+    
+          <tr>
+              <td>QKG86291.1</td>
+              <td>laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002253/1">BGC0002253</a></td>
+              <td>Polyketide</td>
+              <td>45.0</td>
+              <td>48.8</td>
+              <td>503.0</td>
+              <td>5.3e-165</td>
+          </tr>
+    
+          <tr>
+              <td>KDB16999.1</td>
+              <td>laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002177/1">BGC0002177</a></td>
+              <td>Polyketide</td>
+              <td>41.0</td>
+              <td>50.4</td>
+              <td>446.0</td>
+              <td>5.24e-143</td>
+          </tr>
+    
+          <tr>
+              <td>XP_028481814.1</td>
+              <td>Alpha/Beta_hydrolase-like_dirigent_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001866/1">BGC0001866</a></td>
+              <td>Polyketide</td>
+              <td>44.0</td>
+              <td>38.7</td>
+              <td>380.0</td>
+              <td>1.36e-118</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001798925.1</td>
+              <td>multi-copper_oxidase/laccase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001865/1">BGC0001865</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>47.9</td>
+              <td>375.0</td>
+              <td>6.42e-116</td>
+          </tr>
+    
+          <tr>
+              <td>PIB01155.1</td>
+              <td>Laccase-1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001541/1">BGC0001541</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>50.0</td>
+              <td>357.0</td>
+              <td>2.43e-109</td>
+          </tr>
+    
+          <tr>
+              <td>AGO65982.1</td>
+              <td>putative_multicopper_oxidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000992/1">BGC0000992</a></td>
+              <td>NRP+Polyketide</td>
+              <td>26.0</td>
+              <td>47.8</td>
+              <td>177.0</td>
+              <td>3.09e-46</td>
+          </tr>
+    
+          <tr>
+              <td>AAP03116.1</td>
+              <td>putative_carboxyesterase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000874/1">BGC0000874</a></td>
+              <td>Other</td>
+              <td>30.0</td>
+              <td>38.4</td>
+              <td>128.0</td>
+              <td>1.37e-30</td>
+          </tr>
+    
+          <tr>
+              <td>AGO59042.1</td>
+              <td>PtaE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000121/1">BGC0000121</a></td>
+              <td>Polyketide</td>
+              <td>24.0</td>
+              <td>47.2</td>
+              <td>111.0</td>
+              <td>8.49e-25</td>
+          </tr>
+    
+          <tr>
+              <td>ABV91296.1</td>
+              <td>putative_type_B_carboxylesterase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000158/1">BGC0000158</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>31.0</td>
+              <td>25.1</td>
+              <td>102.0</td>
+              <td>4.11e-22</td>
+          </tr>
+    
+          <tr>
+              <td>ABI94378.1</td>
+              <td>TMC_biosynthetic_enzyme_L1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000157/1">BGC0000157</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>25.1</td>
+              <td>102.0</td>
+              <td>5.42e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AJO72733.1</td>
+              <td>Type_B_carboxylesterase/acyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001381/1">BGC0001381</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>37.8</td>
+              <td>92.0</td>
+              <td>4.77e-19</td>
+          </tr>
+    
+          <tr>
+              <td>QZA73320.1</td>
+              <td>multicopper_oxidase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002385/1">BGC0002385</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>24.6</td>
+              <td>92.0</td>
+              <td>8.74e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ABW96543.1</td>
+              <td>type_B_carboxylesterase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000159/1">BGC0000159</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>28.0</td>
+              <td>27.9</td>
+              <td>90.0</td>
+              <td>3.73e-18</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ05894.1</td>
+              <td>putative_acyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000872/1">BGC0000872</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>28.6</td>
+              <td>88.0</td>
+              <td>1.45e-17</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

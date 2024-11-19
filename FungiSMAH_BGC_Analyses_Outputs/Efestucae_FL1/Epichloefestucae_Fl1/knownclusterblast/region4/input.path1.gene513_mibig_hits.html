@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CBF87872.1</td>
+              <td>ABC_multidrug_transporter_(Eurofung)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001699/1">BGC0001699</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>54.1</td>
+              <td>167.0</td>
+              <td>8.86e-43</td>
+          </tr>
+    
+          <tr>
+              <td>EPE34342.1</td>
+              <td>ABC-transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001035/1">BGC0001035</a></td>
+              <td>Polyketide+NRP</td>
+              <td>30.0</td>
+              <td>55.4</td>
+              <td>155.0</td>
+              <td>5.83e-39</td>
+          </tr>
+    
+          <tr>
+              <td>KKP00962.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001854/1">BGC0001854</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>32.0</td>
+              <td>47.7</td>
+              <td>147.0</td>
+              <td>2.5e-36</td>
+          </tr>
+    
+          <tr>
+              <td>QIW91876.1</td>
+              <td>TRT</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002543/1">BGC0002543</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>49.4</td>
+              <td>143.0</td>
+              <td>5.77e-35</td>
+          </tr>
+    
+          <tr>
+              <td>OAQ83754.1</td>
+              <td>ABC_multidrug_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001358/1">BGC0001358</a></td>
+              <td>NRP+Polyketide</td>
+              <td>30.0</td>
+              <td>53.1</td>
+              <td>142.0</td>
+              <td>1.06e-34</td>
+          </tr>
+    
+          <tr>
+              <td>ESU05150.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002178/1">BGC0002178</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>46.9</td>
+              <td>138.0</td>
+              <td>2.31e-33</td>
+          </tr>
+    
+          <tr>
+              <td>CBF73441.1</td>
+              <td>ABC_transporter_(Eurofung)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001515/1">BGC0001515</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>46.2</td>
+              <td>137.0</td>
+              <td>5.62e-33</td>
+          </tr>
+    
+          <tr>
+              <td>ESU17753.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002172/1">BGC0002172</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>51.9</td>
+              <td>136.0</td>
+              <td>1.28e-32</td>
+          </tr>
+    
+          <tr>
+              <td>AMM63163.1</td>
+              <td>AniL</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001371/1">BGC0001371</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>53.9</td>
+              <td>129.0</td>
+              <td>2.05e-30</td>
+          </tr>
+    
+          <tr>
+              <td>AEA35029.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002502/1">BGC0002502</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>45.5</td>
+              <td>127.0</td>
+              <td>1.12e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AKJ70948.1</td>
+              <td>multidrug_transporter_(ABC)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002611/1">BGC0002611</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>53.8</td>
+              <td>125.0</td>
+              <td>3.42e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AAN74822.1</td>
+              <td>Fum19p</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000062/1">BGC0000062</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>45.5</td>
+              <td>125.0</td>
+              <td>4.53e-29</td>
+          </tr>
+    
+          <tr>
+              <td>QCC62989.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001966/1">BGC0001966</a></td>
+              <td>NRP+Polyketide</td>
+              <td>28.0</td>
+              <td>55.0</td>
+              <td>117.0</td>
+              <td>8.71e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ACB12564.1</td>
+              <td>Fum19</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000063/1">BGC0000063</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>52.5</td>
+              <td>114.0</td>
+              <td>1.14e-25</td>
+          </tr>
+    
+          <tr>
+              <td>XP_020058106.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001220/1">BGC0001220</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>48.5</td>
+              <td>111.0</td>
+              <td>7.85e-25</td>
+          </tr>
+    
+          <tr>
+              <td>CCT75968.1</td>
+              <td>related_to_multidrug_resistance_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001606/1">BGC0001606</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>51.7</td>
+              <td>103.0</td>
+              <td>2.63e-22</td>
+          </tr>
+    
+          <tr>
+              <td>CRG85577.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001402/1">BGC0001402</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>49.3</td>
+              <td>57.0</td>
+              <td>5.26e-08</td>
+          </tr>
+    
+          <tr>
+              <td>KAH7877381.1</td>
+              <td>multidrug_resistance-associated_ABC_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002747/1">BGC0002747</a></td>
+              <td>RiPP</td>
+              <td>22.0</td>
+              <td>60.8</td>
+              <td>57.0</td>
+              <td>8.93e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>
