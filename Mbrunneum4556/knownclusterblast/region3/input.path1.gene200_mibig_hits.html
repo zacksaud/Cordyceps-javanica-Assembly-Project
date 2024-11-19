@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ASK38702.1</td>
+              <td>putative_aldo/keto_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001436/1">BGC0001436</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>46.0</td>
+              <td>65.9</td>
+              <td>120.0</td>
+              <td>1.12e-32</td>
+          </tr>
+    
+          <tr>
+              <td>CCD48292.1</td>
+              <td>similar_to_aldo/keto_reductase_family_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002217/1">BGC0002217</a></td>
+              <td>Terpene</td>
+              <td>40.0</td>
+              <td>65.4</td>
+              <td>97.0</td>
+              <td>6.85e-24</td>
+          </tr>
+    
+          <tr>
+              <td>AVY05504.1</td>
+              <td>alcohol_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001571/1">BGC0001571</a></td>
+              <td>Terpene</td>
+              <td>41.0</td>
+              <td>65.4</td>
+              <td>94.0</td>
+              <td>1.05e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54227.1</td>
+              <td>PauY7</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001732/1">BGC0001732</a></td>
+              <td>Other</td>
+              <td>38.0</td>
+              <td>53.4</td>
+              <td>67.0</td>
+              <td>4.22e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54174.1</td>
+              <td>Pau7</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001731/1">BGC0001731</a></td>
+              <td>Other</td>
+              <td>38.0</td>
+              <td>53.4</td>
+              <td>67.0</td>
+              <td>5.79e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AHI59116.1</td>
+              <td>putative_2,5-diketo-D-gluconic_acid_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001005/1">BGC0001005</a></td>
+              <td>NRP+Polyketide</td>
+              <td>32.0</td>
+              <td>59.1</td>
+              <td>49.0</td>
+              <td>1.25e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

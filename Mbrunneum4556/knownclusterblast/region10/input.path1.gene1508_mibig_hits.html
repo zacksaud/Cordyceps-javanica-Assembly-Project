@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QNN94287.1</td>
+              <td>EmeC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002555/1">BGC0002555</a></td>
+              <td>NRP+Polyketide</td>
+              <td>50.0</td>
+              <td>60.8</td>
+              <td>80.0</td>
+              <td>1.43e-18</td>
+          </tr>
+    
+          <tr>
+              <td>QIW91874.1</td>
+              <td>OXY2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002543/1">BGC0002543</a></td>
+              <td>NRP</td>
+              <td>55.0</td>
+              <td>51.2</td>
+              <td>80.0</td>
+              <td>1.7e-18</td>
+          </tr>
+    
+          <tr>
+              <td>QBE85645.1</td>
+              <td>BuaE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001857/1">BGC0001857</a></td>
+              <td>Alkaloid+NRP+Polyketide:Iterative type I polyketide</td>
+              <td>57.0</td>
+              <td>48.0</td>
+              <td>79.0</td>
+              <td>4.17e-18</td>
+          </tr>
+    
+          <tr>
+              <td>EPE34347.1</td>
+              <td>nonheme_mononuclear_iron_oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001035/1">BGC0001035</a></td>
+              <td>Polyketide+NRP</td>
+              <td>50.0</td>
+              <td>52.8</td>
+              <td>78.0</td>
+              <td>8.64e-18</td>
+          </tr>
+    
+          <tr>
+              <td>XP_002379987.1</td>
+              <td>gibberellin_2-oxidase,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001621/1">BGC0001621</a></td>
+              <td>NRP</td>
+              <td>53.0</td>
+              <td>61.6</td>
+              <td>77.0</td>
+              <td>2.09e-17</td>
+          </tr>
+    
+          <tr>
+              <td>XP_020058093.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001220/1">BGC0001220</a></td>
+              <td>NRP</td>
+              <td>51.0</td>
+              <td>52.0</td>
+              <td>76.0</td>
+              <td>6.08e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QIW91883.1</td>
+              <td>OXY4</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002543/1">BGC0002543</a></td>
+              <td>NRP</td>
+              <td>53.0</td>
+              <td>44.0</td>
+              <td>69.0</td>
+              <td>1.06e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AMM63174.1</td>
+              <td>AniF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001371/1">BGC0001371</a></td>
+              <td>NRP</td>
+              <td>47.0</td>
+              <td>51.2</td>
+              <td>69.0</td>
+              <td>1.44e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AKJ70940.1</td>
+              <td>non-heme_iron_a-ketoglutarate_dependent_dioxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002611/1">BGC0002611</a></td>
+              <td>NRP</td>
+              <td>45.0</td>
+              <td>51.2</td>
+              <td>67.0</td>
+              <td>9.76e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AGA37270.1</td>
+              <td>2OG-Fe(II)-oxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000819/1">BGC0000819</a></td>
+              <td>NRP+Alkaloid</td>
+              <td>43.0</td>
+              <td>53.6</td>
+              <td>64.0</td>
+              <td>1.33e-12</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

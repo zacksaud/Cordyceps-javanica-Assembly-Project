@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABV57825.1</td>
+              <td>ergot_alkaloid_biosynthetic_protein_A</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001267/1">BGC0001267</a></td>
+              <td>Terpene</td>
+              <td>55.0</td>
+              <td>60.3</td>
+              <td>155.0</td>
+              <td>1.15e-45</td>
+          </tr>
+    
+          <tr>
+              <td>ABM91452.1</td>
+              <td>conserved_protein_EasG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000348/1">BGC0000348</a></td>
+              <td>NRP</td>
+              <td>49.0</td>
+              <td>60.3</td>
+              <td>140.0</td>
+              <td>8.02e-40</td>
+          </tr>
+    
+          <tr>
+              <td>AET79181.1</td>
+              <td>agroclavine_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001241/1">BGC0001241</a></td>
+              <td>Terpene</td>
+              <td>48.0</td>
+              <td>60.3</td>
+              <td>132.0</td>
+              <td>6.43e-37</td>
+          </tr>
+    
+          <tr>
+              <td>CCE30229.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002232/1">BGC0002232</a></td>
+              <td>Alkaloid</td>
+              <td>48.0</td>
+              <td>60.3</td>
+              <td>132.0</td>
+              <td>6.43e-37</td>
+          </tr>
+    
+          <tr>
+              <td>EAL94096.1</td>
+              <td>ergot_alkaloid_biosynthetic_protein_A</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000811/1">BGC0000811</a></td>
+              <td>Alkaloid</td>
+              <td>42.0</td>
+              <td>55.8</td>
+              <td>89.0</td>
+              <td>1.41e-20</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

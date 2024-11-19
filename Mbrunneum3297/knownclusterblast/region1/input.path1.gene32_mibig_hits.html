@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>MAA_10032</td>
+              <td>laccase_Lcc4</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000337/1">BGC0000337</a></td>
+              <td>NRP</td>
+              <td>78.0</td>
+              <td>128.8</td>
+              <td>311.0</td>
+              <td>3.79e-105</td>
+          </tr>
+    
+          <tr>
+              <td>EJP62796.1</td>
+              <td>laccase_2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001720/1">BGC0001720</a></td>
+              <td>Polyketide</td>
+              <td>49.0</td>
+              <td>75.6</td>
+              <td>130.0</td>
+              <td>7.16e-36</td>
+          </tr>
+    
+          <tr>
+              <td>EAU31631.1</td>
+              <td>predicted_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002592/1">BGC0002592</a></td>
+              <td>Polyketide</td>
+              <td>48.0</td>
+              <td>79.5</td>
+              <td>119.0</td>
+              <td>1.09e-31</td>
+          </tr>
+    
+          <tr>
+              <td>EAL89346.1</td>
+              <td>extracellular_dihydrogeodin_oxidase/laccase,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001403/1">BGC0001403</a></td>
+              <td>Polyketide</td>
+              <td>44.0</td>
+              <td>80.1</td>
+              <td>115.0</td>
+              <td>3.56e-30</td>
+          </tr>
+    
+          <tr>
+              <td>AGO59052.1</td>
+              <td>PtaK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000121/1">BGC0000121</a></td>
+              <td>Polyketide</td>
+              <td>40.0</td>
+              <td>87.2</td>
+              <td>113.0</td>
+              <td>9.21e-30</td>
+          </tr>
+    
+          <tr>
+              <td>KAF7526517.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002244/1">BGC0002244</a></td>
+              <td>Polyketide</td>
+              <td>44.0</td>
+              <td>79.5</td>
+              <td>113.0</td>
+              <td>1.17e-29</td>
+          </tr>
+    
+          <tr>
+              <td>gene7</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001906/1">BGC0001906</a></td>
+              <td>Polyketide</td>
+              <td>37.0</td>
+              <td>73.1</td>
+              <td>78.0</td>
+              <td>1.89e-17</td>
+          </tr>
+    
+          <tr>
+              <td>ETS82098.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002161/1">BGC0002161</a></td>
+              <td>Polyketide</td>
+              <td>42.0</td>
+              <td>58.3</td>
+              <td>74.0</td>
+              <td>7.11e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ08911.1</td>
+              <td>putative_multicopper_oxidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000224/1">BGC0000224</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>34.0</td>
+              <td>73.7</td>
+              <td>56.0</td>
+              <td>1.42e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

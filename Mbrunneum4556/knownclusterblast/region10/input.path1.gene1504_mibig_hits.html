@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>MAA_10046</td>
+              <td>glutamate_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000337/1">BGC0000337</a></td>
+              <td>NRP</td>
+              <td>67.0</td>
+              <td>92.9</td>
+              <td>686.0</td>
+              <td>6.78e-247</td>
+          </tr>
+    
+          <tr>
+              <td>QHG11726.1</td>
+              <td>putative_pyridoxal-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002620/1">BGC0002620</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>82.1</td>
+              <td>168.0</td>
+              <td>9.03e-46</td>
+          </tr>
+    
+          <tr>
+              <td>CAB87219.1</td>
+              <td>putative_pyridoxal-dependent_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000940/1">BGC0000940</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>66.9</td>
+              <td>150.0</td>
+              <td>1.32e-39</td>
+          </tr>
+    
+          <tr>
+              <td>AWD37887.1</td>
+              <td>putative_pyridoxal-dependent_decarboxylase_DfoJ</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001572/1">BGC0001572</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>86.7</td>
+              <td>144.0</td>
+              <td>6.48e-37</td>
+          </tr>
+    
+          <tr>
+              <td>RUP78901.1</td>
+              <td>aminotransferase_class_V-fold_PLP-dependent_enzyme</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002073/1">BGC0002073</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>77.3</td>
+              <td>127.0</td>
+              <td>2.58e-31</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

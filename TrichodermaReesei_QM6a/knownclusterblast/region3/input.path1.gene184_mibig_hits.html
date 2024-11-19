@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>KNA98278.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002670/1">BGC0002670</a></td>
+              <td>Other</td>
+              <td>41.0</td>
+              <td>101.5</td>
+              <td>246.0</td>
+              <td>1.19e-79</td>
+          </tr>
+    
+          <tr>
+              <td>AGN71608.1</td>
+              <td>dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000027/1">BGC0000027</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>95.4</td>
+              <td>192.0</td>
+              <td>9.41e-59</td>
+          </tr>
+    
+          <tr>
+              <td>BAJ07868.1</td>
+              <td>putative_aldo/keto_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000232/1">BGC0000232</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>103.1</td>
+              <td>98.0</td>
+              <td>4.67e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AWH12918.1</td>
+              <td>StmK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001784/1">BGC0001784</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>95.4</td>
+              <td>94.0</td>
+              <td>1.86e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QHZ99324.1</td>
+              <td>aldo/keto_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001875/1">BGC0001875</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>78.0</td>
+              <td>88.0</td>
+              <td>2.79e-19</td>
+          </tr>
+    
+          <tr>
+              <td>WP_027148172.1</td>
+              <td>aldo/keto_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001480/1">BGC0001480</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>82.4</td>
+              <td>87.0</td>
+              <td>4.26e-19</td>
+          </tr>
+    
+          <tr>
+              <td>UPA71923.1</td>
+              <td>aldo-keto_reductase_IolS</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002636/1">BGC0002636</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>75.9</td>
+              <td>85.0</td>
+              <td>3.45e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AXG22408.1</td>
+              <td>L-glyceraldehyde_3-phosphate_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002024/1">BGC0002024</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>87.3</td>
+              <td>84.0</td>
+              <td>8.48e-18</td>
+          </tr>
+    
+          <tr>
+              <td>WP_018960018.1</td>
+              <td>aldo/keto_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002010/1">BGC0002010</a></td>
+              <td>NRP+Polyketide</td>
+              <td>27.0</td>
+              <td>75.9</td>
+              <td>84.0</td>
+              <td>8.71e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_orf20</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000053/1">BGC0000053</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>59.1</td>
+              <td>82.0</td>
+              <td>2.42e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AUA09454.1</td>
+              <td>L-glyceraldehyde_3-phosphate_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002291/1">BGC0002291</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>59.1</td>
+              <td>82.0</td>
+              <td>3.29e-17</td>
+          </tr>
+    
+          <tr>
+              <td>ATV82117.1</td>
+              <td>aldoketoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001909/1">BGC0001909</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>82.7</td>
+              <td>81.0</td>
+              <td>8.96e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AFB35637.1</td>
+              <td>6-acetyl-PCA_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000935/1">BGC0000935</a></td>
+              <td>Polyketide+Other:Aminocoumarin</td>
+              <td>27.0</td>
+              <td>76.2</td>
+              <td>78.0</td>
+              <td>6.64e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54209.1</td>
+              <td>Pau42</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001731/1">BGC0001731</a></td>
+              <td>Other</td>
+              <td>26.0</td>
+              <td>96.9</td>
+              <td>77.0</td>
+              <td>1.12e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AYU66246.1</td>
+              <td>TjhD2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002461/1">BGC0002461</a></td>
+              <td>Polyketide</td>
+              <td>23.0</td>
+              <td>83.6</td>
+              <td>77.0</td>
+              <td>1.47e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AIE54262.1</td>
+              <td>PauY42</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001732/1">BGC0001732</a></td>
+              <td>Other</td>
+              <td>26.0</td>
+              <td>96.9</td>
+              <td>77.0</td>
+              <td>1.52e-15</td>
+          </tr>
+    
+          <tr>
+              <td>QFU19817.1</td>
+              <td>aldo/keto_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002431/1">BGC0002431</a></td>
+              <td>Polyketide+Saccharide</td>
+              <td>31.0</td>
+              <td>59.8</td>
+              <td>73.0</td>
+              <td>2.84e-14</td>
+          </tr>
+    
+          <tr>
+              <td>BBE36476.1</td>
+              <td>dTDP-2,3-ketoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001922/1">BGC0001922</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>98.5</td>
+              <td>72.0</td>
+              <td>5.31e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ23049.1</td>
+              <td>possible_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000291/1">BGC0000291</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>69.3</td>
+              <td>72.0</td>
+              <td>5.96e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ABB05109.1</td>
+              <td>LipDig3</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001003/1">BGC0001003</a></td>
+              <td>NRP:Lipopeptide+Polyketide:Modular type I polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>25.0</td>
+              <td>96.9</td>
+              <td>72.0</td>
+              <td>9.23e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ABC02798.1</td>
+              <td>putative_dTDP-4-keto-6-deoxy-L-hexose_2,3-reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000809/1">BGC0000809</a></td>
+              <td>Alkaloid</td>
+              <td>28.0</td>
+              <td>65.9</td>
+              <td>71.0</td>
+              <td>1.69e-13</td>
+          </tr>
+    
+          <tr>
+              <td>BAQ21942.1</td>
+              <td>putative_TDP-sugar_2,3-reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001204/1">BGC0001204</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>60.1</td>
+              <td>69.0</td>
+              <td>1.05e-12</td>
+          </tr>
+    
+          <tr>
+              <td>BAA84599.1</td>
+              <td>dTDP-4-keto-6-deoxy-L-hexose_2,3-reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000025/1">BGC0000025</a></td>
+              <td>Polyketide</td>
+              <td>24.0</td>
+              <td>77.7</td>
+              <td>65.0</td>
+              <td>1.66e-11</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

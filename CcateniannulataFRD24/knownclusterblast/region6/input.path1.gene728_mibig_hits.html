@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>KGO40477.1</td>
+              <td>Serine_hydrolase_FSH</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001205/1">BGC0001205</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>81.6</td>
+              <td>83.0</td>
+              <td>1.31e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ANF07287.1</td>
+              <td>hydrolase_341</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001340/1">BGC0001340</a></td>
+              <td>Polyketide:Iterative type I polyketide</td>
+              <td>38.0</td>
+              <td>49.3</td>
+              <td>79.0</td>
+              <td>3.23e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BBU42027.1</td>
+              <td>putative_hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002222/1">BGC0002222</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>49.6</td>
+              <td>78.0</td>
+              <td>8.55e-17</td>
+          </tr>
+    
+          <tr>
+              <td>QTE75993.1</td>
+              <td>ZopR1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002224/1">BGC0002224</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>49.6</td>
+              <td>78.0</td>
+              <td>8.55e-17</td>
+          </tr>
+    
+          <tr>
+              <td>EWG54261.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001190/1">BGC0001190</a></td>
+              <td>Polyketide</td>
+              <td>27.0</td>
+              <td>100.0</td>
+              <td>78.0</td>
+              <td>1.27e-16</td>
+          </tr>
+    
+          <tr>
+              <td>EHA28230.1</td>
+              <td>catalytic_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001143/1">BGC0001143</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>59.9</td>
+              <td>64.0</td>
+              <td>1.81e-11</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

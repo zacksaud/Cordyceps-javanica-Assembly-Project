@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>XP_002379984.1</td>
+              <td>nonribosomal_peptide_synthase,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001621/1">BGC0001621</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>92.4</td>
+              <td>69.0</td>
+              <td>2.71e-14</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78808.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001428/1">BGC0001428</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>30.0</td>
+              <td>96.9</td>
+              <td>64.0</td>
+              <td>2.1e-12</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78768.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001425/1">BGC0001425</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>28.0</td>
+              <td>96.9</td>
+              <td>62.0</td>
+              <td>5.32e-12</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78781.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001426/1">BGC0001426</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>28.0</td>
+              <td>96.9</td>
+              <td>62.0</td>
+              <td>5.32e-12</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78794.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001427/1">BGC0001427</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>28.0</td>
+              <td>96.9</td>
+              <td>62.0</td>
+              <td>5.32e-12</td>
+          </tr>
+    
+          <tr>
+              <td>CBF73453.1</td>
+              <td>nonribosomal_peptide_synthase,_putative_(JCVI)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001515/1">BGC0001515</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>95.4</td>
+              <td>61.0</td>
+              <td>1.37e-11</td>
+          </tr>
+    
+          <tr>
+              <td>QIW91877.1</td>
+              <td>NRPS</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002543/1">BGC0002543</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>96.9</td>
+              <td>61.0</td>
+              <td>1.37e-11</td>
+          </tr>
+    
+          <tr>
+              <td>EPE34341.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001035/1">BGC0001035</a></td>
+              <td>Polyketide+NRP</td>
+              <td>31.0</td>
+              <td>96.2</td>
+              <td>60.0</td>
+              <td>3.46e-11</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78755.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001423/1">BGC0001423</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>30.0</td>
+              <td>96.9</td>
+              <td>59.0</td>
+              <td>6.33e-11</td>
+          </tr>
+    
+          <tr>
+              <td>QCE43603.1</td>
+              <td>nonribosomal_peptide_synthetase_(NRPS),_subunit_2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001834/1">BGC0001834</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>94.7</td>
+              <td>59.0</td>
+              <td>6.41e-11</td>
+          </tr>
+    
+          <tr>
+              <td>EXU96269.1</td>
+              <td>nonribosomal_peptide_synthetase,_serinocyclin_synthetase_NPS1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001240/1">BGC0001240</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>94.7</td>
+              <td>59.0</td>
+              <td>8.77e-11</td>
+          </tr>
+    
+          <tr>
+              <td>ARB50207.1</td>
+              <td>lysergyl_peptide_synthetase_21</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001573/1">BGC0001573</a></td>
+              <td>Alkaloid</td>
+              <td>29.0</td>
+              <td>93.9</td>
+              <td>57.0</td>
+              <td>2.99e-10</td>
+          </tr>
+    
+          <tr>
+              <td>EKJ70673.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002188/1">BGC0002188</a></td>
+              <td>NRP+Polyketide</td>
+              <td>31.0</td>
+              <td>96.9</td>
+              <td>57.0</td>
+              <td>5.61e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AEO14743.1</td>
+              <td>NdaA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000396/1">BGC0000396</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>99.2</td>
+              <td>56.0</td>
+              <td>7.5e-10</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78728.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001421/1">BGC0001421</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>30.0</td>
+              <td>93.9</td>
+              <td>56.0</td>
+              <td>7.52e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ADY16697.1</td>
+              <td>TqaA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001142/1">BGC0001142</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>89.3</td>
+              <td>56.0</td>
+              <td>7.57e-10</td>
+          </tr>
+    
+          <tr>
+              <td>XP_020058100.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001220/1">BGC0001220</a></td>
+              <td>NRP</td>
+              <td>23.0</td>
+              <td>96.9</td>
+              <td>56.0</td>
+              <td>7.63e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AIS24862.1</td>
+              <td>dst18</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001147/1">BGC0001147</a></td>
+              <td>NRP</td>
+              <td>35.0</td>
+              <td>98.5</td>
+              <td>56.0</td>
+              <td>9.79e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AQM37583.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001424/1">BGC0001424</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>27.0</td>
+              <td>96.9</td>
+              <td>56.0</td>
+              <td>1.4e-09</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78703.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001419/1">BGC0001419</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>30.0</td>
+              <td>94.7</td>
+              <td>56.0</td>
+              <td>1.4e-09</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78715.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001420/1">BGC0001420</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>29.0</td>
+              <td>94.7</td>
+              <td>55.0</td>
+              <td>1.9e-09</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78743.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001422/1">BGC0001422</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>27.0</td>
+              <td>96.9</td>
+              <td>55.0</td>
+              <td>1.9e-09</td>
+          </tr>
+    
+          <tr>
+              <td>QED55423.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001984/1">BGC0001984</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>98.5</td>
+              <td>55.0</td>
+              <td>1.93e-09</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78691.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001418/1">BGC0001418</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>29.0</td>
+              <td>94.7</td>
+              <td>54.0</td>
+              <td>3.53e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AGI89791.1</td>
+              <td>Nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001792/1">BGC0001792</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>102.3</td>
+              <td>54.0</td>
+              <td>4.86e-09</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78855.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001432/1">BGC0001432</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>31.0</td>
+              <td>94.7</td>
+              <td>53.0</td>
+              <td>8.92e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AET79184.1</td>
+              <td>lysergyl_peptide_synthetase_subunit_1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001241/1">BGC0001241</a></td>
+              <td>Terpene</td>
+              <td>25.0</td>
+              <td>93.9</td>
+              <td>53.0</td>
+              <td>8.96e-09</td>
+          </tr>
+    
+          <tr>
+              <td>CCE30225.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002232/1">BGC0002232</a></td>
+              <td>Alkaloid</td>
+              <td>25.0</td>
+              <td>93.9</td>
+              <td>53.0</td>
+              <td>8.96e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AKJ70942.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002611/1">BGC0002611</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>103.8</td>
+              <td>53.0</td>
+              <td>1.23e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AEP18655.1</td>
+              <td>WAPS2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000461/1">BGC0000461</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>95.4</td>
+              <td>52.0</td>
+              <td>2.29e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ88610.1</td>
+              <td>putative_non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000327/1">BGC0000327</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>93.9</td>
+              <td>52.0</td>
+              <td>2.93e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CCA53799.1</td>
+              <td>iron_aquisition_yersiniabactin_synthesis_enzyme</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001801/1">BGC0001801</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>96.2</td>
+              <td>52.0</td>
+              <td>3e-08</td>
+          </tr>
+    
+          <tr>
+              <td>MAA_10043</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000337/1">BGC0000337</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>93.1</td>
+              <td>51.0</td>
+              <td>5.78e-08</td>
+          </tr>
+    
+          <tr>
+              <td>PHM26613.1</td>
+              <td>pyoverdine_synthetase_D</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001130/1">BGC0001130</a></td>
+              <td>NRP+Polyketide</td>
+              <td>31.0</td>
+              <td>96.9</td>
+              <td>50.0</td>
+              <td>7.69e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ34374.1</td>
+              <td>NRPS_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000445/1">BGC0000445</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>30.0</td>
+              <td>93.1</td>
+              <td>50.0</td>
+              <td>7.72e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ADG27358.1</td>
+              <td>peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000296/1">BGC0000296</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>93.9</td>
+              <td>50.0</td>
+              <td>7.72e-08</td>
+          </tr>
+    
+          <tr>
+              <td>WP_044618979.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001791/1">BGC0001791</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>94.7</td>
+              <td>50.0</td>
+              <td>1.06e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AED90002.1</td>
+              <td>non-ribosomal_peptide_synthetase_ThaA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000443/1">BGC0000443</a></td>
+              <td>NRP:Beta-lactam</td>
+              <td>31.0</td>
+              <td>94.7</td>
+              <td>50.0</td>
+              <td>1.07e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AMK48227.1</td>
+              <td>nonribosomal_peptide_synthetas</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001351/1">BGC0001351</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>93.1</td>
+              <td>50.0</td>
+              <td>1.4e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ATP76243.1</td>
+              <td>NdaA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001705/1">BGC0001705</a></td>
+              <td>NRP+Polyketide</td>
+              <td>27.0</td>
+              <td>88.5</td>
+              <td>50.0</td>
+              <td>1.43e-07</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78845.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001431/1">BGC0001431</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>27.0</td>
+              <td>94.7</td>
+              <td>50.0</td>
+              <td>1.44e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AAP92505.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000458/1">BGC0000458</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>98.5</td>
+              <td>49.0</td>
+              <td>2.41e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AAU34202.1</td>
+              <td>mannopeptimycin_peptide_synthetase_MppA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000388/1">BGC0000388</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>97.7</td>
+              <td>49.0</td>
+              <td>2.66e-07</td>
+          </tr>
+    
+          <tr>
+              <td>KFL51886.1</td>
+              <td>amino_acid_adenylation_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001711/1">BGC0001711</a></td>
+              <td>NRP+Polyketide</td>
+              <td>26.0</td>
+              <td>103.1</td>
+              <td>49.0</td>
+              <td>2.66e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AMK48225.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001351/1">BGC0001351</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>102.3</td>
+              <td>49.0</td>
+              <td>3.49e-07</td>
+          </tr>
+    
+          <tr>
+              <td>CBD77749.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000974/1">BGC0000974</a></td>
+              <td>NRP+Polyketide</td>
+              <td>31.0</td>
+              <td>91.6</td>
+              <td>49.0</td>
+              <td>3.54e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ANS62967.1</td>
+              <td>non-ribosomal_peptide_synthase/amino_acid_adenylation_enzyme</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001567/1">BGC0001567</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>93.9</td>
+              <td>48.0</td>
+              <td>4.92e-07</td>
+          </tr>
+    
+          <tr>
+              <td>BAW32324.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001630/1">BGC0001630</a></td>
+              <td>NRP+Polyketide</td>
+              <td>27.0</td>
+              <td>96.9</td>
+              <td>48.0</td>
+              <td>4.95e-07</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74906.1</td>
+              <td>condensation_domain-containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002588/1">BGC0002588</a></td>
+              <td>Other</td>
+              <td>38.0</td>
+              <td>44.3</td>
+              <td>48.0</td>
+              <td>5.9e-07</td>
+          </tr>
+    
+          <tr>
+              <td>CAP96445.1</td>
+              <td>NRPS</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000420/1">BGC0000420</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>90.8</td>
+              <td>48.0</td>
+              <td>6.68e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AEW95634.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002697/1">BGC0002697</a></td>
+              <td>NRP+Polyketide</td>
+              <td>31.0</td>
+              <td>92.4</td>
+              <td>48.0</td>
+              <td>6.68e-07</td>
+          </tr>
+    
+          <tr>
+              <td>SDF67417.1</td>
+              <td>amino_acid_adenylation_domain-containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002422/1">BGC0002422</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>94.7</td>
+              <td>48.0</td>
+              <td>6.72e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AJW76711.1</td>
+              <td>DsaI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001196/1">BGC0001196</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>89.3</td>
+              <td>47.0</td>
+              <td>1.24e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AGI89788.1</td>
+              <td>Nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001792/1">BGC0001792</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>95.4</td>
+              <td>47.0</td>
+              <td>1.25e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ23077.1</td>
+              <td>peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000291/1">BGC0000291</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>91.6</td>
+              <td>47.0</td>
+              <td>1.26e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AMM63162.1</td>
+              <td>AniA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001371/1">BGC0001371</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>99.2</td>
+              <td>47.0</td>
+              <td>1.26e-06</td>
+          </tr>
+    
+          <tr>
+              <td>QXJ21808.1</td>
+              <td>amino_acid_adenylation_domain-containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002370/1">BGC0002370</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>85.5</td>
+              <td>47.0</td>
+              <td>1.7e-06</td>
+          </tr>
+    
+          <tr>
+              <td>BAX89999.1</td>
+              <td>Non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001628/1">BGC0001628</a></td>
+              <td>NRP</td>
+              <td>32.0</td>
+              <td>94.7</td>
+              <td>46.0</td>
+              <td>2.3e-06</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78833.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001430/1">BGC0001430</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>24.0</td>
+              <td>96.9</td>
+              <td>46.0</td>
+              <td>2.31e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AAG06715.1</td>
+              <td>probable_non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002037/1">BGC0002037</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>91.6</td>
+              <td>45.0</td>
+              <td>4.24e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CBL93723.1</td>
+              <td>NRPS_didomain_A-PCP</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000360/1">BGC0000360</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>95.4</td>
+              <td>45.0</td>
+              <td>5.28e-06</td>
+          </tr>
+    
+          <tr>
+              <td>EFL06866.1</td>
+              <td>predicted_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000300/1">BGC0000300</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>93.1</td>
+              <td>45.0</td>
+              <td>5.65e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ55900.1</td>
+              <td>non-ribosomal_peptide_synthase:Amino_acid_adenylation</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000359/1">BGC0000359</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>96.2</td>
+              <td>45.0</td>
+              <td>5.83e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CAD17793.1</td>
+              <td>probable_non_ribosomal_peptide_synthetase_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001363/1">BGC0001363</a></td>
+              <td>NRP+Polyketide</td>
+              <td>29.0</td>
+              <td>94.7</td>
+              <td>45.0</td>
+              <td>5.87e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AGI89789.1</td>
+              <td>Nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001792/1">BGC0001792</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>97.7</td>
+              <td>45.0</td>
+              <td>5.89e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AAC82549.1</td>
+              <td>FxbB</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000351/1">BGC0000351</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>94.7</td>
+              <td>45.0</td>
+              <td>7.87e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ59905.1</td>
+              <td>synthetase_CbsF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002680/1">BGC0002680</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>97.7</td>
+              <td>45.0</td>
+              <td>7.89e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CAG29031.1</td>
+              <td>nonribosomal_peptide_synthetase_(modules_1_and_2)</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001023/1">BGC0001023</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide</td>
+              <td>27.0</td>
+              <td>95.4</td>
+              <td>45.0</td>
+              <td>7.9e-06</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78821.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001429/1">BGC0001429</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>27.0</td>
+              <td>95.4</td>
+              <td>45.0</td>
+              <td>7.9e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

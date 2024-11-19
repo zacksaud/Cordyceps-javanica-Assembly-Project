@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QCS37516.1</td>
+              <td>pyiF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001881/1">BGC0001881</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>73.0</td>
+              <td>56.1</td>
+              <td>248.0</td>
+              <td>5.96e-80</td>
+          </tr>
+    
+          <tr>
+              <td>EAW09120.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000983/1">BGC0000983</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>68.0</td>
+              <td>56.1</td>
+              <td>228.0</td>
+              <td>7.01e-73</td>
+          </tr>
+    
+          <tr>
+              <td>EHA55870.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002235/1">BGC0002235</a></td>
+              <td>Polyketide+NRP</td>
+              <td>61.0</td>
+              <td>56.1</td>
+              <td>218.0</td>
+              <td>7.71e-69</td>
+          </tr>
+    
+          <tr>
+              <td>QJY30854.1</td>
+              <td>Diels-Alderase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002539/1">BGC0002539</a></td>
+              <td>Alkaloid</td>
+              <td>50.0</td>
+              <td>55.4</td>
+              <td>171.0</td>
+              <td>2.73e-50</td>
+          </tr>
+    
+          <tr>
+              <td>QHD43132.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002546/1">BGC0002546</a></td>
+              <td>NRP+Polyketide</td>
+              <td>48.0</td>
+              <td>55.4</td>
+              <td>158.0</td>
+              <td>3.4e-45</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001220462.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001182/1">BGC0001182</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>48.0</td>
+              <td>55.4</td>
+              <td>156.0</td>
+              <td>1.28e-44</td>
+          </tr>
+    
+          <tr>
+              <td>EAT91805.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002205/1">BGC0002205</a></td>
+              <td>Polyketide+NRP</td>
+              <td>41.0</td>
+              <td>55.4</td>
+              <td>140.0</td>
+              <td>6.66e-39</td>
+          </tr>
+    
+          <tr>
+              <td>QOG08948.1</td>
+              <td>FfsF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002204/1">BGC0002204</a></td>
+              <td>Polyketide+NRP</td>
+              <td>44.0</td>
+              <td>55.7</td>
+              <td>140.0</td>
+              <td>1.3e-38</td>
+          </tr>
+    
+          <tr>
+              <td>EPS29080.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001724/1">BGC0001724</a></td>
+              <td>NRP+Polyketide</td>
+              <td>40.0</td>
+              <td>54.3</td>
+              <td>123.0</td>
+              <td>4.14e-32</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAJ14040.1</td>
+              <td>phosphinomethylmalate_isomerase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000406/1">BGC0000406</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>34.2</td>
+              <td>190.0</td>
+              <td>7.08e-49</td>
+          </tr>
+    
+          <tr>
+              <td>XP_020058096.1</td>
+              <td>uncharacterized_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001220/1">BGC0001220</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>32.9</td>
+              <td>139.0</td>
+              <td>4.91e-33</td>
+          </tr>
+    
+          <tr>
+              <td>AMM63164.1</td>
+              <td>AniB</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001371/1">BGC0001371</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>33.9</td>
+              <td>129.0</td>
+              <td>1.18e-29</td>
+          </tr>
+    
+          <tr>
+              <td>AKJ70936.1</td>
+              <td>aconitase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002611/1">BGC0002611</a></td>
+              <td>NRP</td>
+              <td>24.0</td>
+              <td>39.0</td>
+              <td>128.0</td>
+              <td>1.87e-29</td>
+          </tr>
+    
+          <tr>
+              <td>QIW91870.1</td>
+              <td>HtyD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002543/1">BGC0002543</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>33.4</td>
+              <td>124.0</td>
+              <td>3.16e-28</td>
+          </tr>
+    
+          <tr>
+              <td>EPE34343.1</td>
+              <td>Aconitase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001035/1">BGC0001035</a></td>
+              <td>Polyketide+NRP</td>
+              <td>25.0</td>
+              <td>36.2</td>
+              <td>120.0</td>
+              <td>6.54e-27</td>
+          </tr>
+    
+          <tr>
+              <td>QVQ62870.1</td>
+              <td>3-isopropylmalate_dehydratase_large_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002373/1">BGC0002373</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>21.1</td>
+              <td>115.0</td>
+              <td>2.13e-26</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

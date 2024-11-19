@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAL69595.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001049/1">BGC0001049</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>68.0</td>
+              <td>95.3</td>
+              <td>538.0</td>
+              <td>6.14e-190</td>
+          </tr>
+    
+          <tr>
+              <td>ADN43683.1</td>
+              <td>P450</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001136/1">BGC0001136</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>68.0</td>
+              <td>95.3</td>
+              <td>538.0</td>
+              <td>6.14e-190</td>
+          </tr>
+    
+          <tr>
+              <td>AKC54421.1</td>
+              <td>cytochrome_P450_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001218/1">BGC0001218</a></td>
+              <td>NRP+Polyketide</td>
+              <td>65.0</td>
+              <td>100.5</td>
+              <td>532.0</td>
+              <td>2.95e-187</td>
+          </tr>
+    
+          <tr>
+              <td>QBQ83709.1</td>
+              <td>cytochrome_P450</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002093/1">BGC0002093</a></td>
+              <td>Polyketide+NRP</td>
+              <td>46.0</td>
+              <td>84.5</td>
+              <td>323.0</td>
+              <td>1.88e-105</td>
+          </tr>
+    
+          <tr>
+              <td>XP_001213596.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001475/1">BGC0001475</a></td>
+              <td>Terpene</td>
+              <td>39.0</td>
+              <td>92.3</td>
+              <td>278.0</td>
+              <td>4.05e-88</td>
+          </tr>
+    
+          <tr>
+              <td>EAW09122.1</td>
+              <td>cytochrome_P450</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000983/1">BGC0000983</a></td>
+              <td>NRP+Polyketide:Iterative type I polyketide</td>
+              <td>23.0</td>
+              <td>96.7</td>
+              <td>62.0</td>
+              <td>5.2e-10</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>
