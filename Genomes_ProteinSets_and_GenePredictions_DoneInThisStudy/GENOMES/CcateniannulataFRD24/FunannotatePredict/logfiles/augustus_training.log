@@ -1,0 +1,56 @@
+Will create parameters for a EUKARYOTIC species!
+creating directory /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/cordyceps_cateniannulata_frd24/ ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/cordyceps_cateniannulata_frd24/cordyceps_cateniannulata_frd24_parameters.cfg ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/cordyceps_cateniannulata_frd24/cordyceps_cateniannulata_frd24_weightmatrix.txt ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/cordyceps_cateniannulata_frd24/cordyceps_cateniannulata_frd24_metapars.cfg ...
+The necessary files for training cordyceps_cateniannulata_frd24 have been created.
+Now, either run etraining or optimize_parameters.pl with --species=cordyceps_cateniannulata_frd24.
+etraining quickly estimates the parameters from a file with training genes.
+optimize_augustus.pl alternates running etraining and augustus to find optimal metaparameters.
+
+# Read in 4238 genbank sequences.
+Quantiles of the GC contents in the training set:
+0%	0.461
+5%	0.504	10%	0.514
+15%	0.52	20%	0.525
+25%	0.529	30%	0.533
+35%	0.537	40%	0.541
+45%	0.544	50%	0.548
+55%	0.552	60%	0.555
+65%	0.559	70%	0.564
+75%	0.569	80%	0.574
+85%	0.58	90%	0.588
+95%	0.598	100%	0.644
+HMM-training the parameters...
+i= 0 bc= (0.237, 0.263, 0.263, 0.237)
+ ** building model for exons *EXON*
+gene gene3979.t1 transcr. 1 in sequence scaffold_8_739340-745909: coding length not a multiple of 3. Skipping...
+start codon frequencies: ATG(4237)
+# admissible start codons and their probabilities: ATG(1), CTG(0), TTG(0)
+ number of bases in the reading frames: 2401299 2405437 2405432
+--- frame = 0 ---    minPatSum = 233
+--- frame = 1 ---    minPatSum = 233
+--- frame = 2 ---    minPatSum = 233
+--- initial frame = 0 ---    minPatSum = 233
+--- initial frame = 1 ---    minPatSum = 233
+--- initial frame = 2 ---    minPatSum = 233
+--- internal exon terminal frame = 0 ---    minPatSum = 233
+--- internal exon terminal frame = 1 ---    minPatSum = 233
+--- internal exon terminal frame = 2 ---    minPatSum = 233
+single, initial, internal, terminal mean exon lengths :
+1234	270	279	594
+single exon : 825
+initial exon 0 : 1361
+initial exon 1 : 1204
+initial exon 2 : 847
+internal exon 0 : 1954
+internal exon 1 : 1666
+internal exon 2 : 1570
+terminal exon : 3412
+Frequency of stop codons:
+tag: 1303 (0.308)
+taa: 1671 (0.394)
+tga: 1263 (0.298)
+end *EXON*
+Storing parameters to file...
+Writing exon model parameters [1] to file /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/cordyceps_cateniannulata_frd24/cordyceps_cateniannulata_frd24_exon_probs.pbl.

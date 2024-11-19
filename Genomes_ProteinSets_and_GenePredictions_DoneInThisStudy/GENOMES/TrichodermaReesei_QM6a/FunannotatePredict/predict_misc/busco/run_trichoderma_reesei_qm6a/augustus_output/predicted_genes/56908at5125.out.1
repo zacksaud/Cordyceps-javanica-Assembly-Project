@@ -1,0 +1,101 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Sources of extrinsic information: M RM 
+# Initializing the parameters using config directory /home/zack/miniconda3/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..337]--> unknown_A (14) <--[0..4]--> unknown_B (77) <--[0..1]--> unknown_C (13) <--[0..1]--> unknown_D (9) <--[0..21]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_7trichoderma_reesei_qm6a_3752470121_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10379, name = scaffold_7) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_7	AUGUSTUS	gene	1075570	1076074	0.86	-	.	g1
+scaffold_7	AUGUSTUS	transcript	1075570	1076074	0.86	-	.	g1.t1
+scaffold_7	AUGUSTUS	stop_codon	1075570	1075572	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	CDS	1075570	1075650	0.87	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	CDS	1075808	1076074	0.98	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	start_codon	1076072	1076074	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	1075573	1075599	8.3	-	0	target "unknown_D[1..9]"; target_start 106; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	1075600	1075638	11.9	-	0	target "unknown_C[1..13]"; target_start 93; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	1075639	1075650	10.8	-	0	target "unknown_B[74..77]"; target_start 16; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	1075808	1076026	11	-	0	target "unknown_B[1..73]"; target_start 16; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	1076030	1076071	7.3	-	0	target "unknown_A[1..14]"; target_start 1; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgccgacgttccagaacaagacattccgctcgtcggccgacgccaacaagctcggcatgcgataccgagccctcatga
+# gcaagcacccgttcctcgcctttgggctgcccttcatggccgtcatcgtcgccggctccttcgtcctcactcctgccacggcgatccgatacgagaag
+# cacgaccgcaaggtgcgccaaatgaccaaggaggaggagctgaacgtgaggagggcggcacgcaaggtggacatgaaggaggagtactatagacttgc
+# tggaagagacctggacaattgggagcagaagcgggttgagaggctgcccggcgagagcgacgggattttgtaa]
+# protein sequence = [MPTFQNKTFRSSADANKLGMRYRALMSKHPFLAFGLPFMAVIVAGSFVLTPATAIRYEKHDRKVRQMTKEEELNVRRA
+# ARKVDMKEEYYRLAGRDLDNWEQKRVERLPGESDGIL]
+# sequence of block unknown_D   106 [LPGESDGIL] 115
+# sequence of block unknown_C    93 [RDLDNWEQKRVER] 106
+# sequence of block unknown_B    16 [KLGMRYRALMSKHPFLAFGLPFMAVIVAGSFVLTPATAIRYEKHDRKVRQMTKEEELNVRRAARKVDMKEEYYRLAG] 93
+# sequence of block unknown_A     1 [PTFQNKTFRSSADA] 15
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/2
+# CDS introns: 0/1
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 2
+#     RM:   2 
+# incompatible hint groups: 3
+#     RM:   3 
+# end gene g1
+###
+# start gene g2
+scaffold_7	AUGUSTUS	gene	1077367	1079678	0.57	-	.	g2
+scaffold_7	AUGUSTUS	transcript	1077367	1079678	0.57	-	.	g2.t1
+scaffold_7	AUGUSTUS	stop_codon	1077367	1077369	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_7	AUGUSTUS	CDS	1077367	1078512	0.98	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_7	AUGUSTUS	CDS	1078584	1079678	0.58	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_7	AUGUSTUS	start_codon	1079676	1079678	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+# coding sequence = [atgactgccgtcgcaaatcctccaactttcccgcaaatttcccggccgccatgggctactattaacggcaacaaccaga
+# tgaactcagaggatgtcagaggcatgttcatgaaccgcaagagtatttcgcgaagcaactcgtcctcgtccatcgcctccaacgcctccaatacgact
+# gttgcgacgaatggctcccactccaatgccacatcgctgtcatcagcttcggatctgagtcagtggtcgaatggcagcgcaaacagaaagaggcctca
+# accgaagaacccttggccagctggtaaaggagacgcgcagtcggacttttcgaggcctccccaaggacgacccaacggcatggtgcctcacgccacca
+# tgcagcaaggcggaccgggacagcctcagatgggaccccagggcatggtgcgacccatggggcccaacgagcagcagttccctcccggccagcccatg
+# ctctacctgctgtccttgaacggcacctttgagcgcaagacgattgccgtgccctttgcgcccgactccatacgcatcggccgacagacgaaccagaa
+# gacggtgccgactgctacgaatggcttcttcgatagtaaagtgctgtcacgacagcatgcggaaatcttcgccgagcgaaatggaaaaatctacatcc
+# gagacgtcaagtcgtccaacggcacctttgtcaacggcacccgactgtcccaggagaatcgcgagtctgagcctcacgaactccagactgccgaccat
+# ctcgagctaggcattgatatcgtcagcgaagatcagaagacggtggtccaccacaaggtagccgcgaaaatcgagcacgcgggcttcttgaatacgac
+# aaacaacgttttggatatgaactttggagacctcgatcctgccaacaacgccatgatgatcccggctggagtgcagatgcgaggccgcgctggaagca
+# acatgtccatgggcaacaatggccgcatgatggttaacggcggaaccatgaatggccatatgaacggcatggcgcaacagcgtccctttttcttgaca
+# cccattgctacggatcagatcctaaagcgtcttgctaatgaaatgaggagcgccaagctccaggctcaagatctgaatcgcacgagccagttcatcaa
+# cactctcctatccaaagacgacctaaaggacgttgagaaacttgaagcttcggaaccgccgaaacctcagaccatggtcaacggcaatctttccttcc
+# ggtcagacccaaaggcgcgcttctccgatcctcctgcaccaccgcctcaacagcctcttcccgaaaagccagatgtgccctctctcaagcgaggttcc
+# tcggacagacccaagttagactcggcgaccgcgtctccgattcgtcaagaaaatcttagccaaatcatccagctgactgaagcacttaataatgcgaa
+# gcgagatattgatacccagacggcgcgtatgcgagagttggagttgatgcttcagaaggagcgggaagcacgcgagttggcagaagagctggcacggc
+# gccttgaagaatcggccaacaatgcccaggttaatggcgtgcagtcgcacgaaaggcacgatgaagctgagggagcagtacacgaggaggccaatgac
+# gccgacgagacggagacggtgctgccagaggcggaagagatgccagaggcggacaaggtggcgcaggagaccgcagcagcattgcaatctcgcatcga
+# caccatggacgagcagatgcgggagctgaggatgcagatggagcagtggagggcccggtgcgaggcggccgaagcggagcgcgactcgtgcaggaaga
+# cccttgaggagatggtcattcagctgcgagaggaggaggcaaagcgggtcgcggccgaggaacgacgacgatctcgctcaagggcactccgcgccgaa
+# cgagacgaggcagcagaaaaggcgaccacggctgcctcccccactcctgaagccgctcaactggcatcaaagcaggaaaagtctgcgacgattcccga
+# cgaggactcggcagacgtcccaactctctcgagggccaatacggtcacgcctcaagcctcaccgagaggaggccctctagccagccagcaccttcgcg
+# ccggcattccatacgcctcgatgatcggcgtggttctgcttggcatggggctaatggcgtacatgaacggatggcaatcatcgccgcctcacgccgcc
+# gaatga]
+# protein sequence = [MTAVANPPTFPQISRPPWATINGNNQMNSEDVRGMFMNRKSISRSNSSSSIASNASNTTVATNGSHSNATSLSSASDL
+# SQWSNGSANRKRPQPKNPWPAGKGDAQSDFSRPPQGRPNGMVPHATMQQGGPGQPQMGPQGMVRPMGPNEQQFPPGQPMLYLLSLNGTFERKTIAVPF
+# APDSIRIGRQTNQKTVPTATNGFFDSKVLSRQHAEIFAERNGKIYIRDVKSSNGTFVNGTRLSQENRESEPHELQTADHLELGIDIVSEDQKTVVHHK
+# VAAKIEHAGFLNTTNNVLDMNFGDLDPANNAMMIPAGVQMRGRAGSNMSMGNNGRMMVNGGTMNGHMNGMAQQRPFFLTPIATDQILKRLANEMRSAK
+# LQAQDLNRTSQFINTLLSKDDLKDVEKLEASEPPKPQTMVNGNLSFRSDPKARFSDPPAPPPQQPLPEKPDVPSLKRGSSDRPKLDSATASPIRQENL
+# SQIIQLTEALNNAKRDIDTQTARMRELELMLQKEREARELAEELARRLEESANNAQVNGVQSHERHDEAEGAVHEEANDADETETVLPEAEEMPEADK
+# VAQETAAALQSRIDTMDEQMRELRMQMEQWRARCEAAEAERDSCRKTLEEMVIQLREEEAKRVAAEERRRSRSRALRAERDEAAEKATTAASPTPEAA
+# QLASKQEKSATIPDEDSADVPTLSRANTVTPQASPRGGPLASQHLRAGIPYASMIGVVLLGMGLMAYMNGWQSSPPHAAE]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/2
+# CDS introns: 0/1
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 4
+#     RM:   4 
+# end gene g2
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/home/zack/funannotate_db/hypocreales_odb10/prfl/56908at5125.prfl --predictionStart=1070573 --predictionEnd=1080951 --species=anidulans ./tmp/scaffold_7trichoderma_reesei_qm6a_3752470121_.temp

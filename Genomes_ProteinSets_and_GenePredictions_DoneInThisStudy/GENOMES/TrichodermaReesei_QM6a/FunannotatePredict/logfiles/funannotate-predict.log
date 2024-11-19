@@ -1,0 +1,185 @@
+[03/03/24 14:32:13]: /home/zack/miniconda3/envs/funannotate/bin/funannotate predict -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunnanotateSortedCleaned.fasta --species Trichoderma reesei --cpus 4 -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict --weights genemark:100 augustus:0 GlimmerHMM:100 Augustus HiQ:100 snap:100 --force --busco_db hypocreales_odb10 --min_protlen 10 --repeat_filter none --strain QM6a
+
+[03/03/24 14:32:13]: OS: Ubuntu 24.04, 12 cores, ~ 132 GB RAM. Python: 3.7.12
+[03/03/24 14:32:13]: Running funannotate v1.8.15
+[03/03/24 14:32:13]: GeneMark path: /home/zack/gmes_linux_64_4/
+[03/03/24 14:32:13]: Full path to gmes_petap.pl: /home/zack/gmes_linux_64_4/gmes_petap.pl
+[03/03/24 14:32:13]: GeneMark appears to be functional? True
+[03/03/24 14:32:13]: exonerate version=exonerate 2.4.0 path=/home/zack/miniconda3/envs/funannotate/bin/exonerate
+[03/03/24 14:32:13]: diamond version=2.1.8 path=/home/zack/miniconda3/envs/funannotate/bin/diamond
+[03/03/24 14:32:13]: tbl2asn version=25.8 path=/home/zack/miniconda3/envs/funannotate/bin/tbl2asn
+[03/03/24 14:32:13]: bedtools version=bedtools v2.31.1 path=/home/zack/miniconda3/envs/funannotate/bin/bedtools
+[03/03/24 14:32:13]: augustus version=3.5.0 path=/home/zack/miniconda3/envs/funannotate/bin/augustus
+[03/03/24 14:32:13]: etraining version=NA path=/home/zack/miniconda3/envs/funannotate/bin/etraining
+[03/03/24 14:32:13]: tRNAscan-SE version=2.0.12 (Nov 2022) path=/home/zack/miniconda3/envs/funannotate/bin/tRNAscan-SE
+[03/03/24 14:32:13]: bam2hints version=NA path=/home/zack/miniconda3/envs/funannotate/bin/bam2hints
+[03/03/24 14:32:13]: minimap2 version=2.26-r1175 path=/home/zack/miniconda3/envs/funannotate/bin/minimap2
+[03/03/24 14:32:13]: $AUGUSTUS_CONFIG_PATH=/home/zack/miniconda3/envs/funannotate/config/
+[03/03/24 14:32:13]: {'augustus': 1, 'hiq': 100, 'genemark': 100, 'pasa': 6, 'codingquarry': 0, 'snap': 100, 'glimmerhmm': 100, 'proteins': 1, 'transcripts': 1}
+[03/03/24 14:32:13]: Skipping CodingQuarry as no --rna_bam passed
+[03/03/24 14:32:13]: {'augustus': 'busco', 'genemark': 'selftraining', 'snap': 'busco', 'glimmerhmm': 'busco'}
+[03/03/24 14:32:13]: Parsed training data, run ab-initio gene predictors as follows:
+[03/03/24 14:32:13]: augustus --species=anidulans --proteinprofile=/home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/config/EOG092C0B3U.prfl /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/config/busco_test.fa
+[03/03/24 14:32:15]: {'augustus': 1, 'hiq': 100, 'genemark': 100, 'pasa': 6, 'codingquarry': 0, 'snap': 100, 'glimmerhmm': 100, 'proteins': 1, 'transcripts': 1}
+[03/03/24 14:32:31]: Loading genome assembly and parsing soft-masked repetitive sequences
+[03/03/24 14:32:36]: Genome loaded: 7 scaffolds; 34,922,528 bp; 15.25% repeats masked
+[03/03/24 17:00:48]: join_mult_hints.pl
+[03/03/24 17:00:48]: Running GeneMark-ES on assembly
+[03/03/24 17:00:48]: /home/zack/gmes_linux_64_4/gmes_petap.pl --ES --max_intron 3000 --soft_mask 2000 --cores 4 --sequence /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa --fungus
+[03/03/24 17:48:44]: perl /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/misc/augustus_GFF3_to_EVM_GFF3.pl /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genemark.gff
+[03/03/24 17:48:46]: 9,231 predictions from GeneMark
+[03/03/24 17:48:46]: Running BUSCO to find conserved gene models for training ab-initio predictors
+[03/03/24 17:48:46]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa -m genome --lineage /home/zack/funannotate_db/hypocreales_odb10 -o trichoderma_reesei_qm6a -c 4 --species anidulans -f --local_augustus /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/ab_initio_parameters/augustus
+[03/03/24 20:38:00]: 4,437 valid BUSCO predictions found, validating protein sequences
+[03/03/24 20:46:31]: 4,422 BUSCO predictions validated
+[03/03/24 20:46:31]: Training Augustus using BUSCO gene models
+[03/03/24 20:46:31]: gff2gbSmallDNA.pl /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco.final.gff3 /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa 600 /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/augustus.training.busco.gb
+[03/03/24 20:47:26]: Augustus initial training results:
+[03/03/24 20:47:26]: Running Augustus gene prediction using trichoderma_reesei_qm6a parameters
+[03/03/24 20:59:03]: perl /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/misc/augustus_GFF3_to_EVM_GFF3.pl /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/augustus.gff3
+[03/03/24 20:59:05]: Pulling out high quality Augustus predictions
+[03/03/24 20:59:05]: Found 91 high quality predictions from Augustus (>90% exon evidence)
+[03/03/24 20:59:05]: Running SNAP gene prediction, using training data: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco.final.gff3
+[03/03/24 20:59:08]: 4422 gene models to train snap on 7 scaffolds
+[03/03/24 20:59:09]: fathom /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/snap.training.zff /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/snap-training.scaffolds.fasta -categorize 1000 -min-intron 10 -max-intron 3000
+[03/03/24 20:59:11]: fathom uni.ann uni.dna -export 1000 -plus
+[03/03/24 20:59:14]: forge export.ann export.dna
+[03/03/24 20:59:17]: perl /home/zack/miniconda3/envs/funannotate/bin/hmm-assembler.pl snap-trained /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/snaptrain
+[03/03/24 20:59:17]: snap /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/snap-trained.hmm /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa
+[03/03/24 21:02:28]: scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+
+[03/03/24 21:02:41]: 9,998 predictions from SNAP
+[03/03/24 21:02:41]: Running GlimmerHMM gene prediction, using training data: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco.final.gff3
+[03/03/24 21:02:45]: trainGlimmerHMM /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/glimmer.exons -d /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/glimmerhmm
+[03/03/24 21:13:10]: perl /home/zack/miniconda3/envs/funannotate/bin/glimmhmm.pl /home/zack/miniconda3/envs/funannotate/bin/glimmerhmm /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/glimmerhmm -g
+[03/03/24 21:16:55]: Process scaffold_1
+Done 950000 bp
+Done 1850000 bp
+Done 2750000 bp
+Done 3650000 bp
+Done 4550592 bp
+Done 5450592 bp
+Done 6350592 bp
+Done 6835803 bp
+Done scaffold_1
+Process scaffold_2
+Done 950000 bp
+Done 1851988 bp
+Done 2751988 bp
+Done 3651988 bp
+Done 4552860 bp
+Done 5452860 bp
+Done 6234656 bp
+Done scaffold_2
+Process scaffold_3
+Done 950000 bp
+Done 1850000 bp
+Done 2750458 bp
+Done 3653317 bp
+Done 4553317 bp
+Done 5311445 bp
+Done scaffold_3
+Process scaffold_4
+Done 950000 bp
+Done 1850000 bp
+Done 2750566 bp
+Done 3652434 bp
+Done 4556834 bp
+Done scaffold_4
+Process scaffold_5
+Done 950000 bp
+Done 1850000 bp
+Done 2751092 bp
+Done 3651092 bp
+Done 4159965 bp
+Done scaffold_5
+Process scaffold_6
+Done 951232 bp
+Done 1851232 bp
+Done 2752400 bp
+Done 3652400 bp
+Done 4000387 bp
+Done scaffold_6
+Process scaffold_7
+Done 950000 bp
+Done 1850000 bp
+Done 2752271 bp
+Done 3652534 bp
+Done 3823438 bp
+Done scaffold_7
+
+[03/03/24 21:16:55]: 9,126 predictions from GlimmerHMM
+[03/03/24 21:16:56]: Prediction sources: ['Augustus', 'HiQ', 'GeneMark', 'GlimmerHMM', 'snap']
+[03/03/24 21:16:56]: Summary of gene models: {'total': 36220, 'Augustus': 7774, 'HiQ': 91, 'GeneMark': 9231, 'GlimmerHMM': 9126, 'snap': 9998}
+[03/03/24 21:16:56]: EVM Weights: {'Augustus': 1, 'HiQ': 100, 'GeneMark': 100, 'GlimmerHMM': 100, 'snap': 100, 'proteins': 1}
+[03/03/24 21:16:56]: Summary of gene models passed to EVM (weights):
+[03/03/24 21:16:56]: Launching EVM via funannotate-runEVM.py
+[03/03/24 21:16:56]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-runEVM.py -w /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/weights.evm.txt -c 4 -g /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/gene_predictions.gff3 -d /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/EVM -f /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa -l /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/logfiles/funannotate-EVM.log -m 10 -i 1500 -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/evm.round1.gff3 --EVM_HOME /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1 -p /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/protein_alignments.gff3
+[03/03/24 22:00:24]: 9,100 total gene models from EVM
+[03/03/24 22:00:24]: Generating protein fasta files from 9,100 EVM models
+[03/03/24 22:00:33]: now filtering out bad gene models (< 10 aa in length, transposable elements, etc).
+[03/03/24 22:00:33]: diamond blastp --sensitive --query /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/evm.round1.proteins.fa --threads 4 --out /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/repeats.xml --db /home/zack/funannotate_db/repeats.dmnd --evalue 1e-10 --max-target-seqs 1 --outfmt 5
+[03/03/24 22:00:50]: 9,100 gene models remaining
+[03/03/24 22:00:50]: Predicting tRNAs
+[03/03/24 22:00:50]: tRNAscan-SE -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/tRNAscan.out --thread 4 /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa
+[03/03/24 22:02:15]: Status: Phase I: Searching for tRNAs with HMM-enabled Infernal
+Status: Phase II: Infernal verification of candidate tRNAs detected with first-pass scan
+
+[03/03/24 22:02:15]: 
+tRNAscan-SE v.2.0.12 (Nov 2022) - scan sequences for transfer RNAs
+Copyright (C) 2022 Patricia Chan and Todd Lowe
+                   University of California Santa Cruz
+Freely distributed under the GNU General Public License (GPLv3)
+
+------------------------------------------------------------
+Sequence file(s) to search:        /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa
+Search Mode:                       Eukaryotic
+Results written to:                /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/tRNAscan.out
+Output format:                     Tabular
+Searching with:                    Infernal First Pass->Infernal
+Isotype-specific model scan:       Yes
+Covariance model:                  /home/zack/miniconda3/envs/funannotate/lib/tRNAscan-SE/models/TRNAinf-euk.cm
+                                   /home/zack/miniconda3/envs/funannotate/lib/tRNAscan-SE/models/TRNAinf-euk-SeC.cm
+Infernal first pass cutoff score:  10
+
+Temporary directory:               /tmp
+------------------------------------------------------------
+
+
+[03/03/24 22:02:15]: bedtools intersect -sorted -v -a /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/trnascan.gff3.sorted.gff3 -b /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/evm.cleaned.gff3.sorted.gff3 /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/assembly-gaps.bed.sorted.gff3
+[03/03/24 22:02:15]: 198 tRNAscan models are valid (non-overlapping)
+[03/03/24 22:02:15]: Generating GenBank tbl annotation file
+[03/03/24 22:02:43]: Collecting final annotation files for 9,298 total gene models
+[03/03/24 22:02:43]: Converting to final Genbank format
+[03/03/24 22:02:43]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/tbl2asn_parallel.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/tbl2asn/genome.tbl -f /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/tbl2asn --sbt /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/config/test.sbt -d /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_results/Trichoderma_reesei_QM6a.discrepency.report.txt -s Trichoderma reesei -t -l paired-ends -v 1 -c 4 --strain QM6a
+[03/03/24 22:03:29]: Funannotate predict is finished, output files are in the /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_results folder
+[03/03/24 22:03:29]: Your next step might be functional annotation, suggested commands:
+-------------------------------------------------------
+Run InterProScan (manual install): 
+funannotate iprscan -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict -c 4
+
+Run antiSMASH (optional): 
+funannotate remote -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict -m antismash -e youremail@server.edu
+
+Annotate Genome: 
+funannotate annotate -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict --cpus 4 --sbt yourSBTfile.txt
+-------------------------------------------------------
+                
+[03/03/24 22:03:29]: Training parameters file saved: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_results/trichoderma_reesei_qm6a.parameters.json
+[03/03/24 22:03:29]: Add species parameters to database:
+
+  funannotate species -s trichoderma_reesei_qm6a -a /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_results/trichoderma_reesei_qm6a.parameters.json
+

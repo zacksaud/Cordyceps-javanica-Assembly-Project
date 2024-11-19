@@ -1,0 +1,1 @@
+/home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/genemark/run/ES_A_1/ES_A_1.mod

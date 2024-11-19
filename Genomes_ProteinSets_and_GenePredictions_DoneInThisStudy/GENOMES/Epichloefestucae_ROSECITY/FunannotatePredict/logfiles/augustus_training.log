@@ -1,0 +1,58 @@
+Will create parameters for a EUKARYOTIC species!
+creating directory /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/epichloe_festucae_rosecity/ ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/epichloe_festucae_rosecity/epichloe_festucae_rosecity_parameters.cfg ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/epichloe_festucae_rosecity/epichloe_festucae_rosecity_weightmatrix.txt ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/epichloe_festucae_rosecity/epichloe_festucae_rosecity_metapars.cfg ...
+The necessary files for training epichloe_festucae_rosecity have been created.
+Now, either run etraining or optimize_parameters.pl with --species=epichloe_festucae_rosecity.
+etraining quickly estimates the parameters from a file with training genes.
+optimize_augustus.pl alternates running etraining and augustus to find optimal metaparameters.
+
+# Read in 3612 genbank sequences.
+Quantiles of the GC contents in the training set:
+0%	0.337
+5%	0.479	10%	0.49
+15%	0.497	20%	0.502
+25%	0.506	30%	0.509
+35%	0.512	40%	0.516
+45%	0.519	50%	0.522
+55%	0.525	60%	0.528
+65%	0.531	70%	0.534
+75%	0.538	80%	0.542
+85%	0.548	90%	0.556
+95%	0.568	100%	0.648
+HMM-training the parameters...
+i= 0 bc= (0.237, 0.263, 0.263, 0.237)
+ ** building model for exons *EXON*
+gene gene8.t1 transcr. 1 in sequence scaffold_11_1195472-1209757: coding length not a multiple of 3. Skipping...
+gene gene2178.t1 transcr. 1 in sequence scaffold_14_578490-579929: Single exon doesn't end in stop codon. Variable stopCodonExcludedFromCDS set right?
+gene gene2871.t1 transcr. 1 in sequence scaffold_19_1-1244: coding length not a multiple of 3. Skipping...
+start codon frequencies: ATG(3610)
+# admissible start codons and their probabilities: ATG(1), CTG(0), TTG(0)
+ number of bases in the reading frames: 2066133 2069652 2069645
+--- frame = 0 ---    minPatSum = 233
+--- frame = 1 ---    minPatSum = 233
+--- frame = 2 ---    minPatSum = 233
+--- initial frame = 0 ---    minPatSum = 233
+--- initial frame = 1 ---    minPatSum = 233
+--- initial frame = 2 ---    minPatSum = 233
+--- internal exon terminal frame = 0 ---    minPatSum = 233
+--- internal exon terminal frame = 1 ---    minPatSum = 233
+--- internal exon terminal frame = 2 ---    minPatSum = 233
+single, initial, internal, terminal mean exon lengths :
+1215	283	301	578
+single exon : 604
+initial exon 0 : 1175
+initial exon 1 : 1022
+initial exon 2 : 808
+internal exon 0 : 1903
+internal exon 1 : 1696
+internal exon 2 : 1481
+terminal exon : 3005
+Frequency of stop codons:
+tag: 1048 (0.29)
+taa: 1055 (0.292)
+tga: 1506 (0.417)
+end *EXON*
+Storing parameters to file...
+Writing exon model parameters [1] to file /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/epichloe_festucae_rosecity/epichloe_festucae_rosecity_exon_probs.pbl.

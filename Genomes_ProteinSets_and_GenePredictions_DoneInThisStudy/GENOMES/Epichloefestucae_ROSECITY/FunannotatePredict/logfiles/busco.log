@@ -1,0 +1,132 @@
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 03/03/2024 11:11:48 ******************
+INFO	The lineage dataset is: hypocreales_odb10 (eukaryota)
+INFO	Mode is: genome
+INFO	Maximum number of regions limited to: 3
+INFO	To reproduce this run: python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa -o epichloe_festucae_rosecity -l /home/zack/funannotate_db/hypocreales_odb10/ -m genome -c 12 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+
+INFO	****** Phase 1 of 2, initial predictions ******
+INFO	****** Step 1/3, current time: 03/03/2024 11:11:48 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 03/03/2024 11:11:48
+INFO	[makeblastdb]	New DB name:   /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco/tmp/epichloe_festucae_rosecity_1979595390
+INFO	[makeblastdb]	New DB title:  /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 3000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 19 sequences in 0.171533 seconds.
+INFO	Running tblastn, writing output to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco/run_epichloe_festucae_rosecity/blast_output/tblastn_epichloe_festucae_rosecity.tsv...
+INFO	****** Step 2/3, current time: 03/03/2024 11:14:35 ******
+INFO	Getting coordinates for candidate regions...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Running Augustus prediction using anidulans as species:
+INFO	[augustus] Please find all logs related to Augustus here: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco/run_epichloe_festucae_rosecity/augustus_output/augustus.log
+INFO	03/03/2024 11:14:36 =>	0% of predictions performed (4956 to be done)
+INFO	03/03/2024 11:19:43 =>	10% of predictions performed (496/4956 candidate regions)
+INFO	03/03/2024 11:25:05 =>	20% of predictions performed (992/4956 candidate regions)
+INFO	03/03/2024 11:30:23 =>	30% of predictions performed (1487/4956 candidate regions)
+INFO	03/03/2024 11:35:39 =>	40% of predictions performed (1983/4956 candidate regions)
+INFO	03/03/2024 11:40:56 =>	50% of predictions performed (2480/4956 candidate regions)
+INFO	03/03/2024 11:45:50 =>	60% of predictions performed (2974/4956 candidate regions)
+INFO	03/03/2024 11:50:42 =>	70% of predictions performed (3470/4956 candidate regions)
+INFO	03/03/2024 11:55:19 =>	80% of predictions performed (3966/4956 candidate regions)
+INFO	03/03/2024 12:00:51 =>	90% of predictions performed (4461/4956 candidate regions)
+INFO	03/03/2024 12:05:50 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 03/03/2024 12:06:08 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	03/03/2024 12:06:08 =>	0% of predictions performed (4956 to be done)
+INFO	03/03/2024 12:06:12 =>	10% of predictions performed (498/4956 candidate proteins)
+INFO	03/03/2024 12:06:20 =>	20% of predictions performed (995/4956 candidate proteins)
+INFO	03/03/2024 12:06:31 =>	30% of predictions performed (1488/4956 candidate proteins)
+INFO	03/03/2024 12:06:46 =>	40% of predictions performed (1983/4956 candidate proteins)
+INFO	03/03/2024 12:07:04 =>	50% of predictions performed (2480/4956 candidate proteins)
+INFO	03/03/2024 12:07:25 =>	60% of predictions performed (2975/4956 candidate proteins)
+INFO	03/03/2024 12:07:49 =>	70% of predictions performed (3470/4956 candidate proteins)
+INFO	03/03/2024 12:08:16 =>	80% of predictions performed (3967/4956 candidate proteins)
+INFO	03/03/2024 12:08:46 =>	90% of predictions performed (4462/4956 candidate proteins)
+INFO	03/03/2024 12:09:21 =>	100% of predictions performed
+INFO	Results:
+INFO	C:84.9%[S:84.7%,D:0.2%],F:0.6%,M:14.5%,n:4494
+INFO	3814 Complete BUSCOs (C)
+INFO	3807 Complete and single-copy BUSCOs (S)
+INFO	7 Complete and duplicated BUSCOs (D)
+INFO	27 Fragmented BUSCOs (F)
+INFO	653 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	****** Phase 2 of 2, predictions using species specific training ******
+INFO	****** Step 1/3, current time: 03/03/2024 12:09:21 ******
+INFO	Extracting missing and fragmented buscos from the ancestral_variants file...
+WARNING	The busco id(s) ['30162at5125'] were not found in the ancestral_variants file
+INFO	Running tblastn, writing output to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco/run_epichloe_festucae_rosecity/blast_output/tblastn_epichloe_festucae_rosecity_missing_and_frag_rerun.tsv...
+INFO	Getting coordinates for candidate regions...
+INFO	****** Step 2/3, current time: 03/03/2024 12:13:13 ******
+INFO	Training Augustus using Single-Copy Complete BUSCOs:
+INFO	03/03/2024 12:13:13 =>	Converting predicted genes to short genbank files...
+INFO	03/03/2024 12:14:16 =>	All files converted to short genbank files, now running the training scripts...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Re-running Augustus with the new metaparameters, number of target BUSCOs: 680
+INFO	03/03/2024 12:14:23 =>	0% of predictions performed (574 to be done)
+INFO	03/03/2024 12:14:23 =>	10% of predictions performed (62/574 candidate regions)
+INFO	03/03/2024 12:14:23 =>	20% of predictions performed (120/574 candidate regions)
+INFO	03/03/2024 12:14:23 =>	30% of predictions performed (176/574 candidate regions)
+INFO	03/03/2024 12:14:24 =>	40% of predictions performed (232/574 candidate regions)
+INFO	03/03/2024 12:14:24 =>	50% of predictions performed (288/574 candidate regions)
+INFO	03/03/2024 12:14:24 =>	60% of predictions performed (346/574 candidate regions)
+INFO	03/03/2024 12:14:25 =>	70% of predictions performed (404/574 candidate regions)
+INFO	03/03/2024 12:14:25 =>	80% of predictions performed (463/574 candidate regions)
+INFO	03/03/2024 12:14:26 =>	90% of predictions performed (523/574 candidate regions)
+INFO	03/03/2024 12:14:26 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 03/03/2024 12:14:28 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	03/03/2024 12:14:28 =>	0% of predictions performed (0 to be done)
+INFO	03/03/2024 12:14:28 =>	100% of predictions performed
+INFO	Results:
+INFO	C:84.9%[S:84.7%,D:0.2%],F:0.6%,M:14.5%,n:4494
+INFO	3814 Complete BUSCOs (C)
+INFO	3807 Complete and single-copy BUSCOs (S)
+INFO	7 Complete and duplicated BUSCOs (D)
+INFO	27 Fragmented BUSCOs (F)
+INFO	653 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	BUSCO analysis done with WARNING(s). Total running time: 3761.51984000206 seconds
+INFO	Results written in /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco/run_epichloe_festucae_rosecity/
+
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 03/03/2024 12:16:42 ******************
+INFO	The lineage dataset is: hypocreales_odb10 (eukaryota)
+INFO	Mode is: proteins
+INFO	To reproduce this run: python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco_augustus.proteins.fasta -o epichloe_festucae_rosecity -l /home/zack/funannotate_db/hypocreales_odb10/ -m proteins -c 12 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+INFO	Running HMMER on the proteins:
+INFO	03/03/2024 12:16:42 =>	0% of predictions performed (4494 to be done)
+INFO	03/03/2024 12:16:52 =>	10% of predictions performed (450/4494 candidate proteins)
+INFO	03/03/2024 12:17:02 =>	20% of predictions performed (902/4494 candidate proteins)
+INFO	03/03/2024 12:17:15 =>	30% of predictions performed (1350/4494 candidate proteins)
+INFO	03/03/2024 12:17:31 =>	40% of predictions performed (1798/4494 candidate proteins)
+INFO	03/03/2024 12:17:51 =>	50% of predictions performed (2248/4494 candidate proteins)
+INFO	03/03/2024 12:18:14 =>	60% of predictions performed (2698/4494 candidate proteins)
+INFO	03/03/2024 12:18:40 =>	70% of predictions performed (3146/4494 candidate proteins)
+INFO	03/03/2024 12:19:07 =>	80% of predictions performed (3596/4494 candidate proteins)
+INFO	03/03/2024 12:19:37 =>	90% of predictions performed (4045/4494 candidate proteins)
+INFO	03/03/2024 12:20:13 =>	100% of predictions performed
+INFO	Results:
+INFO	C:84.1%[S:83.9%,D:0.2%],F:0.0%,M:15.9%,n:4494
+INFO	3781 Complete BUSCOs (C)
+INFO	3771 Complete and single-copy BUSCOs (S)
+INFO	10 Complete and duplicated BUSCOs (D)
+INFO	1 Fragmented BUSCOs (F)
+INFO	712 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	BUSCO analysis done. Total running time: 211.52445888519287 seconds
+INFO	Results written in /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco_proteins/run_epichloe_festucae_rosecity/
+

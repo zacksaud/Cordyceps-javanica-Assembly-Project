@@ -1,0 +1,1 @@
+/home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/CcateniannulataMBC234/FunannotatePredict/predict_misc/genemark/run/ES_A_2/ES_A_2.mod

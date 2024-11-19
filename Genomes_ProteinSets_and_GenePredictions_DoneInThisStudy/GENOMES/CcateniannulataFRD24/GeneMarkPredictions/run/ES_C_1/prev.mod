@@ -1,0 +1,1 @@
+/home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/GeneMarkPredictions/run/ES_B_1/ES_B_1.mod

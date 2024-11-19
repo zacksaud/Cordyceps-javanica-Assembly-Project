@@ -1,0 +1,59 @@
+[01/06/24 19:30:48]: /home/zack/miniconda3/envs/funannotate/bin/funannotate annotate -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_results --sbt /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/Ccateniannulata.sbt --antismash /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/SignalP_IPRScan_FungalSMASH/FungalSMASHRegular/Cordyceps_cateniannulata_FRD24.scaffolds.gbk --iprscan /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/SignalP_IPRScan_FungalSMASH/Interproscan/Cordyceps_cateniannulata_FRD24.proteins.fa.xml --signalp /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/SignalP_IPRScan_FungalSMASH/Cordyceps_cateniannulata_FRD24.proteins_summary.signalp5 -d /home/zack/funannotate_db --cpus 12 -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/Funannotate_Annotate -s Cordyceps cateniannulata --strain FRD 24 --busco_db hypocreales_odb10
+
+[01/06/24 19:30:48]: OS: Ubuntu 24.04, 12 cores, ~ 132 GB RAM. Python: 3.9.15
+[01/06/24 19:30:48]: Running 1.8.16
+[01/06/24 19:30:48]: hmmscan version=HMMER 3.4 (Aug 2023) path=/home/zack/miniconda3/envs/funannotate/bin/hmmscan
+[01/06/24 19:30:48]: hmmsearch version=HMMER 3.4 (Aug 2023) path=/home/zack/miniconda3/envs/funannotate/bin/hmmsearch
+[01/06/24 19:30:48]: diamond version=2.1.8 path=/home/zack/miniconda3/envs/funannotate/bin/diamond
+[01/06/24 19:30:48]: bedtools version=bedtools v2.31.1 path=/home/zack/miniconda3/envs/funannotate/bin/bedtools
+[01/06/24 19:30:48]: Found existing output directory /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict. Warning, will re-use any intermediate files found.
+[01/06/24 19:30:48]: Parsing input files
+[01/06/24 19:30:48]: Existing tbl found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_results/Cordyceps_cateniannulata_FRD24.tbl
+[01/06/24 19:30:51]: TBL file: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/genome.tbl
+[01/06/24 19:30:51]: GFF3 file: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_results/Cordyceps_cateniannulata_FRD24.gff3
+[01/06/24 19:30:51]: Proteins file: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/genome.proteins.fasta
+[01/06/24 19:30:56]: Adding Functional Annotation to Cordyceps cateniannulata, NCBI accession: None
+[01/06/24 19:30:56]: Annotation consists of: 10,882 gene models
+[01/06/24 19:30:56]: 10,746 protein records loaded
+[01/06/24 19:30:56]: Existing Pfam-A results found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/annotations.pfam.txt
+[01/06/24 19:30:56]: 12,829 annotations added
+[01/06/24 19:30:56]: Running Diamond blastp search of UniProt DB version 2023_05
+[01/06/24 19:30:57]: 866 valid gene/product annotations from 1,175 total
+[01/06/24 19:30:57]: Existing Eggnog-mapper results found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/eggnog.emapper.annotations
+[01/06/24 19:30:57]: Parsing EggNog Annotations
+[01/06/24 19:30:57]: EggNog version parsed as 2.1.12
+[01/06/24 19:30:57]: EggNog annotation detected as emapper v2.1.12 and DB prefix ENOG50
+[01/06/24 19:30:57]: 20,870  COG and EggNog annotations added
+[01/06/24 19:30:57]: Combining UniProt/EggNog gene and product names using Gene2Product version 1.92
+[01/06/24 19:30:58]: 2,754 gene name and product description annotations added
+[01/06/24 19:30:58]: Existing MEROPS results found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/annotations.merops.txt
+[01/06/24 19:30:58]: 487 annotations added
+[01/06/24 19:30:58]: Existing CAZYme results found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/annotations.dbCAN.txt
+[01/06/24 19:30:58]: 356 annotations added
+[01/06/24 19:30:58]: Existing BUSCO2 results found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/annotations.busco.txt
+[01/06/24 19:30:58]: 4,362 annotations added
+[01/06/24 19:30:58]: Skipping phobius predictions, try funannotate remote -m phobius
+[01/06/24 19:30:58]: Existing SignalP results found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/signalp.results.txt
+[01/06/24 19:30:58]: 1,215 secretome and 0 transmembane annotations added
+[01/06/24 19:30:58]: Parsing InterProScan5 XML file
+[01/06/24 19:30:58]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.9/site-packages/funannotate/aux_scripts/iprscan2annotations.py /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/iprscan.xml /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/annotations.iprscan.txt
+[01/06/24 19:31:04]: Now parsing antiSMASH v7 results, finding SM clusters
+[01/06/24 19:31:05]: Found 66 clusters, 0 biosynthetic enyzmes, and 0 smCOGs predicted by antiSMASH
+[01/06/24 19:31:09]: Found 0 duplicated annotations, adding 74,854 valid annotations
+[01/06/24 19:31:09]: Parsing tbl file: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/genome.tbl
+[01/06/24 19:31:09]: Converting to final Genbank format, good luck!
+[01/06/24 19:31:09]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.9/site-packages/funannotate/aux_scripts/tbl2asn_parallel.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/tbl2asn/genome.tbl -f /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/tbl2asn/genome.fsa -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/tbl2asn --sbt /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/Ccateniannulata.sbt -d discrepency.report.txt -s Cordyceps cateniannulata -t -l paired-ends -v 1 -c 12 --strain FRD 24
+[01/06/24 19:31:51]: Creating AGP file and corresponding contigs file
+[01/06/24 19:31:52]: Cross referencing SM cluster hits with MIBiG database version 1.4
+[01/06/24 19:31:52]: diamond blastp --sensitive --query /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/antismash/smcluster.proteins.fasta --threads 12 --out /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_misc/antismash/smcluster.MIBiG.blast.txt --db /home/zack/funannotate_db/mibig.dmnd --max-hsps 1 --evalue 0.001 --max-target-seqs 1 --outfmt 6
+[01/06/24 19:31:58]: Creating tab-delimited SM cluster output
+[01/06/24 19:32:00]: Writing genome annotation table.
+[01/06/24 19:32:46]: Funannotate annotate has completed successfully!
+
+        We need YOUR help to improve gene names/product descriptions:
+           0 gene/products names MUST be fixed, see /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_results/Gene2Products.must-fix.txt
+           0 gene/product names need to be curated, see /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_results/Gene2Products.need-curating.txt
+           3 gene/product names passed but are not in Database, see /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/annotate_results/Gene2Products.new-names-passed.txt
+
+        Please consider contributing a PR at https://github.com/nextgenusfs/gene2product
+

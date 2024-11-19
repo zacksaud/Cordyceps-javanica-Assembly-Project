@@ -1,0 +1,119 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Sources of extrinsic information: M RM 
+# Initializing the parameters using config directory /home/zack/miniconda3/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..223]--> unknown_A (172) <--[0..1]--> unknown_B (174) <--[0..0]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_2cordyceps_cateniannulata_frd24_3711762076_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10954, name = scaffold_2) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_2	AUGUSTUS	gene	1118820	1119778	0.61	-	.	g1
+scaffold_2	AUGUSTUS	transcript	1118820	1119778	0.61	-	.	g1.t1
+scaffold_2	AUGUSTUS	CDS	1119348	1119420	0.64	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	CDS	1119560	1119778	0.81	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	start_codon	1119776	1119778	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgaagttctctgttctcgctctcaccgtcggcgcctctgctgctgctggtccttggggtggtccttggggccggaacg
+# agaccaccaaggctccgaccaaggctcccattcaaaccggcatcccgccgccgccgccgccccctcctcctgccaagaacaacgtcaccaccctgcac
+# acgttcaccactatcgttaactccttcaccaccttctgccctggccctactctgattcccatccgcgccaacaagacgatcaccgtcaccaaggccac
+# ccagctgaccgtcactg]
+# protein sequence = [MKFSVLALTVGASAAAGPWGGPWGRNETTKAPTKAPIQTGIPPPPPPPPPAKNNVTTLHTFTTIVNSFTTFCPGPTLI
+# PIRANKTITVTKATQLTVT]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/2
+# CDS introns: 0/2
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 5
+#     RM:   5 
+# incompatible hint groups: 3
+#     RM:   3 
+# end gene g1
+###
+# start gene g2
+scaffold_2	AUGUSTUS	gene	1123666	1124776	0.15	+	.	g2
+scaffold_2	AUGUSTUS	transcript	1123666	1124776	0.15	+	.	g2.t1
+scaffold_2	AUGUSTUS	start_codon	1123666	1123668	.	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_2	AUGUSTUS	CDS	1123666	1123788	0.79	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_2	AUGUSTUS	CDS	1123853	1124776	0.16	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_2	AUGUSTUS	stop_codon	1124774	1124776	.	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_2	AUGUSTUS	protein_match	1123669	1123788	6.13	+	0	target "unknown_A[1..40]"; target_start 1; transcript_id "g2.t1"; gene_id "g2";
+scaffold_2	AUGUSTUS	protein_match	1123853	1124248	10.7	+	0	target "unknown_A[41..172]"; target_start 1; transcript_id "g2.t1"; gene_id "g2";
+scaffold_2	AUGUSTUS	protein_match	1124252	1124773	10.6	+	0	target "unknown_B[1..174]"; target_start 174; transcript_id "g2.t1"; gene_id "g2";
+# coding sequence = [atgcctgccgaaactaccactctgcagcagtttgagagcatctggcccaagctccaggccgccattctcgaacatgccc
+# aggcctacaaacttccccagggggagacggactggttcaaactgagccttgagaccaacaccgttggcggaaaatgcaaccgtggcatgtccgttccc
+# gactcggtcgctcttctccttggcgaaaagctcaacgaggagcaatacttcatggccgcaaccctgggctggatgactgagcttcttcaggctttctt
+# ccttgtctcggacgacatgatggatggcagcatcacgcgccgtggcaagccttgctggtaccgcatgaacggtgttggcatgattgccatcaacgacg
+# ccttcatgctcgagtcgggcatctacgtcttgctcaagaagttctttcgctcgcacccggcctacattgacctcgttgagctcttccacgaagttaca
+# ctgcagactgagctcggccagctctgcgacctcctaaccgctcccgaggacaaggtcaacctcgacaacttctccctgcaaaagtaccagttcatcgt
+# catctacaaaacagcctactactccttctacctccctgtcgccctcgccctgcaccagcttaacctcgccacccccaagaacctcaagcaggccgagg
+# acatcctgatcccgcttggcgagtacttccaggtccaggacgactaccttgacaactttggtttgcctgagcacattggcaagattggcactgatatc
+# aaggacaacaagtgctcctggctcgtcaacaaggccctcgagattgccacccccgagcagcgcaagattctggaggagaactacggccaaaaggacga
+# cgccaaggaggctgtcatcaagaagctctacgacgacttgaagctcaaggacgtctatctcaagtttgaggaggagcgcgctgaaaaaattcgcgaga
+# tgattgccaatgtcgatgagagcgagggtctcaagaaggggattttcgaggcattcctcaagaagatctacaaacgcaccaagtaa]
+# protein sequence = [MPAETTTLQQFESIWPKLQAAILEHAQAYKLPQGETDWFKLSLETNTVGGKCNRGMSVPDSVALLLGEKLNEEQYFMA
+# ATLGWMTELLQAFFLVSDDMMDGSITRRGKPCWYRMNGVGMIAINDAFMLESGIYVLLKKFFRSHPAYIDLVELFHEVTLQTELGQLCDLLTAPEDKV
+# NLDNFSLQKYQFIVIYKTAYYSFYLPVALALHQLNLATPKNLKQAEDILIPLGEYFQVQDDYLDNFGLPEHIGKIGTDIKDNKCSWLVNKALEIATPE
+# QRKILEENYGQKDDAKEAVIKKLYDDLKLKDVYLKFEEERAEKIREMIANVDESEGLKKGIFEAFLKKIYKRTK]
+# sequence of block unknown_A     1 [PAETTTLQQFESIWPKLQAAILEHAQAYKLPQGETDWFKLSLETNTVGGKCNRGMSVPDSVALLLGEKLNEEQYFMAATLGWMTELLQAFFLVSDDMMDGSITRRGKPCWYRMNGVGMIAINDAFMLESGIYVLLKKFFRSHPAYIDLVELFHEVTLQTELGQLCDLLTAPE] 173
+# sequence of block unknown_B   174 [KVNLDNFSLQKYQFIVIYKTAYYSFYLPVALALHQLNLATPKNLKQAEDILIPLGEYFQVQDDYLDNFGLPEHIGKIGTDIKDNKCSWLVNKALEIATPEQRKILEENYGQKDDAKEAVIKKLYDDLKLKDVYLKFEEERAEKIREMIANVDESEGLKKGIFEAFLKKIYKRTK] 348
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/2
+# CDS introns: 0/1
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 1
+#     RM:   1 
+# incompatible hint groups: 11
+#     RM:  11 
+# end gene g2
+###
+# start gene g3
+scaffold_2	AUGUSTUS	gene	1125579	1127048	0.14	+	.	g3
+scaffold_2	AUGUSTUS	transcript	1125579	1127048	0.14	+	.	g3.t1
+scaffold_2	AUGUSTUS	start_codon	1125579	1125581	.	+	0	transcript_id "g3.t1"; gene_id "g3";
+scaffold_2	AUGUSTUS	CDS	1125579	1127048	0.14	+	0	transcript_id "g3.t1"; gene_id "g3";
+scaffold_2	AUGUSTUS	stop_codon	1127046	1127048	.	+	0	transcript_id "g3.t1"; gene_id "g3";
+# coding sequence = [atgtccgggttagttgaaaaggcggcggtggtccaagccaccgagaagcagccagagcttctatcacacgccgccgccg
+# acaccgacaacgccaccgccgccggccaggaggaacccgtgcgacaggcctggtaccagtggttctcgccgaccgacacgtctgaggagcgacggctg
+# attgtcaagctggacctgttgatcctggtgttcgtcttcctcgcatactgggccaaggtgctggaccagtcggcgacgagcgcggcgtacgtgagcgg
+# catgcgcgaggacctgcaactcttcggcaacgagctcaactacctcaacgcggcgtacttggtcgggctcgtcgtgccgcaggtgccgctaacgctgt
+# tgatgacgcgcgcgcggtccgtcggctgggtcctgcccgcggccgacgtcgcgtgggcgacgctgacgctcgcgcagttccgcgtggcgagtgtcggc
+# ccgctgtacgcgctgcgcttcctggtcggcgccgcaggaagcctcttcttcccggccgtgcagtggtacctcgggtgctggtacacgcgtgcggagct
+# cggtcgccgcggcgcgctcttcttcgttgccagccaggtcggcggcatgagcgcgggctacgtgcaagccggcgcgcacgccacgctgcacatgcgcg
+# gcggactcgagggctggcgctggctgtatatcatctgcttcacagcgacactgcccgtcgccgcgctcggcttcctctgtctgcctgggctgccggag
+# cgcccgcggtcgctgttcctgtcgccgcgcgaggccgagctcgcaaggacgcgtatgcgcgcggagcgcaggcagccccggcggccgttgacgcgggc
+# tgtgttcaagaagacgctcacgggctggcgcttctgggtgctcgtcggtttcgccttcttcttctcgcaggccgacggcgtgtcggccaacagcgggc
+# tgccgctgtggctcaaggctcgcgactacagcgtcgaggagatcaacaccattaccacagtgtcgcccgccgtcaccatcgtgtccgcgatagtttgt
+# ggcgtgctgtcggacgcctacgacgccaaggtgccgctcatcgcggcaacggcgctgctcaatatcctcgcgagcgccgtgcttgccgtctggcacgt
+# gccgacgggcttcaagttctttgccttctttctggcggggtcggctaacggcatcgcgccggtcgtctacgcgtgggccaacgagatttgcgcgggcg
+# acgcggaggagcgcgccatcgtgctcagcagcatgaacacgctcggcaacgcctttggcgcatggctgccgctgttcgtatggaagacgacggacgcg
+# ccgcgctacttgattgggtatacatggacaattgctttggacgtgggcatgttagtcatgctgtttgtgctccggtcgttttggaaccgcgaaaaggc
+# taggcaggcagagaagtag]
+# protein sequence = [MSGLVEKAAVVQATEKQPELLSHAAADTDNATAAGQEEPVRQAWYQWFSPTDTSEERRLIVKLDLLILVFVFLAYWAK
+# VLDQSATSAAYVSGMREDLQLFGNELNYLNAAYLVGLVVPQVPLTLLMTRARSVGWVLPAADVAWATLTLAQFRVASVGPLYALRFLVGAAGSLFFPA
+# VQWYLGCWYTRAELGRRGALFFVASQVGGMSAGYVQAGAHATLHMRGGLEGWRWLYIICFTATLPVAALGFLCLPGLPERPRSLFLSPREAELARTRM
+# RAERRQPRRPLTRAVFKKTLTGWRFWVLVGFAFFFSQADGVSANSGLPLWLKARDYSVEEINTITTVSPAVTIVSAIVCGVLSDAYDAKVPLIAATAL
+# LNILASAVLAVWHVPTGFKFFAFFLAGSANGIAPVVYAWANEICAGDAEERAIVLSSMNTLGNAFGAWLPLFVWKTTDAPRYLIGYTWTIALDVGMLV
+# MLFVLRSFWNREKARQAEK]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/1
+# CDS introns: 0/0
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 16
+#     RM:  16 
+# end gene g3
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/home/zack/funannotate_db/hypocreales_odb10/prfl/30816at5125.prfl --predictionStart=1118820 --predictionEnd=1129773 --species=anidulans ./tmp/scaffold_2cordyceps_cateniannulata_frd24_3711762076_.temp

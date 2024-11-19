@@ -1,0 +1,639 @@
+[01/05/24 20:52:01]: /home/zack/miniconda3/envs/funannotate/lib/python3.8/site-packages/funannotate/aux_scripts/funannotate-runEVM.py -w /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/weights.evm.txt -c 12 -g /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/gene_predictions.gff3 -d /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM -f /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/genome.softmasked.fa -l /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/logfiles/funannotate-EVM.log -m 10 -i 1500 -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/evm.round1.gff3 --EVM_HOME /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1 -p /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/protein_alignments.gff3
+
+[01/05/24 20:52:01]: EVM: partitioning input to ~ 35 genes per partition using min 1500 bp interval
+[01/05/24 20:52:03]: 16 total contigs; skipping 0 contigs with no genes
+[01/05/24 20:52:03]: Merged 50335 genes into 9927 supergenes with bedtools
+[01/05/24 20:52:03]: scaffold_1_1-98887 --> 98886 bp
+[01/05/24 20:52:03]: scaffold_1_94339-226942 --> 132603 bp
+[01/05/24 20:52:03]: scaffold_1_219705-353014 --> 133309 bp
+[01/05/24 20:52:03]: scaffold_1_347389-451246 --> 103857 bp
+[01/05/24 20:52:03]: scaffold_1_449264-528904 --> 79640 bp
+[01/05/24 20:52:03]: scaffold_1_526797-677311 --> 150514 bp
+[01/05/24 20:52:03]: scaffold_1_675778-797122 --> 121344 bp
+[01/05/24 20:52:03]: scaffold_1_795405-932096 --> 136691 bp
+[01/05/24 20:52:03]: scaffold_1_923640-1010479 --> 86839 bp
+[01/05/24 20:52:03]: scaffold_1_1006849-1127517 --> 120668 bp
+[01/05/24 20:52:03]: scaffold_1_1125061-1224784 --> 99723 bp
+[01/05/24 20:52:03]: scaffold_1_1221968-1348411 --> 126443 bp
+[01/05/24 20:52:03]: scaffold_1_1341408-1454108 --> 112700 bp
+[01/05/24 20:52:03]: scaffold_1_1451720-1587544 --> 135824 bp
+[01/05/24 20:52:03]: scaffold_1_1583145-1677972 --> 94827 bp
+[01/05/24 20:52:03]: scaffold_1_1671318-1813594 --> 142276 bp
+[01/05/24 20:52:03]: scaffold_1_1811542-1913600 --> 102058 bp
+[01/05/24 20:52:03]: scaffold_1_1909302-2047423 --> 138121 bp
+[01/05/24 20:52:03]: scaffold_1_2043268-2185557 --> 142289 bp
+[01/05/24 20:52:03]: scaffold_1_2183496-2327784 --> 144288 bp
+[01/05/24 20:52:03]: scaffold_1_2318416-2460890 --> 142474 bp
+[01/05/24 20:52:03]: scaffold_1_2450129-2556931 --> 106802 bp
+[01/05/24 20:52:03]: scaffold_1_2554882-2686949 --> 132067 bp
+[01/05/24 20:52:03]: scaffold_1_2684133-2780475 --> 96342 bp
+[01/05/24 20:52:03]: scaffold_1_2777863-2925141 --> 147278 bp
+[01/05/24 20:52:03]: scaffold_1_2922088-3047417 --> 125329 bp
+[01/05/24 20:52:03]: scaffold_1_3045528-3169504 --> 123976 bp
+[01/05/24 20:52:03]: scaffold_1_3167046-3325703 --> 158657 bp
+[01/05/24 20:52:03]: scaffold_1_3323577-3435462 --> 111885 bp
+[01/05/24 20:52:03]: scaffold_1_3431484-3561624 --> 130140 bp
+[01/05/24 20:52:03]: scaffold_1_3558711-3628261 --> 69550 bp
+[01/05/24 20:52:03]: scaffold_1_3626359-3790021 --> 163662 bp
+[01/05/24 20:52:03]: scaffold_1_3781393-3903142 --> 121749 bp
+[01/05/24 20:52:03]: scaffold_1_3895742-4024686 --> 128944 bp
+[01/05/24 20:52:03]: scaffold_1_4021188-4125984 --> 104796 bp
+[01/05/24 20:52:03]: scaffold_1_4121457-4249502 --> 128045 bp
+[01/05/24 20:52:03]: scaffold_1_4247941-4398749 --> 150808 bp
+[01/05/24 20:52:03]: scaffold_1_4394532-4496624 --> 102092 bp
+[01/05/24 20:52:03]: scaffold_1_4494683-4623066 --> 128383 bp
+[01/05/24 20:52:03]: scaffold_1_4618641-4753946 --> 135305 bp
+[01/05/24 20:52:03]: scaffold_1_4750904-4877519 --> 126615 bp
+[01/05/24 20:52:03]: scaffold_1_4874930-5016532 --> 141602 bp
+[01/05/24 20:52:03]: scaffold_1_5012456-5110329 --> 97873 bp
+[01/05/24 20:52:03]: scaffold_1_5106060-5251145 --> 145085 bp
+[01/05/24 20:52:03]: scaffold_1_5249078-5350294 --> 101216 bp
+[01/05/24 20:52:03]: scaffold_1_5348635-5457569 --> 108934 bp
+[01/05/24 20:52:03]: scaffold_2_1-45946 --> 45945 bp
+[01/05/24 20:52:03]: scaffold_2_44145-264911 --> 220766 bp
+[01/05/24 20:52:03]: scaffold_2_256231-371156 --> 114925 bp
+[01/05/24 20:52:03]: scaffold_2_369256-476745 --> 107489 bp
+[01/05/24 20:52:03]: scaffold_2_473672-590265 --> 116593 bp
+[01/05/24 20:52:03]: scaffold_2_587650-710595 --> 122945 bp
+[01/05/24 20:52:03]: scaffold_2_707574-839496 --> 131922 bp
+[01/05/24 20:52:03]: scaffold_2_833604-935684 --> 102080 bp
+[01/05/24 20:52:03]: scaffold_2_933846-1091630 --> 157784 bp
+[01/05/24 20:52:03]: scaffold_2_1089784-1198872 --> 109088 bp
+[01/05/24 20:52:03]: scaffold_2_1197354-1306204 --> 108850 bp
+[01/05/24 20:52:03]: scaffold_2_1303650-1396553 --> 92903 bp
+[01/05/24 20:52:03]: scaffold_2_1392405-1554258 --> 161853 bp
+[01/05/24 20:52:03]: scaffold_2_1551874-1669158 --> 117284 bp
+[01/05/24 20:52:03]: scaffold_2_1667334-1779361 --> 112027 bp
+[01/05/24 20:52:03]: scaffold_2_1775601-1912655 --> 137054 bp
+[01/05/24 20:52:03]: scaffold_2_1911076-2039522 --> 128446 bp
+[01/05/24 20:52:03]: scaffold_2_2037965-2128542 --> 90577 bp
+[01/05/24 20:52:03]: scaffold_2_2126795-2262416 --> 135621 bp
+[01/05/24 20:52:03]: scaffold_2_2258309-2393501 --> 135192 bp
+[01/05/24 20:52:03]: scaffold_2_2388029-2523176 --> 135147 bp
+[01/05/24 20:52:03]: scaffold_2_2521455-2630457 --> 109002 bp
+[01/05/24 20:52:03]: scaffold_2_2628517-2732589 --> 104072 bp
+[01/05/24 20:52:03]: scaffold_2_2729893-2859869 --> 129976 bp
+[01/05/24 20:52:03]: scaffold_2_2857979-2939534 --> 81555 bp
+[01/05/24 20:52:03]: scaffold_2_2937862-3046472 --> 108610 bp
+[01/05/24 20:52:03]: scaffold_2_3044587-3194376 --> 149789 bp
+[01/05/24 20:52:03]: scaffold_2_3189466-3281482 --> 92016 bp
+[01/05/24 20:52:03]: scaffold_2_3279899-3417778 --> 137879 bp
+[01/05/24 20:52:03]: scaffold_2_3415958-3536539 --> 120581 bp
+[01/05/24 20:52:03]: scaffold_2_3528300-3654696 --> 126396 bp
+[01/05/24 20:52:03]: scaffold_2_3646602-3753050 --> 106448 bp
+[01/05/24 20:52:03]: scaffold_2_3751187-3877551 --> 126364 bp
+[01/05/24 20:52:03]: scaffold_2_3874941-3987662 --> 112721 bp
+[01/05/24 20:52:03]: scaffold_2_3982758-4089588 --> 106830 bp
+[01/05/24 20:52:03]: scaffold_2_4086372-4193322 --> 106950 bp
+[01/05/24 20:52:03]: scaffold_2_4186996-4335332 --> 148336 bp
+[01/05/24 20:52:03]: scaffold_2_4333026-4408465 --> 75439 bp
+[01/05/24 20:52:03]: scaffold_2_4406887-4527063 --> 120176 bp
+[01/05/24 20:52:03]: scaffold_2_4523685-4649417 --> 125732 bp
+[01/05/24 20:52:03]: scaffold_2_4646204-4763761 --> 117557 bp
+[01/05/24 20:52:03]: scaffold_2_4761372-4844612 --> 83240 bp
+[01/05/24 20:52:03]: scaffold_3_1-96708 --> 96707 bp
+[01/05/24 20:52:03]: scaffold_3_94463-234026 --> 139563 bp
+[01/05/24 20:52:03]: scaffold_3_231688-336751 --> 105063 bp
+[01/05/24 20:52:03]: scaffold_3_330708-411880 --> 81172 bp
+[01/05/24 20:52:03]: scaffold_3_409607-547543 --> 137936 bp
+[01/05/24 20:52:03]: scaffold_3_542687-671049 --> 128362 bp
+[01/05/24 20:52:03]: scaffold_3_667706-765373 --> 97667 bp
+[01/05/24 20:52:03]: scaffold_3_760379-907061 --> 146682 bp
+[01/05/24 20:52:03]: scaffold_3_904698-1025240 --> 120542 bp
+[01/05/24 20:52:03]: scaffold_3_1021417-1133861 --> 112444 bp
+[01/05/24 20:52:03]: scaffold_3_1131089-1260294 --> 129205 bp
+[01/05/24 20:52:03]: scaffold_3_1255724-1342443 --> 86719 bp
+[01/05/24 20:52:03]: scaffold_3_1339661-1452937 --> 113276 bp
+[01/05/24 20:52:03]: scaffold_3_1449397-1543328 --> 93931 bp
+[01/05/24 20:52:03]: scaffold_3_1541587-1641794 --> 100207 bp
+[01/05/24 20:52:03]: scaffold_3_1640082-1753512 --> 113430 bp
+[01/05/24 20:52:03]: scaffold_3_1751734-1857533 --> 105799 bp
+[01/05/24 20:52:03]: scaffold_3_1855764-1981553 --> 125789 bp
+[01/05/24 20:52:03]: scaffold_3_1978578-2122393 --> 143815 bp
+[01/05/24 20:52:03]: scaffold_3_2120787-2207465 --> 86678 bp
+[01/05/24 20:52:03]: scaffold_3_2203507-2316268 --> 112761 bp
+[01/05/24 20:52:03]: scaffold_3_2313489-2457090 --> 143601 bp
+[01/05/24 20:52:03]: scaffold_3_2453782-2577189 --> 123407 bp
+[01/05/24 20:52:03]: scaffold_3_2574257-2709476 --> 135219 bp
+[01/05/24 20:52:03]: scaffold_3_2706893-2826866 --> 119973 bp
+[01/05/24 20:52:03]: scaffold_3_2823529-2932812 --> 109283 bp
+[01/05/24 20:52:03]: scaffold_3_2926098-3071683 --> 145585 bp
+[01/05/24 20:52:03]: scaffold_3_3064103-3183794 --> 119691 bp
+[01/05/24 20:52:03]: scaffold_3_3181105-3257960 --> 76855 bp
+[01/05/24 20:52:03]: scaffold_3_3255871-3376397 --> 120526 bp
+[01/05/24 20:52:03]: scaffold_3_3373649-3526343 --> 152694 bp
+[01/05/24 20:52:03]: scaffold_3_3524300-3609278 --> 84978 bp
+[01/05/24 20:52:03]: scaffold_3_3605795-3745938 --> 140143 bp
+[01/05/24 20:52:03]: scaffold_3_3741193-3839418 --> 98225 bp
+[01/05/24 20:52:03]: scaffold_3_3837848-3954209 --> 116361 bp
+[01/05/24 20:52:03]: scaffold_3_3952557-4050015 --> 97458 bp
+[01/05/24 20:52:03]: scaffold_3_4047544-4138984 --> 91440 bp
+[01/05/24 20:52:03]: scaffold_3_4137120-4236787 --> 99667 bp
+[01/05/24 20:52:03]: scaffold_3_4235070-4345565 --> 110495 bp
+[01/05/24 20:52:03]: scaffold_3_4344062-4454901 --> 110839 bp
+[01/05/24 20:52:03]: scaffold_3_4453353-4532422 --> 79069 bp
+[01/05/24 20:52:03]: scaffold_3_4530087-4621726 --> 91639 bp
+[01/05/24 20:52:03]: scaffold_3_4620044-4781499 --> 161455 bp
+[01/05/24 20:52:03]: scaffold_4_1-95712 --> 95711 bp
+[01/05/24 20:52:03]: scaffold_4_93291-215602 --> 122311 bp
+[01/05/24 20:52:03]: scaffold_4_213790-316643 --> 102853 bp
+[01/05/24 20:52:03]: scaffold_4_314711-451064 --> 136353 bp
+[01/05/24 20:52:03]: scaffold_4_448098-514722 --> 66624 bp
+[01/05/24 20:52:03]: scaffold_4_512709-675790 --> 163081 bp
+[01/05/24 20:52:03]: scaffold_4_674181-803846 --> 129665 bp
+[01/05/24 20:52:03]: scaffold_4_794642-895429 --> 100787 bp
+[01/05/24 20:52:03]: scaffold_4_893084-1005647 --> 112563 bp
+[01/05/24 20:52:03]: scaffold_4_1003313-1123994 --> 120681 bp
+[01/05/24 20:52:03]: scaffold_4_1119349-1168910 --> 49561 bp
+[01/05/24 20:52:03]: scaffold_4_1166876-1375006 --> 208130 bp
+[01/05/24 20:52:03]: scaffold_4_1372722-1443804 --> 71082 bp
+[01/05/24 20:52:03]: scaffold_4_1440853-1578187 --> 137334 bp
+[01/05/24 20:52:03]: scaffold_4_1574884-1702945 --> 128061 bp
+[01/05/24 20:52:03]: scaffold_4_1700299-1817024 --> 116725 bp
+[01/05/24 20:52:03]: scaffold_4_1815410-1924095 --> 108685 bp
+[01/05/24 20:52:03]: scaffold_4_1920215-2048694 --> 128479 bp
+[01/05/24 20:52:03]: scaffold_4_2046984-2151942 --> 104958 bp
+[01/05/24 20:52:03]: scaffold_4_2148958-2228429 --> 79471 bp
+[01/05/24 20:52:03]: scaffold_4_2224673-2334467 --> 109794 bp
+[01/05/24 20:52:03]: scaffold_4_2329257-2457589 --> 128332 bp
+[01/05/24 20:52:03]: scaffold_4_2456091-2554497 --> 98406 bp
+[01/05/24 20:52:03]: scaffold_4_2551543-2749389 --> 197846 bp
+[01/05/24 20:52:03]: scaffold_4_2742232-2882588 --> 140356 bp
+[01/05/24 20:52:03]: scaffold_4_2878912-3019680 --> 140768 bp
+[01/05/24 20:52:03]: scaffold_4_3016857-3114076 --> 97219 bp
+[01/05/24 20:52:03]: scaffold_4_3110175-3225203 --> 115028 bp
+[01/05/24 20:52:03]: scaffold_4_3223175-3381645 --> 158470 bp
+[01/05/24 20:52:03]: scaffold_4_3379403-3487600 --> 108197 bp
+[01/05/24 20:52:03]: scaffold_4_3485118-3594806 --> 109688 bp
+[01/05/24 20:52:03]: scaffold_4_3592483-3695776 --> 103293 bp
+[01/05/24 20:52:03]: scaffold_4_3690946-3838832 --> 147886 bp
+[01/05/24 20:52:03]: scaffold_4_3836770-3945108 --> 108338 bp
+[01/05/24 20:52:03]: scaffold_4_3942924-4093503 --> 150579 bp
+[01/05/24 20:52:03]: scaffold_4_4090821-4199401 --> 108580 bp
+[01/05/24 20:52:03]: scaffold_4_4197887-4260819 --> 62932 bp
+[01/05/24 20:52:03]: scaffold_5_1-99506 --> 99505 bp
+[01/05/24 20:52:03]: scaffold_5_97207-218787 --> 121580 bp
+[01/05/24 20:52:03]: scaffold_5_217204-329011 --> 111807 bp
+[01/05/24 20:52:03]: scaffold_5_325479-431032 --> 105553 bp
+[01/05/24 20:52:03]: scaffold_5_427404-565476 --> 138072 bp
+[01/05/24 20:52:03]: scaffold_5_562098-677243 --> 115145 bp
+[01/05/24 20:52:03]: scaffold_5_675379-837139 --> 161760 bp
+[01/05/24 20:52:03]: scaffold_5_835354-939666 --> 104312 bp
+[01/05/24 20:52:03]: scaffold_5_936677-1039127 --> 102450 bp
+[01/05/24 20:52:03]: scaffold_5_1035969-1164619 --> 128650 bp
+[01/05/24 20:52:03]: scaffold_5_1161810-1283379 --> 121569 bp
+[01/05/24 20:52:03]: scaffold_5_1281778-1447145 --> 165367 bp
+[01/05/24 20:52:03]: scaffold_5_1444824-1552297 --> 107473 bp
+[01/05/24 20:52:03]: scaffold_5_1547784-1659531 --> 111747 bp
+[01/05/24 20:52:03]: scaffold_5_1650074-1777644 --> 127570 bp
+[01/05/24 20:52:03]: scaffold_5_1775449-1907483 --> 132034 bp
+[01/05/24 20:52:03]: scaffold_5_1904662-2042247 --> 137585 bp
+[01/05/24 20:52:03]: scaffold_5_2038316-2151056 --> 112740 bp
+[01/05/24 20:52:03]: scaffold_5_2146441-2267718 --> 121277 bp
+[01/05/24 20:52:03]: scaffold_5_2265416-2399754 --> 134338 bp
+[01/05/24 20:52:03]: scaffold_5_2398139-2515878 --> 117739 bp
+[01/05/24 20:52:03]: scaffold_5_2514192-2640460 --> 126268 bp
+[01/05/24 20:52:03]: scaffold_5_2629767-2762491 --> 132724 bp
+[01/05/24 20:52:03]: scaffold_5_2760634-2884267 --> 123633 bp
+[01/05/24 20:52:03]: scaffold_5_2881507-3013553 --> 132046 bp
+[01/05/24 20:52:03]: scaffold_5_3010716-3141294 --> 130578 bp
+[01/05/24 20:52:03]: scaffold_5_3139734-3263891 --> 124157 bp
+[01/05/24 20:52:03]: scaffold_5_3262365-3389746 --> 127381 bp
+[01/05/24 20:52:03]: scaffold_5_3386472-3503574 --> 117102 bp
+[01/05/24 20:52:03]: scaffold_5_3496412-3617787 --> 121375 bp
+[01/05/24 20:52:03]: scaffold_5_3609442-3776914 --> 167472 bp
+[01/05/24 20:52:03]: scaffold_5_3773753-3878754 --> 105001 bp
+[01/05/24 20:52:03]: scaffold_6_1-114830 --> 114829 bp
+[01/05/24 20:52:03]: scaffold_6_113198-235429 --> 122231 bp
+[01/05/24 20:52:03]: scaffold_6_233587-342301 --> 108714 bp
+[01/05/24 20:52:03]: scaffold_6_340746-419087 --> 78341 bp
+[01/05/24 20:52:03]: scaffold_6_417405-551177 --> 133772 bp
+[01/05/24 20:52:03]: scaffold_6_549595-656876 --> 107281 bp
+[01/05/24 20:52:03]: scaffold_6_654443-769986 --> 115543 bp
+[01/05/24 20:52:03]: scaffold_6_768396-850121 --> 81725 bp
+[01/05/24 20:52:03]: scaffold_6_848068-965838 --> 117770 bp
+[01/05/24 20:52:03]: scaffold_6_963993-1081861 --> 117868 bp
+[01/05/24 20:52:03]: scaffold_6_1079623-1130152 --> 50529 bp
+[01/05/24 20:52:03]: scaffold_6_1127820-1266718 --> 138898 bp
+[01/05/24 20:52:03]: scaffold_6_1262038-1413824 --> 151786 bp
+[01/05/24 20:52:03]: scaffold_6_1411815-1553987 --> 142172 bp
+[01/05/24 20:52:03]: scaffold_6_1548948-1633170 --> 84222 bp
+[01/05/24 20:52:03]: scaffold_6_1629759-1776794 --> 147035 bp
+[01/05/24 20:52:03]: scaffold_6_1774548-1840486 --> 65938 bp
+[01/05/24 20:52:03]: scaffold_6_1836081-1998366 --> 162285 bp
+[01/05/24 20:52:03]: scaffold_6_1993723-2121605 --> 127882 bp
+[01/05/24 20:52:03]: scaffold_6_2119787-2261079 --> 141292 bp
+[01/05/24 20:52:03]: scaffold_6_2258412-2335993 --> 77581 bp
+[01/05/24 20:52:03]: scaffold_6_2333300-2465300 --> 132000 bp
+[01/05/24 20:52:03]: scaffold_6_2460826-2609627 --> 148801 bp
+[01/05/24 20:52:03]: scaffold_6_2607992-2703490 --> 95498 bp
+[01/05/24 20:52:03]: scaffold_6_2700924-2802951 --> 102027 bp
+[01/05/24 20:52:03]: scaffold_6_2801254-2897450 --> 96196 bp
+[01/05/24 20:52:03]: scaffold_6_2895628-3046092 --> 150464 bp
+[01/05/24 20:52:03]: scaffold_6_3043026-3170498 --> 127472 bp
+[01/05/24 20:52:03]: scaffold_6_3164468-3266324 --> 101856 bp
+[01/05/24 20:52:03]: scaffold_6_3260241-3372681 --> 112440 bp
+[01/05/24 20:52:03]: scaffold_6_3371159-3463839 --> 92680 bp
+[01/05/24 20:52:03]: scaffold_6_3461775-3572991 --> 111216 bp
+[01/05/24 20:52:03]: scaffold_7_1-127072 --> 127071 bp
+[01/05/24 20:52:03]: scaffold_7_125438-195965 --> 70527 bp
+[01/05/24 20:52:03]: scaffold_7_193224-344633 --> 151409 bp
+[01/05/24 20:52:03]: scaffold_7_343029-462619 --> 119590 bp
+[01/05/24 20:52:03]: scaffold_7_460817-581243 --> 120426 bp
+[01/05/24 20:52:03]: scaffold_7_579568-666779 --> 87211 bp
+[01/05/24 20:52:03]: scaffold_7_661933-786120 --> 124187 bp
+[01/05/24 20:52:03]: scaffold_7_784351-867388 --> 83037 bp
+[01/05/24 20:52:03]: scaffold_7_865227-977074 --> 111847 bp
+[01/05/24 20:52:03]: scaffold_7_975190-1082698 --> 107508 bp
+[01/05/24 20:52:03]: scaffold_7_1080037-1204423 --> 124386 bp
+[01/05/24 20:52:03]: scaffold_7_1202771-1321193 --> 118422 bp
+[01/05/24 20:52:03]: scaffold_7_1319363-1460133 --> 140770 bp
+[01/05/24 20:52:03]: scaffold_7_1458090-1556289 --> 98199 bp
+[01/05/24 20:52:03]: scaffold_7_1554394-1658965 --> 104571 bp
+[01/05/24 20:52:03]: scaffold_7_1656768-1803928 --> 147160 bp
+[01/05/24 20:52:03]: scaffold_7_1796964-1916885 --> 119921 bp
+[01/05/24 20:52:03]: scaffold_7_1914703-2021083 --> 106380 bp
+[01/05/24 20:52:03]: scaffold_7_2018750-2137600 --> 118850 bp
+[01/05/24 20:52:03]: scaffold_7_2135717-2269442 --> 133725 bp
+[01/05/24 20:52:03]: scaffold_7_2266084-2367977 --> 101893 bp
+[01/05/24 20:52:03]: scaffold_7_2364246-2501454 --> 137208 bp
+[01/05/24 20:52:03]: scaffold_7_2499057-2624292 --> 125235 bp
+[01/05/24 20:52:03]: scaffold_7_2621937-2836841 --> 214904 bp
+[01/05/24 20:52:03]: scaffold_8_1-118590 --> 118589 bp
+[01/05/24 20:52:03]: scaffold_8_115124-222900 --> 107776 bp
+[01/05/24 20:52:03]: scaffold_8_220895-312572 --> 91677 bp
+[01/05/24 20:52:03]: scaffold_8_310949-455191 --> 144242 bp
+[01/05/24 20:52:03]: scaffold_8_453091-553647 --> 100556 bp
+[01/05/24 20:52:03]: scaffold_8_550981-620893 --> 69912 bp
+[01/05/24 20:52:03]: scaffold_8_618860-707757 --> 88897 bp
+[01/05/24 20:52:03]: scaffold_8_704960-897471 --> 192511 bp
+[01/05/24 20:52:03]: scaffold_8_895821-1038855 --> 143034 bp
+[01/05/24 20:52:03]: scaffold_8_1036380-1141127 --> 104747 bp
+[01/05/24 20:52:03]: scaffold_8_1137993-1282997 --> 145004 bp
+[01/05/24 20:52:03]: scaffold_8_1275073-1391883 --> 116810 bp
+[01/05/24 20:52:03]: scaffold_8_1387709-1520462 --> 132753 bp
+[01/05/24 20:52:03]: scaffold_8_1517008-1605127 --> 88119 bp
+[01/05/24 20:52:03]: scaffold_8_1603206-1738101 --> 134895 bp
+[01/05/24 20:52:03]: scaffold_8_1734696-1846407 --> 111711 bp
+[01/05/24 20:52:03]: scaffold_8_1844230-1956214 --> 111984 bp
+[01/05/24 20:52:03]: scaffold_8_1953988-2039443 --> 85455 bp
+[01/05/24 20:52:03]: scaffold_8_2036833-2201955 --> 165122 bp
+[01/05/24 20:52:03]: scaffold_9_1-50536 --> 50535 bp
+[01/05/24 20:52:03]: scaffold_9_47860-117743 --> 69883 bp
+[01/05/24 20:52:03]: scaffold_9_115501-270438 --> 154937 bp
+[01/05/24 20:52:03]: scaffold_9_268683-396082 --> 127399 bp
+[01/05/24 20:52:03]: scaffold_10_1-104447 --> 104446 bp
+[01/05/24 20:52:03]: scaffold_10_99388-205980 --> 106592 bp
+[01/05/24 20:52:03]: scaffold_10_204041-330641 --> 126600 bp
+[01/05/24 20:52:03]: scaffold_11_1-76578 --> 76577 bp
+[01/05/24 20:52:03]: scaffold_11_73080-187308 --> 114228 bp
+[01/05/24 20:52:03]: scaffold_11_184456-297255 --> 112799 bp
+[01/05/24 20:52:03]: scaffold_12_1-130505 --> 130504 bp
+[01/05/24 20:52:03]: scaffold_12_128465-240150 --> 111685 bp
+[01/05/24 20:52:03]: scaffold_13_1-94434 --> 94433 bp
+[01/05/24 20:52:03]: scaffold_13_92738-189600 --> 96862 bp
+[01/05/24 20:52:03]: scaffold_14_1-96462 --> 96461 bp
+[01/05/24 20:52:03]: scaffold_14_94487-182583 --> 88096 bp
+[01/05/24 20:52:03]: scaffold_15 --> 114634 bp
+[01/05/24 20:52:03]: scaffold_16 --> 48553 bp
+[01/05/24 20:52:23]: Finished partitioning, generating command list
+[01/05/24 21:05:01]: perl /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/recombine_EVM_partial_outputs.pl --partitions partitions_list.out --output_file_name evm.out
+[01/05/24 21:05:06]: Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1035969-1164619/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3386472-3503574/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2881507-3013553/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2146441-2267718/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2038316-2151056/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2760634-2884267/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1281778-1447145/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1904662-2042247/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2265416-2399754/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1650074-1777644/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1-99506/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3773753-3878754/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3496412-3617787/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_217204-329011/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_835354-939666/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2398139-2515878/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1444824-1552297/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_97207-218787/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_562098-677243/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3262365-3389746/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3609442-3776914/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2514192-2640460/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3139734-3263891/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_427404-565476/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_675379-837139/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3010716-3141294/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_936677-1039127/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2629767-2762491/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1775449-1907483/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1547784-1659531/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_325479-431032/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1161810-1283379/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3379403-3487600/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_674181-803846/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_448098-514722/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_93291-215602/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1119349-1168910/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1372722-1443804/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2551543-2749389/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3942924-4093503/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2456091-2554497/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3690946-3838832/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1003313-1123994/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3223175-3381645/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1574884-1702945/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_794642-895429/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3836770-3945108/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2148958-2228429/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3592483-3695776/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2224673-2334467/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2046984-2151942/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3110175-3225203/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_213790-316643/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3016857-3114076/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1920215-2048694/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2742232-2882588/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2878912-3019680/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1-95712/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_4090821-4199401/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1815410-1924095/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_314711-451064/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1166876-1375006/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1700299-1817024/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_512709-675790/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_4197887-4260819/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3485118-3594806/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1440853-1578187/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_893084-1005647/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2329257-2457589/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5249078-5350294/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3895742-4024686/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2684133-2780475/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5106060-5251145/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_675778-797122/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2450129-2556931/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4494683-4623066/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1583145-1677972/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_219705-353014/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2318416-2460890/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5012456-5110329/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1341408-1454108/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_449264-528904/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_923640-1010479/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2554882-2686949/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4618641-4753946/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4394532-4496624/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3781393-3903142/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4247941-4398749/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2183496-2327784/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3167046-3325703/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1451720-1587544/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5348635-5457569/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4121457-4249502/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3626359-3790021/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3431484-3561624/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3558711-3628261/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3045528-3169504/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1811542-1913600/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4021188-4125984/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1-98887/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3323577-3435462/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_347389-451246/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1909302-2047423/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1671318-1813594/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2922088-3047417/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1006849-1127517/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_795405-932096/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_526797-677311/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2043268-2185557/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1221968-1348411/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2777863-2925141/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4750904-4877519/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4874930-5016532/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_94339-226942/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1125061-1224784/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_13/scaffold_13_1-94434/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_13/scaffold_13_92738-189600/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_13/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2135717-2269442/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1319363-1460133/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_661933-786120/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_784351-867388/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1656768-1803928/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_343029-462619/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1202771-1321193/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_193224-344633/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1554394-1658965/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_125438-195965/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1080037-1204423/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_975190-1082698/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2621937-2836841/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2364246-2501454/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2499057-2624292/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_865227-977074/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2018750-2137600/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1796964-1916885/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_460817-581243/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_579568-666779/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2266084-2367977/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1458090-1556289/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1-127072/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1914703-2021083/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3461775-3572991/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2460826-2609627/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3164468-3266324/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3260241-3372681/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_340746-419087/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_233587-342301/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_848068-965838/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_417405-551177/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2119787-2261079/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2895628-3046092/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1079623-1130152/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1262038-1413824/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1629759-1776794/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1836081-1998366/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2801254-2897450/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1993723-2121605/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2258412-2335993/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3371159-3463839/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2607992-2703490/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2333300-2465300/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_113198-235429/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1774548-1840486/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_963993-1081861/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1-114830/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_549595-656876/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1411815-1553987/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_654443-769986/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1548948-1633170/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_768396-850121/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1127820-1266718/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3043026-3170498/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2700924-2802951/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_9/scaffold_9_1-50536/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_9/scaffold_9_268683-396082/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_9/scaffold_9_115501-270438/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_9/scaffold_9_47860-117743/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_9/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_115124-222900/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_2036833-2201955/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_895821-1038855/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_618860-707757/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_310949-455191/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1517008-1605127/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1734696-1846407/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_453091-553647/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1603206-1738101/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1387709-1520462/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_220895-312572/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1953988-2039443/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1137993-1282997/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_704960-897471/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1036380-1141127/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1844230-1956214/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_550981-620893/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1-118590/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/scaffold_8_1275073-1391883/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_14/scaffold_14_1-96462/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_14/scaffold_14_94487-182583/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_14/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2729893-2859869/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1911076-2039522/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2628517-2732589/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2258309-2393501/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1667334-1779361/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_587650-710595/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1089784-1198872/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2857979-2939534/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3982758-4089588/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_933846-1091630/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1303650-1396553/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2521455-2630457/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_369256-476745/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4186996-4335332/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3646602-3753050/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4761372-4844612/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1197354-1306204/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_473672-590265/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1-45946/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3044587-3194376/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2388029-2523176/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4646204-4763761/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3189466-3281482/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4523685-4649417/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3279899-3417778/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4086372-4193322/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1775601-1912655/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3415958-3536539/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3874941-3987662/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1392405-1554258/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4333026-4408465/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2126795-2262416/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_256231-371156/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_707574-839496/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3528300-3654696/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3751187-3877551/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_833604-935684/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2037965-2128542/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_44145-264911/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4406887-4527063/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1551874-1669158/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2937862-3046472/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1-96708/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1449397-1543328/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_760379-907061/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3255871-3376397/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1339661-1452937/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2574257-2709476/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_94463-234026/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4620044-4781499/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2120787-2207465/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2313489-2457090/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4137120-4236787/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3741193-3839418/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3373649-3526343/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_667706-765373/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3064103-3183794/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3605795-3745938/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4235070-4345565/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1640082-1753512/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_330708-411880/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_231688-336751/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4047544-4138984/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1978578-2122393/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3524300-3609278/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2706893-2826866/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3837848-3954209/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3181105-3257960/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4530087-4621726/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4453353-4532422/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1021417-1133861/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1751734-1857533/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1541587-1641794/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_409607-547543/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4344062-4454901/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2926098-3071683/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2203507-2316268/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1855764-1981553/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_904698-1025240/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1255724-1342443/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2823529-2932812/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2453782-2577189/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_542687-671049/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1131089-1260294/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3952557-4050015/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_12/scaffold_12_1-130505/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_12/scaffold_12_128465-240150/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_12/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_10/scaffold_10_99388-205980/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_10/scaffold_10_204041-330641/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_10/scaffold_10_1-104447/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_10/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_11/scaffold_11_73080-187308/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_11/scaffold_11_1-76578/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_11/scaffold_11_184456-297255/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_11/evm.out
+
+
+[01/05/24 21:05:06]: perl /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/convert_EVM_outputs_to_GFF3.pl --partitions partitions_list.out --output evm.out --genome /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/genome.softmasked.fa
+[01/05/24 21:05:07]: // Processing scaffold_16, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_16
+// Processing scaffold_9, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_9
+// Processing scaffold_15, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_15
+// Processing scaffold_6, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_6
+// Processing scaffold_11, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_11
+// Processing scaffold_7, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_7
+// Processing scaffold_14, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_14
+// Processing scaffold_2, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_2
+// Processing scaffold_13, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_13
+// Processing scaffold_10, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_10
+// Processing scaffold_1, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_1
+// Processing scaffold_4, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_4
+// Processing scaffold_8, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_8
+// Processing scaffold_3, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_3
+// Processing scaffold_5, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_5
+// Processing scaffold_12, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/EVM/scaffold_12
+
+[01/05/24 21:05:07]: Converting to GFF3 and collecting all EVM results

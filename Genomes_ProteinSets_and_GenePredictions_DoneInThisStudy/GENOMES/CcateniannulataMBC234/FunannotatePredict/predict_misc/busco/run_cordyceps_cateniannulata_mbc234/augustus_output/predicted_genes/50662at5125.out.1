@@ -1,0 +1,51 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Sources of extrinsic information: M RM 
+# Initializing the parameters using config directory /home/zack/miniconda3/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[9..66]--> unknown_A (27) <--[1..18]--> unknown_B (16) <--[0..20]--> unknown_C (41) <--[0..1]--> unknown_D (68) <--[0..8]--> unknown_E (10) <--[8..13]--> unknown_F (9) <--[0..0]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_45cordyceps_cateniannulata_mbc234_1240476856_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10696, name = scaffold_45) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_45	AUGUSTUS	gene	116942	117968	0.53	-	.	g1
+scaffold_45	AUGUSTUS	transcript	116942	117968	0.53	-	.	g1.t1
+scaffold_45	AUGUSTUS	stop_codon	116942	116944	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	CDS	116942	117120	0.93	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	CDS	117171	117428	1	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	CDS	117479	117507	1	-	1	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	CDS	117556	117578	0.98	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	CDS	117632	117711	0.6	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	CDS	117768	117794	0.59	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	CDS	117861	117892	0.58	-	1	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	CDS	117943	117968	0.58	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_45	AUGUSTUS	start_codon	117966	117968	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atggggcgattcaattactcctcaaaccgcgaacttcatgtcgtggtccttggcgccggcggtgttggaaagagctgct
+# tgactgcccaatttgtacacaacgaatggattgagagttacgatccaaccattgaagattcctaccgcacgcaaatacaagttgacggtcgtcaagtg
+# gtcctggagattctggacactgccggcaccgagcagtttgttgcaatgcgcgacttgtacatgaagacaggccagggatttctcctagtcttcagcat
+# cacgtcaccatcttcgctgagtgaactcgcgggtcttcgggaagaaattattcgaatcaaagatgacgagaatattcccatggtcatcgttggtaaca
+# aagcagatttggaagacagccgggccgtgccccgcgccaaaggcttctcaatatcgcaacgttggggcgcaccttactatgaagcgagtgctaggact
+# cgtactaatgttgatgaagtatttattgatctctctagacagatgctccgcaaggacgacgactatctcggcgcgggggatccagatgaaggcttcaa
+# gtttgactctcccaagagtgggcaaaaacgacgccatagactgcggtttcgcgagaatggccaaccacgttgtgtaatcctataa]
+# protein sequence = [MGRFNYSSNRELHVVVLGAGGVGKSCLTAQFVHNEWIESYDPTIEDSYRTQIQVDGRQVVLEILDTAGTEQFVAMRDL
+# YMKTGQGFLLVFSITSPSSLSELAGLREEIIRIKDDENIPMVIVGNKADLEDSRAVPRAKGFSISQRWGAPYYEASARTRTNVDEVFIDLSRQMLRKD
+# DDYLGAGDPDEGFKFDSPKSGQKRRHRLRFRENGQPRCVIL]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/8
+# CDS introns: 0/7
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 1
+#     RM:   1 
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/home/zack/funannotate_db/hypocreales_odb10/prfl/50662at5125.prfl --predictionStart=112017 --predictionEnd=122712 --species=anidulans ./tmp/scaffold_45cordyceps_cateniannulata_mbc234_1240476856_.temp

@@ -1,0 +1,1 @@
+/home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genemark/run/ES_B_1/ES_B_1.mod

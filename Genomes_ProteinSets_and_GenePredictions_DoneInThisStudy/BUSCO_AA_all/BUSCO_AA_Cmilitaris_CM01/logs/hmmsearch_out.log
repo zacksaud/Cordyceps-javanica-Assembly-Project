@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/zack/funannotate_db/hypocreales_odb10/hmms/7414at5125.hmm
+# target sequence database:        /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/Cmilitaris_CM01.faa
+# per-dom hits tabular output:     /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/BUSCO_AA_all/BUSCO_AA_Cmilitaris_CM01/run_hypocreales_odb10/hmmer_output/initial_run_results/7414at5125.out
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       7414at5125  [M=607]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+          0 1217.4   1.0          0 1209.2   1.0    2.0  1  EGX95691.1  transketolase [Cordyceps militaris CM01]
+    2.9e-29  100.7   0.0    3.7e-29  100.4   0.0    1.0  1  EGX96012.1  bacterial-like transketolase [Cordyceps militaris
+
+
+Domain annotation for each sequence (and alignments):
+>> EGX95691.1  transketolase [Cordyceps militaris CM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 1209.2   1.0         0         0       2     607 .]       4     685 .]       3     685 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 1209.2 bits;  conditional E-value: 0
+  7414at5125   2 geidqkainti...avdatfksnsghpgapmgmapvahvlfnkflkfnpknpkwlnrdrfvlsnghgcmlqyallhlfgydl...dlkafrsvdsktpg 94 
+                 +e+dq+ainti   avdatf+snsghpgapmgmapvahvlfnkf++fnp+np+wlnrdrfvlsnghgcmlqyallhlfgy+l   dlk+fr++ds+tpg
+  EGX95691.1   4 TELDQLAINTIrllAVDATFNSNSGHPGAPMGMAPVAHVLFNKFMRFNPQNPSWLNRDRFVLSNGHGCMLQYALLHLFGYKLsiqDLKDFRKIDSITPG 102
+                 79********87679******************************************************************877789************ PP
+
+  7414at5125  95 hpeahdtpgievttgplgqgvsnavglalaqahtaavfnkpgfd.vdnytycflgdgclmegvsseasslaghlqlgnliaiyddnkisidgd...aft 189
+                 hpeahdtpgievttgplgqgv+navgla+aqahtaa+fnkpgfd v+nytycflgdgclmegvs+easslaghlqlgnli++yddn+isidgd   aft
+  EGX95691.1 103 HPEAHDTPGIEVTTGPLGQGVCNAVGLAMAQAHTAAIFNKPGFDlVNNYTYCFLGDGCLMEGVSGEASSLAGHLQLGNLICVYDDNHISIDGDincAFT 201
+                 *******************************************9779*********************************************98888** PP
+
+  7414at5125 190 edvakryeaygwhvv...dgded......................lkttigfgslkqgthgvhgsplkaddikqlkkkfgfnp...favpk.......k 253
+                 edvakryeay+whvv   dgd+d                      l+ttig+gsl++gthgvhgsplkaddi q+kkkfgfnp   favp+       k
+  EGX95691.1 202 EDVAKRYEAYAWHVVtvgDGDNDlasieaaikecqavkdkpslikLRTTIGYGSLQEGTHGVHGSPLKADDIAQVKKKFGFNPdesFAVPQkvydlygK 300
+                 *************9866689998444444444444444444444458***********************************988899**944444445 PP
+
+  7414at5125 254 hssegaa...ewnql..........ehadlkrrl.gelpegwekslpvytp.daavasrklsetvlskie...pellggsadltgsnltrwkeavdfqp 334
+                 hssegaa   ewnql          ehadl+rr+ gelp+gwekslp+ytp d+ava+rklsetvl+kie   pel+ggsadltgsnltrwk+avdfqp
+  EGX95691.1 301 HSSEGAAaeaEWNQLlakykesfpaEHADLVRRQaGELPQGWEKSLPTYTPaDDAVATRKLSETVLTKIEaaiPELFGGSADLTGSNLTRWKDAVDFQP 399
+                 9****954448***8777777777789***999758**************8689***************98889************************* PP
+
+  7414at5125 335 katglgdysgryvrygvrehamgailnglaaygtilpyggtflnfvsyaagavrlsalsr.rviwvathdsiglgedgpthqpietlahfralpnclvw 432
+                 k+tglgdysgryvrygvrehamgailnglaaygtilpy+gtflnfvsyaagavrlsalsr r+iwvathdsiglgedgpthqpietlahfralpnc+vw
+  EGX95691.1 400 KSTGLGDYSGRYVRYGVREHAMGAILNGLAAYGTILPYSGTFLNFVSYAAGAVRLSALSRfRTIWVATHDSIGLGEDGPTHQPIETLAHFRALPNCMVW 498
+                 ***********************************************************989************************************* PP
+
+  7414at5125 433 rpadgnetsaayyvaltskhtpsilalsrqnlpqlegstiekaakggyvlke...aditlvstgsevsiavdaaky......lkarivslpcfevfdaq 522
+                 rpadgnetsaayyva+ts +tpsi+alsrqnlpqleg+tieka+kg+yvl+e   a+itl+stgsevsi+vdaak+      lkarivs+pcfevfdaq
+  EGX95691.1 499 RPADGNETSAAYYVAITSTQTPSIVALSRQNLPQLEGCTIEKASKGAYVLQEvegAKITLISTGSEVSICVDAAKElaekhgLKARIVSIPCFEVFDAQ 597
+                 **************************************************9866678*****************9733344469*************** PP
+
+  7414at5125 523 skeyrlsvlpdgipslsvevmstmgwerytheqfglnrfgasgaykd...kfeftpegiakravatidfwkdvpnvrspinrafqqli 607
+                 skeyrlsvlpdgip+lsvevmstmgwery+heqfglnrfgasgaykd   kfeftpegi+kra+at+dfwkdvpn+rsp+nrafqqli
+  EGX95691.1 598 SKEYRLSVLPDGIPILSVEVMSTMGWERYSHEQFGLNRFGASGAYKDvykKFEFTPEGISKRAIATVDFWKDVPNIRSPLNRAFQQLI 685
+                 **********************************************988789**********************************97 PP
+
+>> EGX96012.1  bacterial-like transketolase [Cordyceps militaris CM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.4   0.0   7.6e-33   3.7e-29      39     205 ..       6     167 ..       2     175 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 100.4 bits;  conditional E-value: 7.6e-33
+  7414at5125  39 fnkflkfnpknpkwlnrdrfvlsnghgcmlqyallhlfgydldl.kafrsvdsktpghpeahdtpgievttgplgqgvsnavglalaqahtaavfnkpg 136
+                 +   lk+  +npk+l+ +rfvlsngh+c ++ ++l ++  d+ l ++ r+        p   +  gi+vtt p+gqgv++avgla+a  + aa++n+pg
+  EGX96012.1   6 WRYVLKYSLNNPKYLKGNRFVLSNGHTCQFKDTFLAVYK-DMTLsRSSRTTPHAPLAGPPETEIEGIKVTTDPFGQGVAKAVGLAIAMKKLAATYNRPG 103
+                 5667999****************************9986.4555144555444333445556899********************************** PP
+
+  7414at5125 137 fd.vdnytycflgdgclmegvsseasslaghlqlgnliaiyddnkisidgdaftedvakryeaygwhvvd 205
+                 ++ v+n t c+  d cl  gv+s    l+g+ +l nl + y + +++ d +    d      aygw+v++
+  EGX96012.1 104 YNlVNNVTCCITRDICLQVGVCSRGGPLTGYWKLNNLAVPYANHQMTCDVSI---D---LLRAYGWDVLE 167
+                 *967999**********************************99999887542...3...35678888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (607 nodes)
+Target sequences:                         9651  (4871812 residues searched)
+Passed MSV filter:                       179  (0.0185473); expected 193.0 (0.02)
+Passed bias filter:                      153  (0.0158533); expected 193.0 (0.02)
+Passed Vit filter:                        13  (0.00134701); expected 9.7 (0.001)
+Passed Fwd filter:                         2  (0.000207232); expected 0.1 (1e-05)
+Initial search space (Z):               9651  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.13
+# Mc/sec: 22747.61
+//
+[ok]

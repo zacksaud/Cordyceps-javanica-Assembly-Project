@@ -1,0 +1,131 @@
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 01/05/2024 19:24:06 ******************
+INFO	The lineage dataset is: hypocreales_odb10 (eukaryota)
+INFO	Mode is: genome
+INFO	Maximum number of regions limited to: 3
+INFO	To reproduce this run: python /home/zack/miniconda3/envs/funannotate/lib/python3.8/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/genome.softmasked.fa -o cordyceps_cateniannulata_frd24 -l /home/zack/funannotate_db/hypocreales_odb10/ -m genome -c 12 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+
+INFO	****** Phase 1 of 2, initial predictions ******
+INFO	****** Step 1/3, current time: 01/05/2024 19:24:07 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 01/05/2024 19:24:07
+INFO	[makeblastdb]	New DB name:   /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/busco/tmp/cordyceps_cateniannulata_frd24_3711762076
+INFO	[makeblastdb]	New DB title:  /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/genome.softmasked.fa
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 3000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 16 sequences in 0.22068 seconds.
+INFO	Running tblastn, writing output to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/busco/run_cordyceps_cateniannulata_frd24/blast_output/tblastn_cordyceps_cateniannulata_frd24.tsv...
+INFO	****** Step 2/3, current time: 01/05/2024 19:28:52 ******
+INFO	Getting coordinates for candidate regions...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Running Augustus prediction using anidulans as species:
+INFO	[augustus] Please find all logs related to Augustus here: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/busco/run_cordyceps_cateniannulata_frd24/augustus_output/augustus.log
+INFO	01/05/2024 19:28:54 =>	0% of predictions performed (5533 to be done)
+INFO	01/05/2024 19:34:42 =>	10% of predictions performed (554/5533 candidate regions)
+INFO	01/05/2024 19:39:51 =>	20% of predictions performed (1107/5533 candidate regions)
+INFO	01/05/2024 19:45:20 =>	30% of predictions performed (1660/5533 candidate regions)
+INFO	01/05/2024 19:50:28 =>	40% of predictions performed (2214/5533 candidate regions)
+INFO	01/05/2024 19:55:23 =>	50% of predictions performed (2767/5533 candidate regions)
+INFO	01/05/2024 20:00:08 =>	60% of predictions performed (3320/5533 candidate regions)
+INFO	01/05/2024 20:04:57 =>	70% of predictions performed (3875/5533 candidate regions)
+INFO	01/05/2024 20:09:32 =>	80% of predictions performed (4427/5533 candidate regions)
+INFO	01/05/2024 20:14:22 =>	90% of predictions performed (4980/5533 candidate regions)
+INFO	01/05/2024 20:19:20 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 01/05/2024 20:20:06 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	01/05/2024 20:20:06 =>	0% of predictions performed (5532 to be done)
+INFO	01/05/2024 20:20:10 =>	10% of predictions performed (554/5532 candidate proteins)
+INFO	01/05/2024 20:20:17 =>	20% of predictions performed (1107/5532 candidate proteins)
+INFO	01/05/2024 20:20:27 =>	30% of predictions performed (1662/5532 candidate proteins)
+INFO	01/05/2024 20:20:41 =>	40% of predictions performed (2214/5532 candidate proteins)
+INFO	01/05/2024 20:20:58 =>	50% of predictions performed (2768/5532 candidate proteins)
+INFO	01/05/2024 20:21:19 =>	60% of predictions performed (3322/5532 candidate proteins)
+INFO	01/05/2024 20:21:43 =>	70% of predictions performed (3873/5532 candidate proteins)
+INFO	01/05/2024 20:22:11 =>	80% of predictions performed (4428/5532 candidate proteins)
+INFO	01/05/2024 20:22:42 =>	90% of predictions performed (4980/5532 candidate proteins)
+INFO	01/05/2024 20:23:17 =>	100% of predictions performed
+INFO	Results:
+INFO	C:97.9%[S:97.7%,D:0.2%],F:0.5%,M:1.6%,n:4494
+INFO	4401 Complete BUSCOs (C)
+INFO	4392 Complete and single-copy BUSCOs (S)
+INFO	9 Complete and duplicated BUSCOs (D)
+INFO	24 Fragmented BUSCOs (F)
+INFO	69 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	****** Phase 2 of 2, predictions using species specific training ******
+INFO	****** Step 1/3, current time: 01/05/2024 20:23:17 ******
+INFO	Extracting missing and fragmented buscos from the ancestral_variants file...
+INFO	Running tblastn, writing output to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/busco/run_cordyceps_cateniannulata_frd24/blast_output/tblastn_cordyceps_cateniannulata_frd24_missing_and_frag_rerun.tsv...
+INFO	Getting coordinates for candidate regions...
+INFO	****** Step 2/3, current time: 01/05/2024 20:23:52 ******
+INFO	Training Augustus using Single-Copy Complete BUSCOs:
+INFO	01/05/2024 20:23:52 =>	Converting predicted genes to short genbank files...
+INFO	01/05/2024 20:25:18 =>	All files converted to short genbank files, now running the training scripts...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Re-running Augustus with the new metaparameters, number of target BUSCOs: 93
+INFO	01/05/2024 20:25:33 =>	0% of predictions performed (105 to be done)
+INFO	01/05/2024 20:25:33 =>	10% of predictions performed (11/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	20% of predictions performed (25/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	30% of predictions performed (32/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	40% of predictions performed (43/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	50% of predictions performed (57/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	60% of predictions performed (65/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	70% of predictions performed (78/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	80% of predictions performed (85/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	90% of predictions performed (96/105 candidate regions)
+INFO	01/05/2024 20:25:33 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 01/05/2024 20:25:34 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	01/05/2024 20:25:34 =>	0% of predictions performed (0 to be done)
+INFO	01/05/2024 20:25:34 =>	100% of predictions performed
+INFO	Results:
+INFO	C:97.9%[S:97.7%,D:0.2%],F:0.5%,M:1.6%,n:4494
+INFO	4401 Complete BUSCOs (C)
+INFO	4392 Complete and single-copy BUSCOs (S)
+INFO	9 Complete and duplicated BUSCOs (D)
+INFO	24 Fragmented BUSCOs (F)
+INFO	69 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	BUSCO analysis done. Total running time: 3688.5845358371735 seconds
+INFO	Results written in /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/busco/run_cordyceps_cateniannulata_frd24/
+
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 01/05/2024 20:27:49 ******************
+INFO	The lineage dataset is: hypocreales_odb10 (eukaryota)
+INFO	Mode is: proteins
+INFO	To reproduce this run: python /home/zack/miniconda3/envs/funannotate/lib/python3.8/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/busco_augustus.proteins.fasta -o cordyceps_cateniannulata_frd24 -l /home/zack/funannotate_db/hypocreales_odb10/ -m proteins -c 12 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+INFO	Running HMMER on the proteins:
+INFO	01/05/2024 20:27:49 =>	0% of predictions performed (4494 to be done)
+INFO	01/05/2024 20:27:59 =>	10% of predictions performed (450/4494 candidate proteins)
+INFO	01/05/2024 20:28:09 =>	20% of predictions performed (899/4494 candidate proteins)
+INFO	01/05/2024 20:28:18 =>	30% of predictions performed (1349/4494 candidate proteins)
+INFO	01/05/2024 20:28:29 =>	40% of predictions performed (1798/4494 candidate proteins)
+INFO	01/05/2024 20:28:42 =>	50% of predictions performed (2251/4494 candidate proteins)
+INFO	01/05/2024 20:28:58 =>	60% of predictions performed (2697/4494 candidate proteins)
+INFO	01/05/2024 20:29:16 =>	70% of predictions performed (3146/4494 candidate proteins)
+INFO	01/05/2024 20:29:37 =>	80% of predictions performed (3598/4494 candidate proteins)
+INFO	01/05/2024 20:30:00 =>	90% of predictions performed (4046/4494 candidate proteins)
+INFO	01/05/2024 20:30:27 =>	100% of predictions performed
+INFO	Results:
+INFO	C:97.3%[S:97.1%,D:0.2%],F:0.0%,M:2.7%,n:4494
+INFO	4373 Complete BUSCOs (C)
+INFO	4365 Complete and single-copy BUSCOs (S)
+INFO	8 Complete and duplicated BUSCOs (D)
+INFO	0 Fragmented BUSCOs (F)
+INFO	121 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	BUSCO analysis done. Total running time: 158.04116463661194 seconds
+INFO	Results written in /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/CordycepsGenomes/CordycepscateniannulataFRD24/FunannotatePredict/predict_misc/busco_proteins/run_cordyceps_cateniannulata_frd24/
+

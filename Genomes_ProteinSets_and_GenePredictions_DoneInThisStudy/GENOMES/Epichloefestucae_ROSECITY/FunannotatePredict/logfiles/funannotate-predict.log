@@ -1,0 +1,236 @@
+[03/03/24 10:54:19]: /home/zack/miniconda3/envs/funannotate/bin/funannotate predict -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/ncbi_dataset/data/GCA_016859245.1/FunannotateCleanedSorted.fasta --species Epichloe festucae --cpus 12 -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict --weights genemark:100 augustus:0 GlimmerHMM:100 Augustus HiQ:100 snap:100 --force --busco_db hypocreales_odb10 --min_protlen 10 --repeat_filter none --strain RoseCity
+
+[03/03/24 10:54:19]: OS: Ubuntu 24.04, 12 cores, ~ 132 GB RAM. Python: 3.7.12
+[03/03/24 10:54:19]: Running funannotate v1.8.15
+[03/03/24 10:54:19]: GeneMark path: /home/zack/gmes_linux_64_4/
+[03/03/24 10:54:19]: Full path to gmes_petap.pl: /home/zack/gmes_linux_64_4/gmes_petap.pl
+[03/03/24 10:54:19]: GeneMark appears to be functional? True
+[03/03/24 10:54:19]: exonerate version=exonerate 2.4.0 path=/home/zack/miniconda3/envs/funannotate/bin/exonerate
+[03/03/24 10:54:19]: diamond version=2.1.8 path=/home/zack/miniconda3/envs/funannotate/bin/diamond
+[03/03/24 10:54:19]: tbl2asn version=25.8 path=/home/zack/miniconda3/envs/funannotate/bin/tbl2asn
+[03/03/24 10:54:19]: bedtools version=bedtools v2.31.1 path=/home/zack/miniconda3/envs/funannotate/bin/bedtools
+[03/03/24 10:54:19]: augustus version=3.5.0 path=/home/zack/miniconda3/envs/funannotate/bin/augustus
+[03/03/24 10:54:19]: etraining version=NA path=/home/zack/miniconda3/envs/funannotate/bin/etraining
+[03/03/24 10:54:19]: tRNAscan-SE version=2.0.12 (Nov 2022) path=/home/zack/miniconda3/envs/funannotate/bin/tRNAscan-SE
+[03/03/24 10:54:19]: bam2hints version=NA path=/home/zack/miniconda3/envs/funannotate/bin/bam2hints
+[03/03/24 10:54:19]: minimap2 version=2.26-r1175 path=/home/zack/miniconda3/envs/funannotate/bin/minimap2
+[03/03/24 10:54:19]: $AUGUSTUS_CONFIG_PATH=/home/zack/miniconda3/envs/funannotate/config/
+[03/03/24 10:54:19]: {'augustus': 1, 'hiq': 100, 'genemark': 100, 'pasa': 6, 'codingquarry': 0, 'snap': 100, 'glimmerhmm': 100, 'proteins': 1, 'transcripts': 1}
+[03/03/24 10:54:19]: Skipping CodingQuarry as no --rna_bam passed
+[03/03/24 10:54:19]: {'augustus': 'busco', 'genemark': 'selftraining', 'snap': 'busco', 'glimmerhmm': 'busco'}
+[03/03/24 10:54:19]: Parsed training data, run ab-initio gene predictors as follows:
+[03/03/24 10:54:19]: augustus --species=anidulans --proteinprofile=/home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/config/EOG092C0B3U.prfl /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/config/busco_test.fa
+[03/03/24 10:54:20]: {'augustus': 1, 'hiq': 100, 'genemark': 100, 'pasa': 6, 'codingquarry': 0, 'snap': 100, 'glimmerhmm': 100, 'proteins': 1, 'transcripts': 1}
+[03/03/24 10:54:25]: Loading genome assembly and parsing soft-masked repetitive sequences
+[03/03/24 10:54:26]: Genome loaded: 19 scaffolds; 30,962,468 bp; 30.05% repeats masked
+[03/03/24 10:54:31]: Existing protein alignments found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/protein_alignments.gff3
+[03/03/24 10:54:32]: join_mult_hints.pl
+[03/03/24 10:54:32]: Running GeneMark-ES on assembly
+[03/03/24 10:54:32]: /home/zack/gmes_linux_64_4/gmes_petap.pl --ES --max_intron 3000 --soft_mask 2000 --cores 12 --sequence /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa --fungus
+[03/03/24 11:11:47]: perl /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/misc/augustus_GFF3_to_EVM_GFF3.pl /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genemark.gff
+[03/03/24 11:11:48]: 6,990 predictions from GeneMark
+[03/03/24 11:11:48]: Running BUSCO to find conserved gene models for training ab-initio predictors
+[03/03/24 11:11:48]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa -m genome --lineage /home/zack/funannotate_db/hypocreales_odb10 -o epichloe_festucae_rosecity -c 12 --species anidulans -f --local_augustus /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/ab_initio_parameters/augustus
+[03/03/24 12:14:29]: 3,807 valid BUSCO predictions found, validating protein sequences
+[03/03/24 12:20:16]: 3,771 BUSCO predictions validated
+[03/03/24 12:20:16]: Training Augustus using BUSCO gene models
+[03/03/24 12:20:16]: gff2gbSmallDNA.pl /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco.final.gff3 /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa 600 /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/augustus.training.busco.gb
+[03/03/24 12:20:57]: Augustus initial training results:
+[03/03/24 12:20:57]: Running Augustus gene prediction using epichloe_festucae_rosecity parameters
+[03/03/24 12:25:18]: perl /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/misc/augustus_GFF3_to_EVM_GFF3.pl /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/augustus.gff3
+[03/03/24 12:25:19]: Pulling out high quality Augustus predictions
+[03/03/24 12:25:19]: Found 54 high quality predictions from Augustus (>90% exon evidence)
+[03/03/24 12:25:19]: Running SNAP gene prediction, using training data: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco.final.gff3
+[03/03/24 12:25:21]: 3771 gene models to train snap on 17 scaffolds
+[03/03/24 12:25:21]: fathom /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/snap.training.zff /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/snap-training.scaffolds.fasta -categorize 1000 -min-intron 10 -max-intron 3000
+[03/03/24 12:25:23]: fathom uni.ann uni.dna -export 1000 -plus
+[03/03/24 12:25:25]: forge export.ann export.dna
+[03/03/24 12:25:27]: perl /home/zack/miniconda3/envs/funannotate/bin/hmm-assembler.pl snap-trained /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/snaptrain
+[03/03/24 12:25:27]: snap /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/snap-trained.hmm /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa
+[03/03/24 12:27:03]: scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+scoring....decoding.10.20.30.40.50.60.70.80.90.100 done
+
+[03/03/24 12:27:09]: 6,748 predictions from SNAP
+[03/03/24 12:27:09]: Running GlimmerHMM gene prediction, using training data: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/busco.final.gff3
+[03/03/24 12:27:11]: trainGlimmerHMM /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/glimmer.exons -d /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/glimmerhmm
+[03/03/24 12:32:40]: perl /home/zack/miniconda3/envs/funannotate/bin/glimmhmm.pl /home/zack/miniconda3/envs/funannotate/bin/glimmerhmm /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/glimmerhmm -g
+[03/03/24 12:35:16]: Process scaffold_1
+Done 959214 bp
+Done 1864543 bp
+Done 2764543 bp
+Done 3674164 bp
+Done 4264167 bp
+Done scaffold_1
+Process scaffold_2
+Done 950166 bp
+Done 1851214 bp
+Done 2752855 bp
+Done 3652855 bp
+Done 4019861 bp
+Done scaffold_2
+Process scaffold_3
+Done 950803 bp
+Done 1854623 bp
+Done 2755081 bp
+Done 3223194 bp
+Done scaffold_3
+Process scaffold_4
+Done 950444 bp
+Done 1850801 bp
+Done 2773382 bp
+Done scaffold_4
+Process scaffold_5
+Done 953590 bp
+Done 1853590 bp
+Done 2735662 bp
+Done scaffold_5
+Process scaffold_6
+Done 951895 bp
+Done 1853151 bp
+Done 2470165 bp
+Done scaffold_6
+Process scaffold_7
+Done 950000 bp
+Done 1851591 bp
+Done 2439681 bp
+Done scaffold_7
+Process scaffold_8
+Done 958664 bp
+Done 1793233 bp
+Done scaffold_8
+Process scaffold_9
+Done 950000 bp
+Done 1352345 bp
+Done scaffold_9
+Process scaffold_10
+Done 950000 bp
+Done 1272810 bp
+Done scaffold_10
+Process scaffold_11
+Done 950311 bp
+Done 1215397 bp
+Done scaffold_11
+Process scaffold_12
+Done 951082 bp
+Done 1040334 bp
+Done scaffold_12
+Process scaffold_13
+Done 628361 bp
+Done scaffold_13
+Process scaffold_14
+Done 579929 bp
+Done scaffold_14
+Process scaffold_15
+Done 523131 bp
+Done scaffold_15
+Process scaffold_16
+Done 252677 bp
+Done scaffold_16
+Process scaffold_17
+Done 201687 bp
+Done scaffold_17
+Process scaffold_18
+Done 90886 bp
+Done scaffold_18
+Process scaffold_19
+Done 85566 bp
+Done scaffold_19
+
+[03/03/24 12:35:16]: 8,151 predictions from GlimmerHMM
+[03/03/24 12:35:16]: Prediction sources: ['Augustus', 'HiQ', 'GeneMark', 'GlimmerHMM', 'snap']
+[03/03/24 12:35:17]: Summary of gene models: {'total': 27379, 'Augustus': 5436, 'HiQ': 54, 'GeneMark': 6990, 'GlimmerHMM': 8151, 'snap': 6748}
+[03/03/24 12:35:17]: EVM Weights: {'Augustus': 1, 'HiQ': 100, 'GeneMark': 100, 'GlimmerHMM': 100, 'snap': 100, 'proteins': 1}
+[03/03/24 12:35:17]: Summary of gene models passed to EVM (weights):
+[03/03/24 12:35:17]: Launching EVM via funannotate-runEVM.py
+[03/03/24 12:35:17]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-runEVM.py -w /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/weights.evm.txt -c 12 -g /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/gene_predictions.gff3 -d /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/EVM -f /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa -l /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/logfiles/funannotate-EVM.log -m 10 -i 1500 -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/evm.round1.gff3 --EVM_HOME /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1 -p /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/protein_alignments.gff3
+[03/03/24 12:46:07]: 6,892 total gene models from EVM
+[03/03/24 12:46:07]: Generating protein fasta files from 6,892 EVM models
+[03/03/24 12:46:11]: now filtering out bad gene models (< 10 aa in length, transposable elements, etc).
+[03/03/24 12:46:11]: diamond blastp --sensitive --query /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/evm.round1.proteins.fa --threads 12 --out /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/repeats.xml --db /home/zack/funannotate_db/repeats.dmnd --evalue 1e-10 --max-target-seqs 1 --outfmt 5
+[03/03/24 12:46:16]: 6,892 gene models remaining
+[03/03/24 12:46:16]: Predicting tRNAs
+[03/03/24 12:46:16]: tRNAscan-SE -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/tRNAscan.out --thread 12 /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa
+[03/03/24 12:46:48]: Status: Phase I: Searching for tRNAs with HMM-enabled Infernal
+Status: Phase II: Infernal verification of candidate tRNAs detected with first-pass scan
+
+[03/03/24 12:46:48]: 
+tRNAscan-SE v.2.0.12 (Nov 2022) - scan sequences for transfer RNAs
+Copyright (C) 2022 Patricia Chan and Todd Lowe
+                   University of California Santa Cruz
+Freely distributed under the GNU General Public License (GPLv3)
+
+------------------------------------------------------------
+Sequence file(s) to search:        /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa
+Search Mode:                       Eukaryotic
+Results written to:                /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/tRNAscan.out
+Output format:                     Tabular
+Searching with:                    Infernal First Pass->Infernal
+Isotype-specific model scan:       Yes
+Covariance model:                  /home/zack/miniconda3/envs/funannotate/lib/tRNAscan-SE/models/TRNAinf-euk.cm
+                                   /home/zack/miniconda3/envs/funannotate/lib/tRNAscan-SE/models/TRNAinf-euk-SeC.cm
+Infernal first pass cutoff score:  10
+
+Temporary directory:               /tmp
+------------------------------------------------------------
+
+
+[03/03/24 12:46:49]: bedtools intersect -sorted -v -a /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/trnascan.gff3.sorted.gff3 -b /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/evm.cleaned.gff3.sorted.gff3 /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/assembly-gaps.bed.sorted.gff3
+[03/03/24 12:46:49]: 87 tRNAscan models are valid (non-overlapping)
+[03/03/24 12:46:49]: Generating GenBank tbl annotation file
+[03/03/24 12:47:03]: Collecting final annotation files for 6,979 total gene models
+[03/03/24 12:47:03]: Converting to final Genbank format
+[03/03/24 12:47:03]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/tbl2asn_parallel.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/tbl2asn/genome.tbl -f /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/genome.softmasked.fa -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_misc/tbl2asn --sbt /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/config/test.sbt -d /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_results/Epichloe_festucae_RoseCity.discrepency.report.txt -s Epichloe festucae -t -l paired-ends -v 1 -c 12 --strain RoseCity
+[03/03/24 12:47:25]: Funannotate predict is finished, output files are in the /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_results folder
+[03/03/24 12:47:25]: Your next step might be functional annotation, suggested commands:
+-------------------------------------------------------
+Run InterProScan (manual install): 
+funannotate iprscan -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict -c 12
+
+Run antiSMASH (optional): 
+funannotate remote -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict -m antismash -e youremail@server.edu
+
+Annotate Genome: 
+funannotate annotate -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict --cpus 12 --sbt yourSBTfile.txt
+-------------------------------------------------------
+                
+[03/03/24 12:47:25]: Training parameters file saved: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_results/epichloe_festucae_rosecity.parameters.json
+[03/03/24 12:47:25]: Add species parameters to database:
+
+  funannotate species -s epichloe_festucae_rosecity -a /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/Epichloefestucae_ROSECITY/FunannotatePredict/predict_results/epichloe_festucae_rosecity.parameters.json
+

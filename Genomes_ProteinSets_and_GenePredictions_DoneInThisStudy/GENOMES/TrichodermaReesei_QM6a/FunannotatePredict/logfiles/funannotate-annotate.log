@@ -1,0 +1,155 @@
+[03/03/24 22:04:53]: /home/zack/miniconda3/envs/funannotate/bin/funannotate annotate -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_results --cpus 4
+
+[03/03/24 22:04:53]: OS: Ubuntu 24.04, 12 cores, ~ 132 GB RAM. Python: 3.7.12
+[03/03/24 22:04:53]: Running 1.8.15
+[03/03/24 22:04:53]: hmmscan version=HMMER 3.4 (Aug 2023) path=/home/zack/miniconda3/envs/funannotate/bin/hmmscan
+[03/03/24 22:04:53]: hmmsearch version=HMMER 3.4 (Aug 2023) path=/home/zack/miniconda3/envs/funannotate/bin/hmmsearch
+[03/03/24 22:04:53]: diamond version=2.1.8 path=/home/zack/miniconda3/envs/funannotate/bin/diamond
+[03/03/24 22:04:54]: No NCBI SBT file given, will use default, however if you plan to submit to NCBI, create one and pass it here '--sbt'
+[03/03/24 22:04:54]: Parsing input files
+[03/03/24 22:04:54]: Existing tbl found: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_results/Trichoderma_reesei_QM6a.tbl
+[03/03/24 22:05:01]: TBL file: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.tbl
+[03/03/24 22:05:01]: GFF3 file: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_results/Trichoderma_reesei_QM6a.gff3
+[03/03/24 22:05:01]: Proteins file: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.proteins.fasta
+[03/03/24 22:05:14]: Adding Functional Annotation to Trichoderma reesei, NCBI accession: None
+[03/03/24 22:05:14]: Annotation consists of: 9,298 gene models
+[03/03/24 22:05:14]: 9,100 protein records loaded
+[03/03/24 22:05:14]: Running HMMer search of PFAM version 36.0
+[03/03/24 22:18:54]: 11,509 annotations added
+[03/03/24 22:18:54]: Running Diamond blastp search of UniProt DB version 2023_05
+[03/03/24 22:18:54]: diamond blastp --sensitive --query /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.proteins.fasta --threads 4 --out /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/uniprot.xml --db /home/zack/funannotate_db/uniprot.dmnd --evalue 1e-05 --max-target-seqs 1 --outfmt 5
+[03/03/24 22:22:08]: 966 valid gene/product annotations from 1,292 total
+[03/03/24 22:22:08]: Running Eggnog-mapper
+[03/03/24 22:22:09]: emapper.py -m diamond -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.proteins.fasta -o eggnog --cpu 4 --scratch_dir /tmp/emapper-a535b32a --temp_dir /tmp --dbmem
+[03/04/24 00:49:19]: #  emapper-2.1.12
+# emapper.py  -m diamond -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.proteins.fasta -o eggnog --cpu 4 --scratch_dir /tmp/emapper-a535b32a --temp_dir /tmp --dbmem
+[1;33m  /home/zack/miniconda3/envs/funannotate/bin/diamond blastp -d '/home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/data/eggnog_proteins.dmnd' -q '/home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.proteins.fasta' --threads 4 -o '/tmp/emapper-a535b32a/eggnog.emapper.hits' --tmpdir '/tmp/emappertmp_dmdn_y_rhn44q' --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+Loading source DB...
+[31mWarning: this can take a few minutes and load up to 45GB to RAM. Using --dbmem is recommended to annotate a large number of sequences.[0m
+ Copying result file /tmp/emapper-a535b32a/eggnog.emapper.hits from scratch to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc
+ Copying result file /tmp/emapper-a535b32a/eggnog.emapper.seed_orthologs from scratch to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc
+ Copying result file /tmp/emapper-a535b32a/eggnog.emapper.annotations from scratch to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc
+[31mData in /tmp/emapper-a535b32a will be not removed. Please, clear it manually.[0m
+[32mDone[0m
+[1;33mResult files:[0m
+   /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/eggnog.emapper.hits
+   /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/eggnog.emapper.seed_orthologs
+   /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/eggnog.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using eggNOG-mapper (version emapper-2.1.12) [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+================================================================================
+
+Total hits processed: 8958
+Total time: 8830 secs
+FINISHED
+
+[03/04/24 00:49:19]: [1;32mFunctional annotation of hits...[0m
+[1;34mTime to load the DB into memory: 34.47708749771118[0m
+500 38.01904320716858 13.15 q/s (% mem usage: 37.50, % mem avail: 62.52)
+1000 39.88392448425293 25.07 q/s (% mem usage: 37.50, % mem avail: 62.51)
+1500 42.09512114524841 35.63 q/s (% mem usage: 37.50, % mem avail: 62.51)
+2000 44.05199933052063 45.40 q/s (% mem usage: 37.50, % mem avail: 62.51)
+2500 45.61887335777283 54.80 q/s (% mem usage: 37.50, % mem avail: 62.51)
+3000 47.135584592819214 63.65 q/s (% mem usage: 37.50, % mem avail: 62.51)
+3500 48.657329082489014 71.93 q/s (% mem usage: 37.50, % mem avail: 62.51)
+4000 50.341312408447266 79.46 q/s (% mem usage: 37.50, % mem avail: 62.51)
+4500 51.98653841018677 86.56 q/s (% mem usage: 37.50, % mem avail: 62.51)
+5000 53.120367765426636 94.13 q/s (% mem usage: 37.50, % mem avail: 62.51)
+5500 54.868547677993774 100.24 q/s (% mem usage: 37.50, % mem avail: 62.51)
+6000 56.148651123046875 106.86 q/s (% mem usage: 37.50, % mem avail: 62.51)
+6500 57.684844970703125 112.68 q/s (% mem usage: 37.50, % mem avail: 62.51)
+7000 59.38191509246826 117.88 q/s (% mem usage: 37.50, % mem avail: 62.51)
+7500 60.4981906414032 123.97 q/s (% mem usage: 37.50, % mem avail: 62.51)
+8000 61.93301248550415 129.17 q/s (% mem usage: 37.50, % mem avail: 62.51)
+8500 63.478320360183716 133.90 q/s (% mem usage: 37.50, % mem avail: 62.51)
+8958 78.47235488891602 114.15 q/s (% mem usage: 4.50, % mem avail: 95.45)
+
+[03/04/24 00:49:19]: Parsing EggNog Annotations
+[03/04/24 00:49:19]: EggNog version parsed as 2.1.12
+[03/04/24 00:49:19]: EggNog annotation detected as emapper v2.1.12 and DB prefix ENOG50
+[03/04/24 00:49:19]: 18,322  COG and EggNog annotations added
+[03/04/24 00:49:19]: Combining UniProt/EggNog gene and product names using Gene2Product version 1.92
+[03/04/24 00:49:19]: 2,755 gene name and product description annotations added
+[03/04/24 00:49:19]: Running Diamond blastp search of MEROPS version 12.0
+[03/04/24 00:49:19]: diamond blastp --sensitive --query /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.proteins.fasta --threads 4 --out /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/merops.xml --db /home/zack/funannotate_db/merops.dmnd --evalue 1e-05 --max-target-seqs 1 --outfmt 5
+[03/04/24 00:49:22]: 307 annotations added
+[03/04/24 00:49:22]: Annotating CAZYmes using HMMer search of dbCAN version 12.0
+[03/04/24 00:50:28]: 363 annotations added
+[03/04/24 00:50:28]: Annotating proteins with BUSCO dikarya models
+[03/04/24 00:50:28]: /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.proteins.fasta -m proteins -l /home/zack/funannotate_db/dikarya -o busco -c 4 -f
+[03/04/24 00:51:28]: 
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 03/04/2024 00:50:28 ******************
+INFO	The lineage dataset is: dikarya_odb9 (eukaryota)
+INFO	Mode is: proteins
+INFO	To reproduce this run: python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.proteins.fasta -o busco -l /home/zack/funannotate_db/dikarya/ -m proteins -c 4 -sp aspergillus_nidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+INFO	Running HMMER on the proteins:
+INFO	03/04/2024 00:50:28 =>	0% of predictions performed (1312 to be done)
+INFO	03/04/2024 00:50:43 =>	10% of predictions performed (132/1312 candidate proteins)
+INFO	03/04/2024 00:50:51 =>	20% of predictions performed (263/1312 candidate proteins)
+INFO	03/04/2024 00:50:58 =>	30% of predictions performed (394/1312 candidate proteins)
+INFO	03/04/2024 00:51:04 =>	40% of predictions performed (525/1312 candidate proteins)
+INFO	03/04/2024 00:51:10 =>	50% of predictions performed (657/1312 candidate proteins)
+INFO	03/04/2024 00:51:16 =>	60% of predictions performed (788/1312 candidate proteins)
+INFO	03/04/2024 00:51:19 =>	70% of predictions performed (920/1312 candidate proteins)
+INFO	03/04/2024 00:51:23 =>	80% of predictions performed (1050/1312 candidate proteins)
+INFO	03/04/2024 00:51:26 =>	90% of predictions performed (1181/1312 candidate proteins)
+INFO	03/04/2024 00:51:28 =>	100% of predictions performed
+INFO	Results:
+INFO	C:97.8%[S:97.5%,D:0.3%],F:1.9%,M:0.3%,n:1312
+INFO	1283 Complete BUSCOs (C)
+INFO	1279 Complete and single-copy BUSCOs (S)
+INFO	4 Complete and duplicated BUSCOs (D)
+INFO	25 Fragmented BUSCOs (F)
+INFO	4 Missing BUSCOs (M)
+INFO	1312 Total BUSCO groups searched
+
+INFO	BUSCO analysis done. Total running time: 60.53909969329834 seconds
+INFO	Results written in /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/run_busco/
+
+
+[03/04/24 00:51:28]: 1,288 annotations added
+[03/04/24 00:51:28]: Skipping phobius predictions, try funannotate remote -m phobius
+[03/04/24 00:51:28]: Skipping secretome: neither SignalP nor Phobius searches were run
+[03/04/24 00:51:28]: 0 secretome and 0 transmembane annotations added
+[03/04/24 00:51:28]: InterProScan error, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/iprscan.xml is empty, or no XML file passed via --iprscan. Functional annotation will be lacking.
+[03/04/24 00:51:29]: Found 0 duplicated annotations, adding 37,299 valid annotations
+[03/04/24 00:51:29]: Parsing tbl file: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/genome.tbl
+[03/04/24 00:51:29]: Converting to final Genbank format, good luck!
+[03/04/24 00:51:29]: /home/zack/miniconda3/envs/funannotate/bin/python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/tbl2asn_parallel.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/tbl2asn/genome.tbl -f /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/tbl2asn/genome.fsa -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_misc/tbl2asn --sbt /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/config/test.sbt -d discrepency.report.txt -s Trichoderma reesei -t -l paired-ends -v 1 -c 4
+[03/04/24 00:52:11]: Creating AGP file and corresponding contigs file
+[03/04/24 00:52:13]: Writing genome annotation table.
+[03/04/24 00:53:05]: Funannotate annotate has completed successfully!
+
+        We need YOUR help to improve gene names/product descriptions:
+           0 gene/products names MUST be fixed, see /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_results/Gene2Products.must-fix.txt
+           0 gene/product names need to be curated, see /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_results/Gene2Products.need-curating.txt
+           7 gene/product names passed but are not in Database, see /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/annotate_results/Gene2Products.new-names-passed.txt
+
+        Please consider contributing a PR at https://github.com/nextgenusfs/gene2product
+

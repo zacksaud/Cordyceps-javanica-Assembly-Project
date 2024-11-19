@@ -1,0 +1,55 @@
+Will create parameters for a EUKARYOTIC species!
+creating directory /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_cbs999.97/ ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_cbs999.97/trichoderma_reesei_cbs999.97_parameters.cfg ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_cbs999.97/trichoderma_reesei_cbs999.97_weightmatrix.txt ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_cbs999.97/trichoderma_reesei_cbs999.97_metapars.cfg ...
+The necessary files for training trichoderma_reesei_cbs999.97 have been created.
+Now, either run etraining or optimize_parameters.pl with --species=trichoderma_reesei_cbs999.97.
+etraining quickly estimates the parameters from a file with training genes.
+optimize_augustus.pl alternates running etraining and augustus to find optimal metaparameters.
+
+# Read in 4323 genbank sequences.
+Quantiles of the GC contents in the training set:
+0%	0.355
+5%	0.515	10%	0.523
+15%	0.529	20%	0.534
+25%	0.538	30%	0.542
+35%	0.545	40%	0.548
+45%	0.55	50%	0.554
+55%	0.556	60%	0.559
+65%	0.562	70%	0.565
+75%	0.569	80%	0.573
+85%	0.578	90%	0.584
+95%	0.592	100%	0.65
+HMM-training the parameters...
+i= 0 bc= (0.237, 0.263, 0.263, 0.237)
+ ** building model for exons *EXON*
+start codon frequencies: ATG(4323)
+# admissible start codons and their probabilities: ATG(1), CTG(0), TTG(0)
+ number of bases in the reading frames: 2481443 2485641 2485643
+--- frame = 0 ---    minPatSum = 233
+--- frame = 1 ---    minPatSum = 233
+--- frame = 2 ---    minPatSum = 233
+--- initial frame = 0 ---    minPatSum = 233
+--- initial frame = 1 ---    minPatSum = 233
+--- initial frame = 2 ---    minPatSum = 233
+--- internal exon terminal frame = 0 ---    minPatSum = 233
+--- internal exon terminal frame = 1 ---    minPatSum = 233
+--- internal exon terminal frame = 2 ---    minPatSum = 233
+single, initial, internal, terminal mean exon lengths :
+1205	282	331	588
+single exon : 688
+initial exon 0 : 1442
+initial exon 1 : 1250
+initial exon 2 : 943
+internal exon 0 : 2180
+internal exon 1 : 1823
+internal exon 2 : 1493
+terminal exon : 3635
+Frequency of stop codons:
+tag: 1155 (0.267)
+taa: 1287 (0.298)
+tga: 1881 (0.435)
+end *EXON*
+Storing parameters to file...
+Writing exon model parameters [1] to file /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_cbs999.97/trichoderma_reesei_cbs999.97_exon_probs.pbl.

@@ -1,0 +1,47 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Sources of extrinsic information: M RM 
+# Initializing the parameters using config directory /home/zack/miniconda3/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..106]--> unknown_A (48) <--[2..3]--> unknown_B (29) <--[1..121]--> unknown_C (131) <--[0..5]--> unknown_D (30) <--[0..0]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_1epichloe_festucae_rosecity_1979595390_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10465, name = scaffold_1) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_1	AUGUSTUS	gene	706094	707383	0.53	-	.	g1
+scaffold_1	AUGUSTUS	transcript	706094	707383	0.53	-	.	g1.t1
+scaffold_1	AUGUSTUS	stop_codon	706094	706096	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	706094	706582	0.99	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	707033	707095	0.54	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	707144	707383	1	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	start_codon	707381	707383	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atggccgatgttcctctgcaggtgatttcagagaactcggcgtccgagcggcgcatcaccccatcctggtccatcaata
+# ctcttaaagcaaagcttgaatctgtcacgggcattcctccttgggcacaaagactcagtctcaaaacgtccacaggctcggatgccatccccgtccaa
+# gcggcagatgaggacgtcacccagctgttcagctttcccctggcaccgtacgccgatctgcatgaccagggctgccacacgagcacgagtgggacgga
+# cgagatacttgtcgatggaggaagctcggtggcggatacccgacctcctggggcaaggcccaacttcaccgacacatctggcgtggacaagtatgaga
+# tgcctgaggaggagtatgaaaagaagtccgactcagttctagcgtggaaaaaggcacaaaaacttggccgattcgatcccaacgcaccaaaccacgag
+# agggctaggctggaggctacggaacaagaagtgcgccagcgtggcatccaagccggtaagcgatgccgcgttggcggtgaggacacaagacgtggggt
+# catccgatacgtgggcgaagtcccggagatcccaaacggccacggacaatgggtgggagtccagctagacgagcctgtaggcaaaaatgacggcagca
+# ttaatggcaacaggtactggggagagccctcgtccatgaagcacggcgtgtttgtgcgtccagaacgggtggaaatcggcgatttccctcgaatggac
+# gatcttgaggacatggaagagatataa]
+# protein sequence = [MADVPLQVISENSASERRITPSWSINTLKAKLESVTGIPPWAQRLSLKTSTGSDAIPVQAADEDVTQLFSFPLAPYAD
+# LHDQGCHTSTSGTDEILVDGGSSVADTRPPGARPNFTDTSGVDKYEMPEEEYEKKSDSVLAWKKAQKLGRFDPNAPNHERARLEATEQEVRQRGIQAG
+# KRCRVGGEDTRRGVIRYVGEVPEIPNGHGQWVGVQLDEPVGKNDGSINGNRYWGEPSSMKHGVFVRPERVEIGDFPRMDDLEDMEEI]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/3
+# CDS introns: 0/2
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/home/zack/funannotate_db/hypocreales_odb10/prfl/44651at5125.prfl --predictionStart=701097 --predictionEnd=711561 --species=anidulans ./tmp/scaffold_1epichloe_festucae_rosecity_1979595390_.temp

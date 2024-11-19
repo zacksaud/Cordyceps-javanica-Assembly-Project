@@ -1,0 +1,131 @@
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 03/03/2024 17:48:46 ******************
+INFO	The lineage dataset is: hypocreales_odb10 (eukaryota)
+INFO	Mode is: genome
+INFO	Maximum number of regions limited to: 3
+INFO	To reproduce this run: python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa -o trichoderma_reesei_qm6a -l /home/zack/funannotate_db/hypocreales_odb10/ -m genome -c 4 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+
+INFO	****** Phase 1 of 2, initial predictions ******
+INFO	****** Step 1/3, current time: 03/03/2024 17:48:46 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 03/03/2024 17:48:46
+INFO	[makeblastdb]	New DB name:   /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco/tmp/trichoderma_reesei_qm6a_3752470121
+INFO	[makeblastdb]	New DB title:  /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/genome.softmasked.fa
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 3000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 7 sequences in 0.223396 seconds.
+INFO	Running tblastn, writing output to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco/run_trichoderma_reesei_qm6a/blast_output/tblastn_trichoderma_reesei_qm6a.tsv...
+INFO	****** Step 2/3, current time: 03/03/2024 17:59:11 ******
+INFO	Getting coordinates for candidate regions...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Running Augustus prediction using anidulans as species:
+INFO	[augustus] Please find all logs related to Augustus here: /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco/run_trichoderma_reesei_qm6a/augustus_output/augustus.log
+INFO	03/03/2024 17:59:14 =>	0% of predictions performed (5368 to be done)
+INFO	03/03/2024 18:13:19 =>	10% of predictions performed (537/5368 candidate regions)
+INFO	03/03/2024 18:28:55 =>	20% of predictions performed (1074/5368 candidate regions)
+INFO	03/03/2024 18:44:25 =>	30% of predictions performed (1611/5368 candidate regions)
+INFO	03/03/2024 19:00:00 =>	40% of predictions performed (2148/5368 candidate regions)
+INFO	03/03/2024 19:15:09 =>	50% of predictions performed (2685/5368 candidate regions)
+INFO	03/03/2024 19:30:12 =>	60% of predictions performed (3221/5368 candidate regions)
+INFO	03/03/2024 19:45:05 =>	70% of predictions performed (3758/5368 candidate regions)
+INFO	03/03/2024 19:58:59 =>	80% of predictions performed (4295/5368 candidate regions)
+INFO	03/03/2024 20:13:54 =>	90% of predictions performed (4832/5368 candidate regions)
+INFO	03/03/2024 20:27:28 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 03/03/2024 20:28:00 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	03/03/2024 20:28:01 =>	0% of predictions performed (5367 to be done)
+INFO	03/03/2024 20:28:11 =>	10% of predictions performed (537/5367 candidate proteins)
+INFO	03/03/2024 20:28:22 =>	20% of predictions performed (1074/5367 candidate proteins)
+INFO	03/03/2024 20:28:36 =>	30% of predictions performed (1612/5367 candidate proteins)
+INFO	03/03/2024 20:28:55 =>	40% of predictions performed (2148/5367 candidate proteins)
+INFO	03/03/2024 20:29:19 =>	50% of predictions performed (2686/5367 candidate proteins)
+INFO	03/03/2024 20:29:46 =>	60% of predictions performed (3222/5367 candidate proteins)
+INFO	03/03/2024 20:30:21 =>	70% of predictions performed (3759/5367 candidate proteins)
+INFO	03/03/2024 20:30:58 =>	80% of predictions performed (4294/5367 candidate proteins)
+INFO	03/03/2024 20:31:43 =>	90% of predictions performed (4834/5367 candidate proteins)
+INFO	03/03/2024 20:32:30 =>	100% of predictions performed
+INFO	Results:
+INFO	C:98.8%[S:98.7%,D:0.1%],F:0.1%,M:1.1%,n:4494
+INFO	4442 Complete BUSCOs (C)
+INFO	4437 Complete and single-copy BUSCOs (S)
+INFO	5 Complete and duplicated BUSCOs (D)
+INFO	6 Fragmented BUSCOs (F)
+INFO	46 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	****** Phase 2 of 2, predictions using species specific training ******
+INFO	****** Step 1/3, current time: 03/03/2024 20:32:31 ******
+INFO	Extracting missing and fragmented buscos from the ancestral_variants file...
+INFO	Running tblastn, writing output to /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco/run_trichoderma_reesei_qm6a/blast_output/tblastn_trichoderma_reesei_qm6a_missing_and_frag_rerun.tsv...
+INFO	Getting coordinates for candidate regions...
+INFO	****** Step 2/3, current time: 03/03/2024 20:33:34 ******
+INFO	Training Augustus using Single-Copy Complete BUSCOs:
+INFO	03/03/2024 20:33:34 =>	Converting predicted genes to short genbank files...
+INFO	03/03/2024 20:37:43 =>	All files converted to short genbank files, now running the training scripts...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Re-running Augustus with the new metaparameters, number of target BUSCOs: 52
+INFO	03/03/2024 20:37:56 =>	0% of predictions performed (56 to be done)
+INFO	03/03/2024 20:37:56 =>	10% of predictions performed (6/56 candidate regions)
+INFO	03/03/2024 20:37:56 =>	20% of predictions performed (12/56 candidate regions)
+INFO	03/03/2024 20:37:57 =>	30% of predictions performed (18/56 candidate regions)
+INFO	03/03/2024 20:37:57 =>	40% of predictions performed (23/56 candidate regions)
+INFO	03/03/2024 20:37:57 =>	50% of predictions performed (29/56 candidate regions)
+INFO	03/03/2024 20:37:57 =>	60% of predictions performed (34/56 candidate regions)
+INFO	03/03/2024 20:37:57 =>	70% of predictions performed (40/56 candidate regions)
+INFO	03/03/2024 20:37:57 =>	80% of predictions performed (46/56 candidate regions)
+INFO	03/03/2024 20:37:57 =>	90% of predictions performed (51/56 candidate regions)
+INFO	03/03/2024 20:37:57 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 03/03/2024 20:37:57 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	03/03/2024 20:37:57 =>	0% of predictions performed (0 to be done)
+INFO	03/03/2024 20:37:57 =>	100% of predictions performed
+INFO	Results:
+INFO	C:98.8%[S:98.7%,D:0.1%],F:0.1%,M:1.1%,n:4494
+INFO	4442 Complete BUSCOs (C)
+INFO	4437 Complete and single-copy BUSCOs (S)
+INFO	5 Complete and duplicated BUSCOs (D)
+INFO	6 Fragmented BUSCOs (F)
+INFO	46 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	BUSCO analysis done. Total running time: 10153.392117023468 seconds
+INFO	Results written in /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco/run_trichoderma_reesei_qm6a/
+
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 03/03/2024 20:41:47 ******************
+INFO	The lineage dataset is: hypocreales_odb10 (eukaryota)
+INFO	Mode is: proteins
+INFO	To reproduce this run: python /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco_augustus.proteins.fasta -o trichoderma_reesei_qm6a -l /home/zack/funannotate_db/hypocreales_odb10/ -m proteins -c 4 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+INFO	Running HMMER on the proteins:
+INFO	03/03/2024 20:41:47 =>	0% of predictions performed (4494 to be done)
+INFO	03/03/2024 20:42:16 =>	10% of predictions performed (450/4494 candidate proteins)
+INFO	03/03/2024 20:42:43 =>	20% of predictions performed (899/4494 candidate proteins)
+INFO	03/03/2024 20:43:08 =>	30% of predictions performed (1350/4494 candidate proteins)
+INFO	03/03/2024 20:43:32 =>	40% of predictions performed (1798/4494 candidate proteins)
+INFO	03/03/2024 20:43:56 =>	50% of predictions performed (2248/4494 candidate proteins)
+INFO	03/03/2024 20:44:22 =>	60% of predictions performed (2697/4494 candidate proteins)
+INFO	03/03/2024 20:44:47 =>	70% of predictions performed (3146/4494 candidate proteins)
+INFO	03/03/2024 20:45:15 =>	80% of predictions performed (3598/4494 candidate proteins)
+INFO	03/03/2024 20:45:43 =>	90% of predictions performed (4047/4494 candidate proteins)
+INFO	03/03/2024 20:46:28 =>	100% of predictions performed
+INFO	Results:
+INFO	C:98.5%[S:98.4%,D:0.1%],F:0.0%,M:1.5%,n:4494
+INFO	4425 Complete BUSCOs (C)
+INFO	4422 Complete and single-copy BUSCOs (S)
+INFO	3 Complete and duplicated BUSCOs (D)
+INFO	0 Fragmented BUSCOs (F)
+INFO	69 Missing BUSCOs (M)
+INFO	4494 Total BUSCO groups searched
+
+INFO	BUSCO analysis done. Total running time: 281.67894554138184 seconds
+INFO	Results written in /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/busco_proteins/run_trichoderma_reesei_qm6a/
+

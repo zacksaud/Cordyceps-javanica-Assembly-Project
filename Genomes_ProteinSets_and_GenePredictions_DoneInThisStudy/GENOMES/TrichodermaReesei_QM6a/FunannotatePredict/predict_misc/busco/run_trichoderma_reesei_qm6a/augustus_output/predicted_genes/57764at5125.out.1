@@ -1,0 +1,58 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Sources of extrinsic information: M RM 
+# Initializing the parameters using config directory /home/zack/miniconda3/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..144]--> unknown_A (30) <--[0..44]--> unknown_B (19) <--[0..3]--> unknown_C (22) <--[0..1]--> unknown_D (6) <--[0..23]--> unknown_E (45) <--[0..0]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_3trichoderma_reesei_qm6a_3752470121_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10540, name = scaffold_3) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_3	AUGUSTUS	gene	2617550	2618320	0.01	+	.	g1
+scaffold_3	AUGUSTUS	transcript	2617550	2618320	0.01	+	.	g1.t1
+scaffold_3	AUGUSTUS	start_codon	2617550	2617552	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	CDS	2617550	2617562	0.01	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	CDS	2617666	2617681	0.01	+	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	CDS	2617768	2617852	0.01	+	1	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	CDS	2617946	2618092	0.01	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	CDS	2618186	2618320	0.99	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	stop_codon	2618318	2618320	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	2617677	2617681	6.08	+	0	target "unknown_A[1..2]"; target_start 8; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	2617768	2617852	7.24	+	1	target "unknown_A[2..30]"; target_start 8; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	2617946	2618002	6.38	+	0	target "unknown_B[1..19]"; target_start 38; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	2618003	2618068	6.56	+	0	target "unknown_C[1..22]"; target_start 57; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	2618072	2618089	7.25	+	0	target "unknown_D[1..6]"; target_start 80; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	2618090	2618092	3.25	+	0	target "unknown_E[1..1]"; target_start 86; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	2618186	2618317	6.35	+	0	target "unknown_E[2..45]"; target_start 86; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgtcctggcaagctttcgtcgatactagcttggtcgccaccggccacgtcgccaagggcgccatcatcagcattgctg
+# gcgacagcgcctgggccacctctccttctctgacgatccaacccgccgagatgaaggtcattgccgacatcgtcagcggcaacgaggccgcctccgac
+# aaggcgcgcgccgagggcctgtacattgccggacagcgctacgtcgtgacccgagtcgatgagggaaacatctacgcccgagctggtcgggagggtgt
+# tgccatcaccgcctccaagcaggccatcgttatcggcatccacaacgagacccagcaggccggaaacgccaccttggtcgtcagcgctctcgccgacc
+# acctcaagaacaccggatactaa]
+# protein sequence = [MSWQAFVDTSLVATGHVAKGAIISIAGDSAWATSPSLTIQPAEMKVIADIVSGNEAASDKARAEGLYIAGQRYVVTRV
+# DEGNIYARAGREGVAITASKQAIVIGIHNETQQAGNATLVVSALADHLKNTGY]
+# sequence of block unknown_A     8 [TSLVATGHVAKGAIISIAGDSAWATSPSLT] 38
+# sequence of block unknown_B    38 [IQPAEMKVIADIVSGNEAA] 57
+# sequence of block unknown_C    57 [SDKARAEGLYIAGQRYVVTRVD] 79
+# sequence of block unknown_D    80 [GNIYAR] 86
+# sequence of block unknown_E    86 [AGREGVAITASKQAIVIGIHNETQQAGNATLVVSALADHLKNTGY] 131
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/5
+# CDS introns: 0/4
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 2
+#     RM:   2 
+# incompatible hint groups: 1
+#     RM:   1 
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/home/zack/funannotate_db/hypocreales_odb10/prfl/57764at5125.prfl --predictionStart=2612763 --predictionEnd=2623302 --species=anidulans ./tmp/scaffold_3trichoderma_reesei_qm6a_3752470121_.temp

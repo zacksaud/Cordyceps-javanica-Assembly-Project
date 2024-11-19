@@ -1,0 +1,135 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/zack/funannotate_db/hypocreales_odb10/hmms/7414at5125.hmm
+# target sequence database:        /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/Cjavanica_IJ2G.faa
+# per-dom hits tabular output:     /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/BUSCO_AA_all/BUSCO_AA_Cjavanica_IJ2G/run_hypocreales_odb10/hmmer_output/initial_run_results/7414at5125.out
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       7414at5125  [M=607]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+          0 1214.5   1.2   8.6e-234  776.5   0.0    2.0  2  TQW05040.1  transketolase 1 [Cordyceps javanica]
+   3.1e-147  490.6   1.1    5.2e-80  268.6   0.0    2.4  2  TQW04555.1  dihydroxyacetone synthase [Cordyceps javanica]
+
+
+Domain annotation for each sequence (and alignments):
+>> TQW05040.1  transketolase 1 [Cordyceps javanica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  436.6   1.0  1.2e-134    7e-131       1     211 [.       3     226 ..       3     242 .. 0.95
+   2 !  776.5   0.0  1.6e-237  8.6e-234     209     607 .]     246     685 .]     233     685 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 436.6 bits;  conditional E-value: 1.2e-134
+  7414at5125   1 ygeidqkainti...avdatfksnsghpgapmgmapvahvlfnkflkfnpknpkwlnrdrfvlsnghgcmlqyallhlfgydl...dlkafrsvdsktp 93 
+                 y+e+dq+ainti   avdatf+snsghpgapmgmapvahvlfnkf++fnp+np+wlnrdrfvlsnghgcmlqyallhlfgy+l   d+k+fr+vds+tp
+  TQW05040.1   3 YTELDQLAINTIrllAVDATFNSNSGHPGAPMGMAPVAHVLFNKFMRFNPQNPSWLNRDRFVLSNGHGCMLQYALLHLFGYKLslqDIKDFRKVDSITP 101
+                 89*********87779******************************************************************866789*********** PP
+
+  7414at5125  94 ghpeahdtpgievttgplgqgvsnavglalaqahtaavfnkpgfdv.dnytycflgdgclmegvsseasslaghlqlgnliaiyddnkisidgd...af 188
+                 ghpeahdtpgievttgplgqgv+navgla+aqah+aavfnk+gfd+ +nytycflgdgclmegvs+easslaghlqlgnli+iyddn+isidgd   af
+  TQW05040.1 102 GHPEAHDTPGIEVTTGPLGQGVCNAVGLAMAQAHSAAVFNKDGFDLlNNYTYCFLGDGCLMEGVSGEASSLAGHLQLGNLICIYDDNHISIDGDincAF 200
+                 *********************************************549*********************************************98888* PP
+
+  7414at5125 189 tedvakryeaygwhvv...dgdedlk 211
+                 tedvakryeaygwhvv   dgd+dl 
+  TQW05040.1 201 TEDVAKRYEAYGWHVVtvsDGDNDLD 226
+                 **************8755589*9996 PP
+
+  == domain 2  score: 776.5 bits;  conditional E-value: 1.6e-237
+  7414at5125 209 dlkttigfgslkqgthgvhgsplkaddikqlkkkfgfnp...favpk.......khssegaa...ewnql..........ehadlkrrl.gelpegwek 283
+                  l+ttig+gslkqgt gvhgsplkaddi q+kkkfgfnp   favp+       khssegaa   ewnql          ehadl+rr+ g+lp+gwek
+  TQW05040.1 246 KLRTTIGYGSLKQGTGGVHGSPLKADDIAQVKKKFGFNPdesFAVPQkvydlygKHSSEGAAaesEWNQLlakykesfpaEHADLVRRQsGDLPQGWEK 344
+                 69************************************988899**9444444459****965558***8777777777789***999758******** PP
+
+  7414at5125 284 slpvytp.daavasrklsetvlskie...pellggsadltgsnltrwkeavdfqpkatglgdysgryvrygvrehamgailnglaaygtilpyggtfln 378
+                 slp+ytp d+ava+rklsetvl+kie   pel+ggsadltgsnltrwk+avdfqpka+glgdysgryvrygvrehamgailnglaaygtilpy+gtfln
+  TQW05040.1 345 SLPTYTPaDDAVATRKLSETVLTKIEaavPELFGGSADLTGSNLTRWKDAVDFQPKANGLGDYSGRYVRYGVREHAMGAILNGLAAYGTILPYAGTFLN 443
+                 ******8689***************98889********************************************************************* PP
+
+  7414at5125 379 fvsyaagavrlsalsr.rviwvathdsiglgedgpthqpietlahfralpnclvwrpadgnetsaayyvaltskhtpsilalsrqnlpqlegstiekaa 476
+                 fvsyaagavrlsals+ r+iwvathdsiglgedgpthqpietlahfralpnc+vwrpadgnetsaayyvaltsk+tpsi+alsrqnlpqleg+tieka+
+  TQW05040.1 444 FVSYAAGAVRLSALSHfRTIWVATHDSIGLGEDGPTHQPIETLAHFRALPNCMVWRPADGNETSAAYYVALTSKNTPSIVALSRQNLPQLEGCTIEKAS 542
+                 ***************879********************************************************************************* PP
+
+  7414at5125 477 kggyvlke...aditlvstgsevsiavdaaky......lkarivslpcfevfdaqskeyrlsvlpdgipslsvevmstmgwerytheqfglnrfgasga 566
+                 kg+yvl+e   aditl+stgsevsi+vdaak+      lk+rivs+pcfevfdaqskeyrlsvlpdgip+lsvevmstmgwery+heqfglnrfgasga
+  TQW05040.1 543 KGAYVLQEvegADITLISTGSEVSICVDAAKElsekhgLKTRIVSIPCFEVFDAQSKEYRLSVLPDGIPILSVEVMSTMGWERYSHEQFGLNRFGASGA 641
+                 ******9866689*****************9733334469*********************************************************** PP
+
+  7414at5125 567 ykd...kfeftpegiakravatidfwkdvpnvrspinrafqqli 607
+                 ykd   kfeftpegiakravat++fwkdvpnvrsp+nrafqqli
+  TQW05040.1 642 YKDvykKFEFTPEGIAKRAVATVNFWKDVPNVRSPLNRAFQQLI 685
+                 **988789**********************************97 PP
+
+>> TQW04555.1  dihydroxyacetone synthase [Cordyceps javanica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  219.7   0.5   5.8e-69   3.2e-65      12     205 ..      37     239 ..      29     254 .. 0.89
+   2 !  268.6   0.0   9.3e-84   5.2e-80     209     573 ..     268     681 ..     263     703 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 219.7 bits;  conditional E-value: 5.8e-69
+  7414at5125  12 iavdatfksnsghpgapmgmapvahvlfnkflkfnpknpkwlnrdrfvlsnghgcmlqyallhlfgyd.l...dlkafrs..vdsktpghpeahdtpgi 104
+                 + +d   + n ghpg+ mgma +   l++  +++ p+np+++nrdrfvlsngh+c++qy++lhl gy+ +   +lk++ s   ds+ pghpe  +  gi
+  TQW04555.1  37 LIADLCQQFNGGHPGSAMGMAAIGIALWKYVMRYSPNNPSFFNRDRFVLSNGHTCLFQYTFLHLTGYKdMtleQLKSYHSarYDSICPGHPEI-EIEGI 134
+                 678889999**********************************************************64522245666543369********7.689** PP
+
+  7414at5125 105 evttgplgqgvsnavglalaqahtaavfnkpgfd.vdnytycflgdgclmegvsseasslaghlqlgnliaiyddnkisidgd...aftedvakryeay 199
+                 evttgplgqgv+navgla+a    aa++n+pgf+ ++n t+c++gd cl egv+ ea   agh +l nl++iyd+n+i+ dg+   + ted+  +  a 
+  TQW04555.1 135 EVTTGPLGQGVANAVGLAMATKSLAATYNRPGFElINNTTWCMVGDACLQEGVALEAFQAAGHWRLNNLVVIYDNNQITCDGSvdmCNTEDINGKMRAC 233
+                 *********************************966999*******************************************733357*********** PP
+
+  7414at5125 200 gwhvvd 205
+                 gw+v++
+  TQW04555.1 234 GWNVIE 239
+                 **9975 PP
+
+  == domain 2  score: 268.6 bits;  conditional E-value: 9.3e-84
+  7414at5125 209 dlkttigfgslkqgthgvhgsplkaddikqlkkkfgfnp...favpkkhss.......egaa...ewnql..........ehadlk.rrlgelpegwek 283
+                 +++t+ig gs+  g    hg+   +dd++ +k+ fg+np   f+v ++  s        g a   ewn l           h++l+ r  g++p++w  
+  TQW04555.1 268 NIRTVIGIGSKVAGDAKAHGAAYGSDDVRSIKQAFGMNPdehFVVHDEVYSyfadikpRGDAlerEWNSLllaygerhgqAHSELRlRMEGKFPKDWRS 366
+                 689***********************************9777777765444122222223223339**98555544333336677624469******** PP
+
+  7414at5125 284 slpvyt..pdaavasrklsetvlskiepel...lggsadltgsnltrwkeavdfqp....katgl.gdysgryvrygvrehamgailnglaay..gtil 370
+                  +p+    + + +a r  + ++ + +  +l   + g+adl+ s    w + +dfq+       g+ g+ysgry+ yg+reham+ai nglaa+  gtil
+  TQW04555.1 367 IIPTREnfSSQPMAFRASAGAICNPLSANLtnfMVGTADLSPSVSMTWENKLDFQHpgleTECGInGNYSGRYIHYGIREHAMAAIANGLAAFskGTIL 465
+                 ***97622466789999999998888776533278********************723222345459************************98779*** PP
+
+  7414at5125 371 pyggtflnfvsyaagavrlsalsr.rviwvathdsiglgedgpthqpietlahfralpnclvwrpadgnetsaayyvaltskhtpsilalsrqnlpq.l 467
+                 p + tf+ f  yaa avr+ al   ++i +athdsig gedgpthqp+     +ra+pn+l  rp+d +et++a+  al +++tp+i++lsrq+lpq l
+  TQW04555.1 466 PVTSTFFMFYIYAAPAVRMGALQGlQTIHIATHDSIGTGEDGPTHQPVALAQLYRAMPNILYIRPCDTEETAGAFIAALEARDTPTIISLSRQKLPQyL 564
+                 **********************75389**********************9999*******************************************978 PP
+
+  7414at5125 468 egstiekaakggyvl...keaditlvstgsevsiavdaakyl......karivslpcfevfdaqskeyrlsvlp..dgipslsvevmstmgwerytheq 555
+                 e s  +  +kg+yvl   ++ad+tl+  g+e++ av++  +l      kar+vs+pc   f++q   y+  vl      p + +e  +  gwery+   
+  TQW04555.1 565 EHSCRDGVQKGAYVLieeRDADVTLLGVGAEMCFAVETRVVLrekfgiKARVVSFPCQRLFEVQPLAYKRDVLRyqSHAPRVIIEAYAVHGWERYADAG 663
+                 9999**********9555679****************976543333338***********************9622578******************** PP
+
+  7414at5125 556 fglnrfgasgaykdkfef 573
+                 + +  fg s   k+ +++
+  TQW04555.1 664 YTMASFGKSLPGKEAYKY 681
+                 ********9888877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (607 nodes)
+Target sequences:                        11142  (5185446 residues searched)
+Passed MSV filter:                       207  (0.0185784); expected 222.8 (0.02)
+Passed bias filter:                      176  (0.0157961); expected 222.8 (0.02)
+Passed Vit filter:                         9  (0.000807754); expected 11.1 (0.001)
+Passed Fwd filter:                         2  (0.000179501); expected 0.1 (1e-05)
+Initial search space (Z):              11142  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.14
+# Mc/sec: 22482.61
+//
+[ok]

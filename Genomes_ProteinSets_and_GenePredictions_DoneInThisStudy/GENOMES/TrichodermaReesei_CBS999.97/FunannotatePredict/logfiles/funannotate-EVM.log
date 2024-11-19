@@ -1,0 +1,548 @@
+[03/03/24 20:59:43]: /home/zack/miniconda3/envs/funannotate/lib/python3.7/site-packages/funannotate/aux_scripts/funannotate-runEVM.py -w /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/weights.evm.txt -c 4 -g /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/gene_predictions.gff3 -d /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM -f /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/genome.softmasked.fa -l /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/logfiles/funannotate-EVM.log -m 10 -i 1500 -o /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/evm.round1.gff3 --EVM_HOME /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1 -p /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/protein_alignments.gff3
+
+[03/03/24 20:59:43]: EVM: partitioning input to ~ 35 genes per partition using min 1500 bp interval
+[03/03/24 20:59:45]: 7 total contigs; skipping 0 contigs with no genes
+[03/03/24 20:59:45]: Merged 34114 genes into 8876 supergenes with bedtools
+[03/03/24 20:59:45]: scaffold_1_1-140190 --> 140189 bp
+[03/03/24 20:59:45]: scaffold_1_138247-278563 --> 140316 bp
+[03/03/24 20:59:45]: scaffold_1_272854-400849 --> 127995 bp
+[03/03/24 20:59:45]: scaffold_1_396199-512530 --> 116331 bp
+[03/03/24 20:59:45]: scaffold_1_506988-634331 --> 127343 bp
+[03/03/24 20:59:45]: scaffold_1_631621-752137 --> 120516 bp
+[03/03/24 20:59:45]: scaffold_1_750471-891058 --> 140587 bp
+[03/03/24 20:59:45]: scaffold_1_887390-990733 --> 103343 bp
+[03/03/24 20:59:45]: scaffold_1_988119-1108250 --> 120131 bp
+[03/03/24 20:59:45]: scaffold_1_1105505-1196048 --> 90543 bp
+[03/03/24 20:59:45]: scaffold_1_1192836-1349836 --> 157000 bp
+[03/03/24 20:59:45]: scaffold_1_1343897-1448312 --> 104415 bp
+[03/03/24 20:59:45]: scaffold_1_1443464-1585803 --> 142339 bp
+[03/03/24 20:59:45]: scaffold_1_1578055-1722139 --> 144084 bp
+[03/03/24 20:59:45]: scaffold_1_1718889-1847098 --> 128209 bp
+[03/03/24 20:59:45]: scaffold_1_1842316-2011975 --> 169659 bp
+[03/03/24 20:59:45]: scaffold_1_2010460-2157603 --> 147143 bp
+[03/03/24 20:59:45]: scaffold_1_2150875-2277305 --> 126430 bp
+[03/03/24 20:59:45]: scaffold_1_2274990-2394626 --> 119636 bp
+[03/03/24 20:59:45]: scaffold_1_2386235-2542170 --> 155935 bp
+[03/03/24 20:59:45]: scaffold_1_2539250-2668136 --> 128886 bp
+[03/03/24 20:59:45]: scaffold_1_2661608-2803475 --> 141867 bp
+[03/03/24 20:59:45]: scaffold_1_2797786-2927906 --> 130120 bp
+[03/03/24 20:59:45]: scaffold_1_2924709-3039076 --> 114367 bp
+[03/03/24 20:59:45]: scaffold_1_3036632-3154915 --> 118283 bp
+[03/03/24 20:59:45]: scaffold_1_3153285-3446246 --> 292961 bp
+[03/03/24 20:59:45]: scaffold_1_3440168-3573545 --> 133377 bp
+[03/03/24 20:59:45]: scaffold_1_3567143-3734397 --> 167254 bp
+[03/03/24 20:59:45]: scaffold_1_3731020-3905456 --> 174436 bp
+[03/03/24 20:59:45]: scaffold_1_3901950-4023418 --> 121468 bp
+[03/03/24 20:59:45]: scaffold_1_4018688-4159418 --> 140730 bp
+[03/03/24 20:59:45]: scaffold_1_4154670-4305303 --> 150633 bp
+[03/03/24 20:59:45]: scaffold_1_4303292-4443985 --> 140693 bp
+[03/03/24 20:59:45]: scaffold_1_4442005-4573686 --> 131681 bp
+[03/03/24 20:59:45]: scaffold_1_4566722-4668422 --> 101700 bp
+[03/03/24 20:59:45]: scaffold_1_4664458-4813337 --> 148879 bp
+[03/03/24 20:59:45]: scaffold_1_4811819-4943566 --> 131747 bp
+[03/03/24 20:59:45]: scaffold_1_4941163-5076133 --> 134970 bp
+[03/03/24 20:59:45]: scaffold_1_5073679-5203859 --> 130180 bp
+[03/03/24 20:59:45]: scaffold_1_5202166-5360702 --> 158536 bp
+[03/03/24 20:59:45]: scaffold_1_5356096-5482460 --> 126364 bp
+[03/03/24 20:59:45]: scaffold_1_5474180-5628081 --> 153901 bp
+[03/03/24 20:59:45]: scaffold_1_5624036-5718324 --> 94288 bp
+[03/03/24 20:59:45]: scaffold_1_5716110-5876666 --> 160556 bp
+[03/03/24 20:59:45]: scaffold_1_5874041-5985283 --> 111242 bp
+[03/03/24 20:59:45]: scaffold_1_5983561-6119556 --> 135995 bp
+[03/03/24 20:59:45]: scaffold_1_6110922-6268899 --> 157977 bp
+[03/03/24 20:59:45]: scaffold_1_6267366-6394835 --> 127469 bp
+[03/03/24 20:59:45]: scaffold_1_6388986-6507551 --> 118565 bp
+[03/03/24 20:59:45]: scaffold_1_6502623-6624250 --> 121627 bp
+[03/03/24 20:59:45]: scaffold_1_6622519-6723659 --> 101140 bp
+[03/03/24 20:59:45]: scaffold_1_6720444-6822241 --> 101797 bp
+[03/03/24 20:59:45]: scaffold_2_1-105309 --> 105308 bp
+[03/03/24 20:59:45]: scaffold_2_103074-249754 --> 146680 bp
+[03/03/24 20:59:45]: scaffold_2_248135-364384 --> 116249 bp
+[03/03/24 20:59:45]: scaffold_2_360243-493504 --> 133261 bp
+[03/03/24 20:59:45]: scaffold_2_491604-633603 --> 141999 bp
+[03/03/24 20:59:45]: scaffold_2_631741-756241 --> 124500 bp
+[03/03/24 20:59:45]: scaffold_2_750326-855787 --> 105461 bp
+[03/03/24 20:59:45]: scaffold_2_852800-975773 --> 122973 bp
+[03/03/24 20:59:45]: scaffold_2_973865-1073675 --> 99810 bp
+[03/03/24 20:59:45]: scaffold_2_1071772-1176095 --> 104323 bp
+[03/03/24 20:59:45]: scaffold_2_1174008-1264390 --> 90382 bp
+[03/03/24 20:59:45]: scaffold_2_1262265-1371888 --> 109623 bp
+[03/03/24 20:59:45]: scaffold_2_1368367-1516427 --> 148060 bp
+[03/03/24 20:59:45]: scaffold_2_1514579-1639079 --> 124500 bp
+[03/03/24 20:59:45]: scaffold_2_1636927-1786677 --> 149750 bp
+[03/03/24 20:59:45]: scaffold_2_1782998-2057483 --> 274485 bp
+[03/03/24 20:59:45]: scaffold_2_1990300-2152838 --> 162538 bp
+[03/03/24 20:59:45]: scaffold_2_2149799-2284975 --> 135176 bp
+[03/03/24 20:59:45]: scaffold_2_2282022-2416996 --> 134974 bp
+[03/03/24 20:59:45]: scaffold_2_2413541-2509160 --> 95619 bp
+[03/03/24 20:59:45]: scaffold_2_2507589-2675687 --> 168098 bp
+[03/03/24 20:59:45]: scaffold_2_2673155-2818057 --> 144902 bp
+[03/03/24 20:59:45]: scaffold_2_2815818-2944568 --> 128750 bp
+[03/03/24 20:59:45]: scaffold_2_2942919-3045861 --> 102942 bp
+[03/03/24 20:59:45]: scaffold_2_3042379-3171829 --> 129450 bp
+[03/03/24 20:59:45]: scaffold_2_3170095-3302625 --> 132530 bp
+[03/03/24 20:59:45]: scaffold_2_3300523-3416456 --> 115933 bp
+[03/03/24 20:59:45]: scaffold_2_3413876-3538971 --> 125095 bp
+[03/03/24 20:59:45]: scaffold_2_3536628-3690536 --> 153908 bp
+[03/03/24 20:59:45]: scaffold_2_3687921-3825304 --> 137383 bp
+[03/03/24 20:59:45]: scaffold_2_3822662-4020514 --> 197852 bp
+[03/03/24 20:59:45]: scaffold_2_4014517-4137001 --> 122484 bp
+[03/03/24 20:59:45]: scaffold_2_4132708-4287038 --> 154330 bp
+[03/03/24 20:59:45]: scaffold_2_4282307-4398945 --> 116638 bp
+[03/03/24 20:59:45]: scaffold_2_4397413-4500071 --> 102658 bp
+[03/03/24 20:59:45]: scaffold_2_4497291-4675263 --> 177972 bp
+[03/03/24 20:59:45]: scaffold_2_4671385-4789827 --> 118442 bp
+[03/03/24 20:59:45]: scaffold_2_4783380-4943685 --> 160305 bp
+[03/03/24 20:59:45]: scaffold_2_4941598-5031916 --> 90318 bp
+[03/03/24 20:59:45]: scaffold_2_5028911-5183452 --> 154541 bp
+[03/03/24 20:59:45]: scaffold_2_5180956-5315768 --> 134812 bp
+[03/03/24 20:59:45]: scaffold_2_5313907-5416683 --> 102776 bp
+[03/03/24 20:59:45]: scaffold_2_5414913-5514020 --> 99107 bp
+[03/03/24 20:59:45]: scaffold_2_5512162-5596818 --> 84656 bp
+[03/03/24 20:59:45]: scaffold_2_5595031-5765025 --> 169994 bp
+[03/03/24 20:59:45]: scaffold_2_5755899-5857137 --> 101238 bp
+[03/03/24 20:59:45]: scaffold_2_5854804-6061597 --> 206793 bp
+[03/03/24 20:59:45]: scaffold_3_1-154316 --> 154315 bp
+[03/03/24 20:59:45]: scaffold_3_150382-247499 --> 97117 bp
+[03/03/24 20:59:45]: scaffold_3_245896-395388 --> 149492 bp
+[03/03/24 20:59:45]: scaffold_3_390068-520705 --> 130637 bp
+[03/03/24 20:59:45]: scaffold_3_519178-661682 --> 142504 bp
+[03/03/24 20:59:45]: scaffold_3_660165-793003 --> 132838 bp
+[03/03/24 20:59:45]: scaffold_3_791041-966074 --> 175033 bp
+[03/03/24 20:59:45]: scaffold_3_963851-1097256 --> 133405 bp
+[03/03/24 20:59:45]: scaffold_3_1087459-1235711 --> 148252 bp
+[03/03/24 20:59:45]: scaffold_3_1232987-1353322 --> 120335 bp
+[03/03/24 20:59:45]: scaffold_3_1351804-1470483 --> 118679 bp
+[03/03/24 20:59:45]: scaffold_3_1468131-1605186 --> 137055 bp
+[03/03/24 20:59:45]: scaffold_3_1603280-1826247 --> 222967 bp
+[03/03/24 20:59:45]: scaffold_3_1756623-1974251 --> 217628 bp
+[03/03/24 20:59:45]: scaffold_3_1971854-2098113 --> 126259 bp
+[03/03/24 20:59:45]: scaffold_3_2095742-2243425 --> 147683 bp
+[03/03/24 20:59:45]: scaffold_3_2241814-2393028 --> 151214 bp
+[03/03/24 20:59:45]: scaffold_3_2388104-2511289 --> 123185 bp
+[03/03/24 20:59:45]: scaffold_3_2507680-2615989 --> 108309 bp
+[03/03/24 20:59:45]: scaffold_3_2614113-2753036 --> 138923 bp
+[03/03/24 20:59:45]: scaffold_3_2748379-2883944 --> 135565 bp
+[03/03/24 20:59:45]: scaffold_3_2877631-3049208 --> 171577 bp
+[03/03/24 20:59:45]: scaffold_3_3047409-3193578 --> 146169 bp
+[03/03/24 20:59:45]: scaffold_3_3187886-3321264 --> 133378 bp
+[03/03/24 20:59:45]: scaffold_3_3312596-3463588 --> 150992 bp
+[03/03/24 20:59:45]: scaffold_3_3454479-3579723 --> 125244 bp
+[03/03/24 20:59:45]: scaffold_3_3576833-3723227 --> 146394 bp
+[03/03/24 20:59:45]: scaffold_3_3719960-3803764 --> 83804 bp
+[03/03/24 20:59:45]: scaffold_3_3801999-3972221 --> 170222 bp
+[03/03/24 20:59:45]: scaffold_3_3966135-4123324 --> 157189 bp
+[03/03/24 20:59:45]: scaffold_3_4116666-4298425 --> 181759 bp
+[03/03/24 20:59:45]: scaffold_3_4290570-4434724 --> 144154 bp
+[03/03/24 20:59:45]: scaffold_3_4431377-4583355 --> 151978 bp
+[03/03/24 20:59:45]: scaffold_3_4580975-4674382 --> 93407 bp
+[03/03/24 20:59:45]: scaffold_3_4671356-4814341 --> 142985 bp
+[03/03/24 20:59:45]: scaffold_3_4812227-4951828 --> 139601 bp
+[03/03/24 20:59:45]: scaffold_3_4950116-5072219 --> 122103 bp
+[03/03/24 20:59:45]: scaffold_3_5070487-5262280 --> 191793 bp
+[03/03/24 20:59:45]: scaffold_4_1-107784 --> 107783 bp
+[03/03/24 20:59:45]: scaffold_4_104921-202456 --> 97535 bp
+[03/03/24 20:59:45]: scaffold_4_199964-326127 --> 126163 bp
+[03/03/24 20:59:45]: scaffold_4_322897-458668 --> 135771 bp
+[03/03/24 20:59:45]: scaffold_4_453969-582351 --> 128382 bp
+[03/03/24 20:59:45]: scaffold_4_572597-714835 --> 142238 bp
+[03/03/24 20:59:45]: scaffold_4_711753-861664 --> 149911 bp
+[03/03/24 20:59:45]: scaffold_4_858476-985860 --> 127384 bp
+[03/03/24 20:59:45]: scaffold_4_983732-1095723 --> 111991 bp
+[03/03/24 20:59:45]: scaffold_4_1093948-1204022 --> 110074 bp
+[03/03/24 20:59:45]: scaffold_4_1200468-1362202 --> 161734 bp
+[03/03/24 20:59:45]: scaffold_4_1360561-1624585 --> 264024 bp
+[03/03/24 20:59:45]: scaffold_4_1622072-1764702 --> 142630 bp
+[03/03/24 20:59:45]: scaffold_4_1762076-1889036 --> 126960 bp
+[03/03/24 20:59:45]: scaffold_4_1887344-2019751 --> 132407 bp
+[03/03/24 20:59:45]: scaffold_4_2018018-2140528 --> 122510 bp
+[03/03/24 20:59:45]: scaffold_4_2138600-2252600 --> 114000 bp
+[03/03/24 20:59:45]: scaffold_4_2250465-2397217 --> 146752 bp
+[03/03/24 20:59:45]: scaffold_4_2395643-2513419 --> 117776 bp
+[03/03/24 20:59:45]: scaffold_4_2511721-2654062 --> 142341 bp
+[03/03/24 20:59:45]: scaffold_4_2652436-2756139 --> 103703 bp
+[03/03/24 20:59:45]: scaffold_4_2750941-2876179 --> 125238 bp
+[03/03/24 20:59:45]: scaffold_4_2874370-2981462 --> 107092 bp
+[03/03/24 20:59:45]: scaffold_4_2978979-3089454 --> 110475 bp
+[03/03/24 20:59:45]: scaffold_4_3085111-3204902 --> 119791 bp
+[03/03/24 20:59:45]: scaffold_4_3202201-3350688 --> 148487 bp
+[03/03/24 20:59:45]: scaffold_4_3348135-3496900 --> 148765 bp
+[03/03/24 20:59:45]: scaffold_4_3494583-3595156 --> 100573 bp
+[03/03/24 20:59:45]: scaffold_4_3592576-3774856 --> 182280 bp
+[03/03/24 20:59:45]: scaffold_4_3771347-3879282 --> 107935 bp
+[03/03/24 20:59:45]: scaffold_4_3876319-3988116 --> 111797 bp
+[03/03/24 20:59:45]: scaffold_4_3986319-4090771 --> 104452 bp
+[03/03/24 20:59:45]: scaffold_4_4088664-4215298 --> 126634 bp
+[03/03/24 20:59:45]: scaffold_4_4212231-4370367 --> 158136 bp
+[03/03/24 20:59:45]: scaffold_5_1-125997 --> 125996 bp
+[03/03/24 20:59:45]: scaffold_5_124441-222643 --> 98202 bp
+[03/03/24 20:59:45]: scaffold_5_220381-329509 --> 109128 bp
+[03/03/24 20:59:45]: scaffold_5_326173-449321 --> 123148 bp
+[03/03/24 20:59:45]: scaffold_5_447774-552286 --> 104512 bp
+[03/03/24 20:59:45]: scaffold_5_546464-671975 --> 125511 bp
+[03/03/24 20:59:45]: scaffold_5_662583-863662 --> 201079 bp
+[03/03/24 20:59:45]: scaffold_5_857580-960858 --> 103278 bp
+[03/03/24 20:59:45]: scaffold_5_957883-1159004 --> 201121 bp
+[03/03/24 20:59:45]: scaffold_5_1142599-1366310 --> 223711 bp
+[03/03/24 20:59:45]: scaffold_5_1363730-1477691 --> 113961 bp
+[03/03/24 20:59:45]: scaffold_5_1470538-1623233 --> 152695 bp
+[03/03/24 20:59:45]: scaffold_5_1618802-1757473 --> 138671 bp
+[03/03/24 20:59:45]: scaffold_5_1754184-1883458 --> 129274 bp
+[03/03/24 20:59:45]: scaffold_5_1878220-2014609 --> 136389 bp
+[03/03/24 20:59:45]: scaffold_5_2011686-2160700 --> 149014 bp
+[03/03/24 20:59:45]: scaffold_5_2155420-2260442 --> 105022 bp
+[03/03/24 20:59:45]: scaffold_5_2257365-2369963 --> 112598 bp
+[03/03/24 20:59:45]: scaffold_5_2367288-2501795 --> 134507 bp
+[03/03/24 20:59:45]: scaffold_5_2499075-2612721 --> 113646 bp
+[03/03/24 20:59:45]: scaffold_5_2610229-2739852 --> 129623 bp
+[03/03/24 20:59:45]: scaffold_5_2737650-2940456 --> 202806 bp
+[03/03/24 20:59:45]: scaffold_5_2936410-3100441 --> 164031 bp
+[03/03/24 20:59:45]: scaffold_5_3093787-3182027 --> 88240 bp
+[03/03/24 20:59:45]: scaffold_5_3178295-3307871 --> 129576 bp
+[03/03/24 20:59:45]: scaffold_5_3305895-3419634 --> 113739 bp
+[03/03/24 20:59:45]: scaffold_5_3417950-3538536 --> 120586 bp
+[03/03/24 20:59:45]: scaffold_5_3535549-3688238 --> 152689 bp
+[03/03/24 20:59:45]: scaffold_5_3684097-3810624 --> 126527 bp
+[03/03/24 20:59:45]: scaffold_5_3808166-3917653 --> 109487 bp
+[03/03/24 20:59:45]: scaffold_5_3914565-4096578 --> 182013 bp
+[03/03/24 20:59:45]: scaffold_6_1-161143 --> 161142 bp
+[03/03/24 20:59:45]: scaffold_6_159570-276452 --> 116882 bp
+[03/03/24 20:59:45]: scaffold_6_271009-430531 --> 159522 bp
+[03/03/24 20:59:45]: scaffold_6_428165-601184 --> 173019 bp
+[03/03/24 20:59:45]: scaffold_6_596630-731353 --> 134723 bp
+[03/03/24 20:59:45]: scaffold_6_729670-922125 --> 192455 bp
+[03/03/24 20:59:45]: scaffold_6_920117-1091156 --> 171039 bp
+[03/03/24 20:59:45]: scaffold_6_1080193-1208550 --> 128357 bp
+[03/03/24 20:59:45]: scaffold_6_1206609-1325633 --> 119024 bp
+[03/03/24 20:59:45]: scaffold_6_1317320-1480518 --> 163198 bp
+[03/03/24 20:59:45]: scaffold_6_1478686-1601175 --> 122489 bp
+[03/03/24 20:59:45]: scaffold_6_1599325-1738317 --> 138992 bp
+[03/03/24 20:59:45]: scaffold_6_1736005-1835535 --> 99530 bp
+[03/03/24 20:59:45]: scaffold_6_1833939-2091697 --> 257758 bp
+[03/03/24 20:59:45]: scaffold_6_2090180-2228123 --> 137943 bp
+[03/03/24 20:59:45]: scaffold_6_2226417-2376571 --> 150154 bp
+[03/03/24 20:59:45]: scaffold_6_2372263-2499179 --> 126916 bp
+[03/03/24 20:59:45]: scaffold_6_2492887-2608240 --> 115353 bp
+[03/03/24 20:59:45]: scaffold_6_2604546-2765599 --> 161053 bp
+[03/03/24 20:59:45]: scaffold_6_2763578-2869390 --> 105812 bp
+[03/03/24 20:59:45]: scaffold_6_2865804-2962336 --> 96532 bp
+[03/03/24 20:59:45]: scaffold_6_2960032-3105678 --> 145646 bp
+[03/03/24 20:59:45]: scaffold_6_3103805-3240025 --> 136220 bp
+[03/03/24 20:59:45]: scaffold_6_3238401-3361398 --> 122997 bp
+[03/03/24 20:59:45]: scaffold_6_3358747-3478539 --> 119792 bp
+[03/03/24 20:59:45]: scaffold_6_3474043-3596191 --> 122148 bp
+[03/03/24 20:59:45]: scaffold_6_3593907-3692709 --> 98802 bp
+[03/03/24 20:59:45]: scaffold_6_3690948-3782361 --> 91413 bp
+[03/03/24 20:59:45]: scaffold_6_3778422-3966998 --> 188576 bp
+[03/03/24 20:59:45]: scaffold_7_1-161744 --> 161743 bp
+[03/03/24 20:59:45]: scaffold_7_159952-318237 --> 158285 bp
+[03/03/24 20:59:45]: scaffold_7_312671-451431 --> 138760 bp
+[03/03/24 20:59:45]: scaffold_7_449386-603686 --> 154300 bp
+[03/03/24 20:59:45]: scaffold_7_593944-730054 --> 136110 bp
+[03/03/24 20:59:45]: scaffold_7_727908-857610 --> 129702 bp
+[03/03/24 20:59:45]: scaffold_7_855465-1053312 --> 197847 bp
+[03/03/24 20:59:45]: scaffold_7_1051415-1141145 --> 89730 bp
+[03/03/24 20:59:45]: scaffold_7_1139079-1270562 --> 131483 bp
+[03/03/24 20:59:45]: scaffold_7_1266573-1357203 --> 90630 bp
+[03/03/24 20:59:45]: scaffold_7_1355435-1525292 --> 169857 bp
+[03/03/24 20:59:45]: scaffold_7_1523182-1749123 --> 225941 bp
+[03/03/24 20:59:45]: scaffold_7_1644773-1916142 --> 271369 bp
+[03/03/24 20:59:45]: scaffold_7_1913561-2003616 --> 90055 bp
+[03/03/24 20:59:45]: scaffold_7_1997136-2205156 --> 208020 bp
+[03/03/24 20:59:45]: scaffold_7_2202331-2334915 --> 132584 bp
+[03/03/24 20:59:45]: scaffold_7_2332146-2482723 --> 150577 bp
+[03/03/24 20:59:45]: scaffold_7_2475347-2591174 --> 115827 bp
+[03/03/24 20:59:45]: scaffold_7_2588932-2702421 --> 113489 bp
+[03/03/24 20:59:45]: scaffold_7_2698999-2820633 --> 121634 bp
+[03/03/24 20:59:45]: scaffold_7_2818578-2981890 --> 163312 bp
+[03/03/24 20:59:45]: scaffold_7_2979736-3114962 --> 135226 bp
+[03/03/24 20:59:45]: scaffold_7_3112384-3229922 --> 117538 bp
+[03/03/24 20:59:45]: scaffold_7_3228407-3353480 --> 125073 bp
+[03/03/24 20:59:45]: scaffold_7_3351510-3452734 --> 101224 bp
+[03/03/24 20:59:45]: scaffold_7_3449438-3564122 --> 114684 bp
+[03/03/24 20:59:46]: scaffold_7_3561539-3742135 --> 180596 bp
+[03/03/24 21:00:10]: Finished partitioning, generating command list
+[03/03/24 21:29:20]: perl /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/recombine_EVM_partial_outputs.pl --partitions partitions_list.out --output_file_name evm.out
+[03/03/24 21:29:28]: Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1514579-1639079/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1-105309/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_5028911-5183452/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_631741-756241/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1636927-1786677/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_852800-975773/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2282022-2416996/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4282307-4398945/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4497291-4675263/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3300523-3416456/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4783380-4943685/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_973865-1073675/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3822662-4020514/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_491604-633603/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_5512162-5596818/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3687921-3825304/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1368367-1516427/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3413876-3538971/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_5180956-5315768/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_103074-249754/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2673155-2818057/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_5313907-5416683/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2413541-2509160/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4397413-4500071/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3170095-3302625/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3042379-3171829/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_5414913-5514020/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1782998-2057483/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_3536628-3690536/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2507589-2675687/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_248135-364384/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4014517-4137001/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_5755899-5857137/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2149799-2284975/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_5595031-5765025/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1174008-1264390/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2942919-3045861/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1990300-2152838/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1071772-1176095/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_750326-855787/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_2815818-2944568/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4941598-5031916/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_5854804-6061597/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4671385-4789827/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_360243-493504/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_1262265-1371888/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/scaffold_2_4132708-4287038/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_159952-318237/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_3112384-3229922/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1523182-1749123/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2202331-2334915/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1997136-2205156/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2588932-2702421/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_3561539-3742135/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_855465-1053312/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1355435-1525292/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_449386-603686/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1266573-1357203/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_3351510-3452734/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2979736-3114962/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1051415-1141145/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_593944-730054/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_3449438-3564122/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1644773-1916142/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2818578-2981890/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2475347-2591174/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1139079-1270562/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2698999-2820633/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1913561-2003616/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_312671-451431/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_2332146-2482723/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_3228407-3353480/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_1-161744/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/scaffold_7_727908-857610/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_711753-861664/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_199964-326127/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1200468-1362202/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1887344-2019751/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1-107784/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1360561-1624585/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1622072-1764702/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2138600-2252600/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3348135-3496900/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1093948-1204022/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_453969-582351/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3592576-3774856/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_4212231-4370367/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_1762076-1889036/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_322897-458668/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2511721-2654062/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3986319-4090771/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3494583-3595156/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3771347-3879282/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2978979-3089454/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2652436-2756139/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_858476-985860/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2250465-2397217/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3085111-3204902/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2395643-2513419/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_572597-714835/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2018018-2140528/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3202201-3350688/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_983732-1095723/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_104921-202456/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_4088664-4215298/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_3876319-3988116/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2750941-2876179/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/scaffold_4_2874370-2981462/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_887390-990733/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5073679-5203859/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3440168-3573545/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_988119-1108250/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4664458-4813337/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1578055-1722139/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2274990-2394626/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5202166-5360702/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1443464-1585803/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3153285-3446246/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_6502623-6624250/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4154670-4305303/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_138247-278563/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5983561-6119556/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2010460-2157603/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4566722-4668422/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3036632-3154915/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5716110-5876666/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5874041-5985283/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1343897-1448312/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_6110922-6268899/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1718889-1847098/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2539250-2668136/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2386235-2542170/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_631621-752137/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_6267366-6394835/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5474180-5628081/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3901950-4023418/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1105505-1196048/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_6622519-6723659/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_396199-512530/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_750471-891058/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_6388986-6507551/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_506988-634331/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4018688-4159418/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4303292-4443985/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2661608-2803475/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_272854-400849/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5356096-5482460/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1192836-1349836/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2924709-3039076/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4442005-4573686/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4941163-5076133/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3731020-3905456/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2797786-2927906/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1-140190/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_5624036-5718324/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_6720444-6822241/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_4811819-4943566/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_1842316-2011975/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_3567143-3734397/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/scaffold_1_2150875-2277305/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2257365-2369963/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_447774-552286/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3417950-3538536/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3305895-3419634/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_857580-960858/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1142599-1366310/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1618802-1757473/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3808166-3917653/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1878220-2014609/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2737650-2940456/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3093787-3182027/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3178295-3307871/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2011686-2160700/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_957883-1159004/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_220381-329509/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3535549-3688238/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3684097-3810624/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2610229-2739852/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_326173-449321/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2155420-2260442/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1363730-1477691/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2936410-3100441/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_3914565-4096578/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1-125997/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1470538-1623233/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_662583-863662/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2499075-2612721/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_546464-671975/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_2367288-2501795/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_124441-222643/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/scaffold_5_1754184-1883458/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4580975-4674382/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_245896-395388/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1971854-2098113/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1087459-1235711/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3312596-3463588/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3966135-4123324/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4812227-4951828/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3187886-3321264/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2614113-2753036/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3719960-3803764/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4431377-4583355/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_390068-520705/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4671356-4814341/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1756623-1974251/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_963851-1097256/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2507680-2615989/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2095742-2243425/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4290570-4434724/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3454479-3579723/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_5070487-5262280/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2877631-3049208/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_660165-793003/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1-154316/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2388104-2511289/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1603280-1826247/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_150382-247499/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_519178-661682/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4116666-4298425/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1468131-1605186/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_4950116-5072219/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3801999-3972221/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3047409-3193578/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1351804-1470483/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2748379-2883944/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_791041-966074/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_1232987-1353322/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_3576833-3723227/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/scaffold_3_2241814-2393028/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3/evm.out
+
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1833939-2091697/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3238401-3361398/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1736005-1835535/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2090180-2228123/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_920117-1091156/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1317320-1480518/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1599325-1738317/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1-161143/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3103805-3240025/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2372263-2499179/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2604546-2765599/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2960032-3105678/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1080193-1208550/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2763578-2869390/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1206609-1325633/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3474043-3596191/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2865804-2962336/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_1478686-1601175/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_596630-731353/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2492887-2608240/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_729670-922125/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3593907-3692709/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_159570-276452/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3690948-3782361/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_2226417-2376571/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3358747-3478539/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_271009-430531/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_3778422-3966998/evm.out
+Parsing /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/scaffold_6_428165-601184/evm.out
+	writing output /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6/evm.out
+
+
+[03/03/24 21:29:28]: perl /home/zack/miniconda3/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/convert_EVM_outputs_to_GFF3.pl --partitions partitions_list.out --output evm.out --genome /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/genome.softmasked.fa
+[03/03/24 21:29:31]: // Processing scaffold_2, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_2
+// Processing scaffold_4, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_4
+// Processing scaffold_5, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_5
+// Processing scaffold_3, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_3
+// Processing scaffold_7, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_7
+// Processing scaffold_1, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_1
+// Processing scaffold_6, /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_CBS999.97/FunannotatePredict/predict_misc/EVM/scaffold_6
+
+[03/03/24 21:29:31]: Converting to GFF3 and collecting all EVM results

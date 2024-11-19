@@ -1,0 +1,55 @@
+Will create parameters for a EUKARYOTIC species!
+creating directory /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_qm6a/ ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_qm6a/trichoderma_reesei_qm6a_parameters.cfg ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_qm6a/trichoderma_reesei_qm6a_weightmatrix.txt ...
+creating /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_qm6a/trichoderma_reesei_qm6a_metapars.cfg ...
+The necessary files for training trichoderma_reesei_qm6a have been created.
+Now, either run etraining or optimize_parameters.pl with --species=trichoderma_reesei_qm6a.
+etraining quickly estimates the parameters from a file with training genes.
+optimize_augustus.pl alternates running etraining and augustus to find optimal metaparameters.
+
+# Read in 4342 genbank sequences.
+Quantiles of the GC contents in the training set:
+0%	0.337
+5%	0.515	10%	0.523
+15%	0.528	20%	0.534
+25%	0.538	30%	0.542
+35%	0.545	40%	0.548
+45%	0.551	50%	0.554
+55%	0.556	60%	0.559
+65%	0.562	70%	0.565
+75%	0.569	80%	0.573
+85%	0.578	90%	0.584
+95%	0.592	100%	0.638
+HMM-training the parameters...
+i= 0 bc= (0.237, 0.263, 0.263, 0.237)
+ ** building model for exons *EXON*
+start codon frequencies: ATG(4342)
+# admissible start codons and their probabilities: ATG(1), CTG(0), TTG(0)
+ number of bases in the reading frames: 2489950 2494159 2494157
+--- frame = 0 ---    minPatSum = 233
+--- frame = 1 ---    minPatSum = 233
+--- frame = 2 ---    minPatSum = 233
+--- initial frame = 0 ---    minPatSum = 233
+--- initial frame = 1 ---    minPatSum = 233
+--- initial frame = 2 ---    minPatSum = 233
+--- internal exon terminal frame = 0 ---    minPatSum = 233
+--- internal exon terminal frame = 1 ---    minPatSum = 233
+--- internal exon terminal frame = 2 ---    minPatSum = 233
+single, initial, internal, terminal mean exon lengths :
+1204	282	340	586
+single exon : 698
+initial exon 0 : 1464
+initial exon 1 : 1242
+initial exon 2 : 938
+internal exon 0 : 2161
+internal exon 1 : 1742
+internal exon 2 : 1432
+terminal exon : 3644
+Frequency of stop codons:
+tag: 1148 (0.264)
+taa: 1301 (0.3)
+tga: 1893 (0.436)
+end *EXON*
+Storing parameters to file...
+Writing exon model parameters [1] to file /home/zack/Desktop/IsariaPreferralGenome/MyGenomeSubmittedToNCBI/HypocrealesProteinSets/GENOMES/TrichodermaReesei_QM6a/FunannotatePredict/predict_misc/ab_initio_parameters/augustus/species/trichoderma_reesei_qm6a/trichoderma_reesei_qm6a_exon_probs.pbl.
